@@ -1,0 +1,841 @@
+ベビー フラッシュカード ― 写真のクレジット
+
+写真はすべて、自由に使えるライセンスで公開されている実写の写真です（おもに Wikimedia Commons）。
+背景を除去して白に置き換え、トリミング・縮小しています。加工した写真も、元の写真と同じライセンスです。
+ライセンスの全文：CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ ／ CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+（3.0・2.5・2.0 なども同じサイトの各バージョン）
+GFDL: https://www.gnu.org/licenses/fdl-1.2.html
+
+card-inu.jpg  いぬ
+  元の写真: 2011-04-02 a Shiba Inu in Japan.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3A2011-04-02_a_Shiba_Inu_in_Japan.jpg
+  撮影者: Alf Melin
+  ライセンス: CC BY-SA 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-neko.jpg  ねこ
+  元の写真: EUR cat transparent.png
+  ページ: https://commons.wikimedia.org/wiki/File%3AEUR_cat_transparent.png
+  撮影者: Heikki Siltala from catza.net
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-usagi.jpg  うさぎ
+  元の写真: Нидерландский карликовый кролик черного окраса.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3A%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D1%80%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2%D1%8B%D0%B9_%D0%BA%D1%80%D0%BE%D0%BB%D0%B8%D0%BA_%D1%87%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D0%B0%D1%81%D0%B0.jpg
+  撮影者: Наталья Олехнович
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-hamster.jpg  ハムスター
+  元の写真: Golden hamster front 1.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AGolden_hamster_front_1.jpg
+  撮影者: Adamjennison111 at English Wikipedia
+  ライセンス: CC BY-SA 3.0 / GFDL / CC BY 2.5
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-inko.jpg  インコ
+  元の写真: Budgerigar-strzelecki-qld.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ABudgerigar-strzelecki-qld.jpg
+  撮影者: Benjamint444
+  ライセンス: GFDL 1.2
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kingyo.jpg  きんぎょ
+  元の写真: Carassius wild golden fish 2013 G1 (white background).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ACarassius_wild_golden_fish_2013_G1_%28white_background%29.jpg
+  撮影者: George Chernilevsky
+  ライセンス: Public domain
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-ushi.jpg  うし
+  元の写真: HF in der Rhön auf der Weide.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AHF_in_der_Rh%C3%B6n_auf_der_Weide.jpg
+  撮影者: Verum
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-buta.jpg  ぶた
+  元の写真: Sow with piglet.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ASow_with_piglet.jpg
+  撮影者: Scott Bauer, USDA
+  ライセンス: Public domain
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-hitsuji.jpg  ひつじ
+  元の写真: File:Sheep (33625876592).jpg
+  ページ: https://commons.wikimedia.org/wiki/File:Sheep_(33625876592).jpg
+  撮影者: Rob Mitchell
+  ライセンス: CC0 1.0（パブリックドメイン）
+  入手元: GCompris（KDE）
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-uma.jpg  うま
+  元の写真: Pixabay: horses-iceland-landmannalaugar-584519
+  ページ: https://pixabay.com/en/horses-iceland-landmannalaugar-584519/
+  撮影者: Pixabay
+  ライセンス: CC0 1.0（Pixabay／StockSnap、2015年公開）
+  入手元: Toddler Animals（Rico Zuñiga, MIT）
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-yagi.jpg  やぎ
+  元の写真: Saanen goat standing.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ASaanen_goat_standing.jpg
+  撮影者: ChristianNawroth
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-niwatori.jpg  にわとり
+  元の写真: White Leghorn Rooster.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AWhite_Leghorn_Rooster.jpg
+  撮影者: Just chaos
+  ライセンス: CC BY 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-hiyoko.jpg  ひよこ
+  元の写真: Day old chick.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ADay_old_chick.jpg
+  撮影者: Fir0002/Flagstaffotos
+  ライセンス: GFDL 1.2 / CC BY-NC 3.0（非営利）
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-ahiru.jpg  あひる
+  元の写真: Amerikanische Pekingenten 2013 01, cropped.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AAmerikanische_Pekingenten_2013_01%2C_cropped.jpg
+  撮影者: Martin Backert You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-raion.jpg  ライオン
+  元の写真: Lion in masai mara.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ALion_in_masai_mara.jpg
+  撮影者: Sumit.pamnani at English Wikipedia
+  ライセンス: Public domain
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-tora.jpg  とら
+  元の写真: Adult male Royal Bengal tiger.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AAdult_male_Royal_Bengal_tiger.jpg
+  撮影者: Seemaleena
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-zou.jpg  ぞう
+  元の写真: 178 Male African bush elephant in Etosha National Park Photo by Giles Laurent.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3A178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg
+  撮影者: Giles Laurent
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kirin.jpg  きりん
+  元の写真: Giraffe-solo Koure-NIGER.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AGiraffe-solo_Koure-NIGER.jpg
+  撮影者: Eric.dane
+  ライセンス: GFDL / CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-shimauma.jpg  しまうま
+  元の写真: Plains Zebra Equus quagga.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3APlains_Zebra_Equus_quagga.jpg
+  撮影者: Muhammad Mahdi Karim
+  ライセンス: GFDL 1.2
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kaba.jpg  かば
+  元の写真: Hippopotamus-2780699 1280.png
+  ページ: https://commons.wikimedia.org/wiki/File%3AHippopotamus-2780699_1280.png
+  撮影者: Capri23auto
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-sai.jpg  さい
+  元の写真: 081 White rhinoceros (male) in the Kalahari Desert of Namibia Photo by Giles Laurent.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3A081_White_rhinoceros_%28male%29_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg
+  撮影者: Giles Laurent
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-gorira.jpg  ゴリラ
+  元の写真: Gorille.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AGorille.jpg
+  撮影者: Macinate
+  ライセンス: CC BY 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-panda.jpg  パンダ
+  元の写真: Giant panda on a white background.png
+  ページ: https://commons.wikimedia.org/wiki/File%3AGiant_panda_on_a_white_background.png
+  撮影者: Harald
+  ライセンス: CC BY 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-ressaapanda.jpg  レッサーパンダ
+  元の写真: Red Panda (25193861686).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ARed_Panda_%2825193861686%29.jpg
+  撮影者: Mathias Appel
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-shirokuma.jpg  しろくま
+  元の写真: Polar Bear - Alaska (cropped).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3APolar_Bear_-_Alaska_%28cropped%29.jpg
+  撮影者: Alan Wilson
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-koara.jpg  コアラ
+  元の写真: File:Koala Perth Zoo.jpg
+  ページ: https://commons.wikimedia.org/wiki/File:Koala_Perth_Zoo.jpg
+  撮影者: BurningWell
+  ライセンス: パブリックドメイン（Unlicense）
+  入手元: GCompris（KDE）
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kangaruu.jpg  カンガルー
+  元の写真: Red kangaroo - melbourne zoo.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ARed_kangaroo_-_melbourne_zoo.jpg
+  撮影者: Fir0002/Flagstaffotos
+  ライセンス: GFDL 1.2 / CC BY-NC 3.0（非営利）
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-pengin.jpg  ペンギン
+  元の写真: Spheniscus humboldti (54905367722).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ASpheniscus_humboldti_%2854905367722%29.jpg
+  撮影者: Christian Ursilva from København, Danmark
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-furamingo.jpg  フラミンゴ
+  元の写真: Phoenicopterus ruber Bonaire 1.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3APhoenicopterus_ruber_Bonaire_1.jpg
+  撮影者: Paul Asman and Jill Lenoble
+  ライセンス: CC BY 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kapibara.jpg  カピバラ
+  元の写真: 046 Capybara by the river in Encontro das Águas State Park Photo by Giles Laurent.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3A046_Capybara_by_the_river_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg
+  撮影者: © Giles Laurent , gileslaurent.com , License CC BY-SA You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You 
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-rakuda.jpg  らくだ
+  元の写真: Transparent Background Dromedary Camel.png
+  ページ: https://commons.wikimedia.org/wiki/File%3ATransparent_Background_Dromedary_Camel.png
+  撮影者: Jjron , MrNoble.xyz
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-saru.jpg  おさる
+  元の写真: Snow Monkey at Jigokudani Monkey Park.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ASnow_Monkey_at_Jigokudani_Monkey_Park.jpg
+  撮影者: Ashley98lee
+  ライセンス: CC BY 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kitsune.jpg  きつね
+  元の写真: Pixabay: fox-nature-animals-roux-fauna-715588
+  ページ: https://pixabay.com/en/fox-nature-animals-roux-fauna-715588/
+  撮影者: Pixabay
+  ライセンス: CC0 1.0（Pixabay／StockSnap、2015年公開）
+  入手元: Toddler Animals（Rico Zuñiga, MIT）
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-shika.jpg  しか
+  元の写真: Cervus nippon dybowski Solo.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ACervus_nippon_dybowski_Solo.jpg
+  撮影者: Altaileopard ; modified by Wildfeuer
+  ライセンス: GFDL / CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-risu.jpg  りす
+  元の写真: Pixabay: squirrel-wildlife-nature-animal-498139
+  ページ: https://pixabay.com/en/squirrel-wildlife-nature-animal-498139/
+  撮影者: Pixabay
+  ライセンス: CC0 1.0（Pixabay／StockSnap、2015年公開）
+  入手元: Toddler Animals（Rico Zuñiga, MIT）
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-suzume.jpg  すずめ
+  元の写真: Tree Sparrow August 2007 Osaka Japan.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ATree_Sparrow_August_2007_Osaka_Japan.jpg
+  撮影者: Laitche
+  ライセンス: Public domain
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-hato.jpg  はと
+  元の写真: Feral pigeon (Columba livia domestica), 2017-05-27.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AFeral_pigeon_%28Columba_livia_domestica%29%2C_2017-05-27.jpg
+  撮影者: Lewis Hulbert
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-karasu.jpg  からす
+  元の写真: Carrion crow 20090612 white background.png
+  ページ: https://commons.wikimedia.org/wiki/File%3ACarrion_crow_20090612_white_background.png
+  撮影者: Aomorikuma（あおもりくま）
+  ライセンス: GFDL / CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-fukurou.jpg  ふくろう
+  元の写真: 2012-11-01 Ural Owl, Novosibirsk Oblast, Russia.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3A2012-11-01_Ural_Owl%2C_Novosibirsk_Oblast%2C_Russia.jpg
+  撮影者: Tatiana Bulyonkova from Novosibirsk, Russia
+  ライセンス: CC BY-SA 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-washi.jpg  わし
+  元の写真: Bald Eagle (Haliaeetus leucocephalus) Kachemak Bay, Alaska.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ABald_Eagle_%28Haliaeetus_leucocephalus%29_Kachemak_Bay%2C_Alaska.jpg
+  撮影者: Andy Morffew from Itchen Abbas, Hampshire, UK
+  ライセンス: CC BY 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-tsuru.jpg  つる
+  元の写真: Red-crowned Crane at the Cincinnati Zoo.png
+  ページ: https://commons.wikimedia.org/wiki/File%3ARed-crowned_Crane_at_the_Cincinnati_Zoo.png
+  撮影者: HAV0Xunderscore
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-hakuchou.jpg  はくちょう
+  元の写真: Mute Swan Emsworth2.JPG
+  ページ: https://commons.wikimedia.org/wiki/File%3AMute_Swan_Emsworth2.JPG
+  撮影者: Geni
+  ライセンス: GFDL / CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-oumu.jpg  オウム
+  元の写真: File:Scarlet macaw at Cougar Mountain Zoological Park.jpg
+  ページ: https://commons.wikimedia.org/wiki/File:Scarlet_macaw_at_Cougar_Mountain_Zoological_Park.jpg
+  撮影者: Dcoetzee
+  ライセンス: CC0 1.0（パブリックドメイン）
+  入手元: GCompris（KDE）
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-iruka.jpg  いるか
+  元の写真: Pixabay: dolphin-aquarium-jumping-fish-906176
+  ページ: https://pixabay.com/en/dolphin-aquarium-jumping-fish-906176/
+  撮影者: Pixabay
+  ライセンス: CC0 1.0（Pixabay／StockSnap、2015年公開）
+  入手元: Toddler Animals（Rico Zuñiga, MIT）
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kujira.jpg  くじら
+  元の写真: Humpback whales in singing position.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AHumpback_whales_in_singing_position.jpg
+  撮影者: Dr. Louis M. Herman.
+  ライセンス: Public domain
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-jinbeezame.jpg  ジンベエザメ
+  元の写真: Male whale shark at Georgia Aquarium.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AMale_whale_shark_at_Georgia_Aquarium.jpg
+  撮影者: Zac Wolf
+  ライセンス: CC BY-SA 2.5
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-same.jpg  さめ
+  元の写真: Blacktip reef shark (Carcharhinus melanopterus) Moorea.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ABlacktip_reef_shark_%28Carcharhinus_melanopterus%29_Moorea.jpg
+  撮影者: .mw-parser-output .commons-creator-table{background-color:#f0f0ff;box-sizing:border-box;font-size:95%;text-align:start;color:inherit}.mw-parser-output .commons-
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-tako.jpg  たこ
+  元の写真: Red Octopus rescued.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ARed_Octopus_rescued.jpg
+  撮影者: Jerry Kirkhart from Los Osos, Calif.
+  ライセンス: CC BY 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-ebi.jpg  えび
+  元の写真: 伊勢海老.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3A%E4%BC%8A%E5%8B%A2%E6%B5%B7%E8%80%81.jpg
+  撮影者: Syced
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-hitode.jpg  ひとで
+  元の写真: Patiria pectinifera 03.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3APatiria_pectinifera_03.jpg
+  撮影者: Σ64
+  ライセンス: GFDL / CC BY 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-chouchou.jpg  ちょうちょ
+  元の写真: Danaus plexippus MHNT.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ADanaus_plexippus_MHNT.jpg
+  撮影者: Didier Descouens
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-tentoumushi.jpg  てんとうむし
+  元の写真: BIEDRONA.JPG
+  ページ: https://commons.wikimedia.org/wiki/File%3ABIEDRONA.JPG
+  撮影者: （元のページを参照）
+  ライセンス: GFDL / CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kabutomushi.jpg  かぶとむし
+  元の写真: Japanese rhinoceros beetle 1.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AJapanese_rhinoceros_beetle_1.jpg
+  撮影者: Nayan j Nath
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kuwagata.jpg  くわがた
+  元の写真: Cerf-volant MHNT male et femelle.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ACerf-volant_MHNT_male_et_femelle.jpg
+  撮影者: Didier Descouens
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-tonbo.jpg  とんぼ
+  元の写真: Sympetrum flaveolum - side (aka).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ASympetrum_flaveolum_-_side_%28aka%29.jpg
+  撮影者: （元のページを参照）
+  ライセンス: CC BY-SA 2.5
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-semi.jpg  せみ
+  元の写真: Fidicina mannifera MHNT.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AFidicina_mannifera_MHNT.jpg
+  撮影者: Didier Descouens
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-batta.jpg  ばった
+  元の写真: Atractomorpha lata, Burdwan, West Bengal, India 27 10 2012.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AAtractomorpha_lata%2C_Burdwan%2C_West_Bengal%2C_India_27_10_2012.jpg
+  撮影者: Joydeep Chakraborty You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, prov
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kamakiri.jpg  かまきり
+  元の写真: Praying mantis india.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3APraying_mantis_india.jpg
+  撮影者: Shiva shankar
+  ライセンス: CC BY-SA 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-katatsumuri.jpg  かたつむり
+  元の写真: Pixabay: nature-snail-wood-wood-pile-750344
+  ページ: https://pixabay.com/en/nature-snail-wood-wood-pile-750344/
+  撮影者: Pixabay
+  ライセンス: CC0 1.0（Pixabay／StockSnap、2015年公開）
+  入手元: Toddler Animals（Rico Zuñiga, MIT）
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-ari.jpg  あり
+  元の写真: Meat eater ant feeding on honey02.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AMeat_eater_ant_feeding_on_honey02.jpg
+  撮影者: Fir0002/Flagstaffotos
+  ライセンス: GFDL 1.2 / CC BY-NC 3.0（非営利）
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-mitsubachi.jpg  みつばち
+  元の写真: CSIRO ScienceImage 2317 An Adult Female Worker Honey Bee.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ACSIRO_ScienceImage_2317_An_Adult_Female_Worker_Honey_Bee.jpg
+  撮影者: CSIRO You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to 
+  ライセンス: CC BY 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-ringo.jpg  りんご
+  元の写真: Red Apple.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ARed_Apple.jpg
+  撮影者: Abhijit Tembhekar from Mumbai, India
+  ライセンス: CC BY 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-mikan.jpg  みかん
+  元の写真: Citrus unshiu 20101118 a.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ACitrus_unshiu_20101118_a.jpg
+  撮影者: Batholith ( talk )
+  ライセンス: Public domain
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-banana.jpg  バナナ
+  元の写真: Banana-Single.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ABanana-Single.jpg
+  撮影者: Evan-Amos
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-ichigo.jpg  いちご
+  元の写真: Strawberry (transparent background).png
+  ページ: https://commons.wikimedia.org/wiki/File%3AStrawberry_%28transparent_background%29.png
+  撮影者: Paolo Neo
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-budou.jpg  ぶどう
+  元の写真: 巨峰.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3A%E5%B7%A8%E5%B3%B0.jpg
+  撮影者: GGGLS
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-nashi.jpg  なし
+  元の写真: Nashi pear.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ANashi_pear.jpg
+  撮影者: （元のページを参照）
+  ライセンス: CC BY-SA 3.0 / GFDL
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kaki.jpg  かき
+  元の写真: Persimmon (fuyu).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3APersimmon_%28fuyu%29.jpg
+  撮影者: Rhododendrites
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-sakuranbo.jpg  さくらんぼ
+  元の写真: Cherry fruit on white background.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ACherry_fruit_on_white_background.jpg
+  撮影者: Paolo Neo
+  ライセンス: Public domain
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-painappuru.jpg  パイナップル
+  元の写真: Pineapple on white table.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3APineapple_on_white_table.jpg
+  撮影者: Julien Pianetti
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-tomato.jpg  トマト
+  元の写真: Bright red tomato and cross section02.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ABright_red_tomato_and_cross_section02.jpg
+  撮影者: Fir0002/Flagstaffotos
+  ライセンス: GFDL 1.2 / CC BY-NC 3.0（非営利）
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kyuuri.jpg  きゅうり
+  元の写真: Cucumber from Denmark.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ACucumber_from_Denmark.jpg
+  撮影者: WiseMan42
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-nasu.jpg  なす
+  元の写真: Aubergine.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AAubergine.jpg
+  撮影者: Horst Frank
+  ライセンス: GFDL / CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-jagaimo.jpg  じゃがいも
+  元の写真: Potato (3780830486).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3APotato_%283780830486%29.jpg
+  撮影者: ben dalton from leeds, uk
+  ライセンス: CC BY 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-tamanegi.jpg  たまねぎ
+  元の写真: Onion on White.JPG
+  ページ: https://commons.wikimedia.org/wiki/File%3AOnion_on_White.JPG
+  撮影者: Colin
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kyabetsu.jpg  キャベツ
+  元の写真: Witte kool.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AWitte_kool.jpg
+  撮影者: Rasbak
+  ライセンス: GFDL / CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-burokkorii.jpg  ブロッコリー
+  元の写真: Broccoli and cross section edit.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ABroccoli_and_cross_section_edit.jpg
+  撮影者: Fir0002/Flagstaffotos
+  ライセンス: GFDL 1.2 / CC BY-NC 3.0（非営利）
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-piiman.jpg  ピーマン
+  元の写真: Green bell pepper 2017 A.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AGreen_bell_pepper_2017_A.jpg
+  撮影者: Fructibus
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-gohan.jpg  ごはん
+  元の写真: Steamed rice in bowl 01.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ASteamed_rice_in_bowl_01.jpg
+  撮影者: Anna Frodesiak
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-onigiri.jpg  おにぎり
+  元の写真: Onigiri 001.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AOnigiri_001.jpg
+  撮影者: Ocdp
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-pan.jpg  パン
+  元の写真: Croissant-Petr Kratochvil.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ACroissant-Petr_Kratochvil.jpg
+  撮影者: Petr Kratochvil
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-udon.jpg  うどん
+  元の写真: Kakeudon.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AKakeudon.jpg
+  撮影者: Lusheeta at Japanese Wikipedia
+  ライセンス: CC BY-SA 3.0 / GFDL
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-raamen.jpg  ラーメン
+  元の写真: Ramen, sopa de fideus.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ARamen%2C_sopa_de_fideus.jpg
+  撮影者: Mariaaa05
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-osushi.jpg  おすし
+  元の写真: Nigiri Sushi (25966163204).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ANigiri_Sushi_%2825966163204%29.jpg
+  撮影者: Tim Reckmann from Hamm, Deutschland
+  ライセンス: CC BY 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-karee.jpg  カレーライス
+  元の写真: Beef curry rice 003.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ABeef_curry_rice_003.jpg
+  撮影者: Ocdp
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-misoshiru.jpg  みそしる
+  元の写真: Miso Soup 001.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AMiso_Soup_001.jpg
+  撮影者: Ocdp
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-tamagoyaki.jpg  たまごやき
+  元の写真: 鳥焼き居酒屋 (39394233682).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3A%E9%B3%A5%E7%84%BC%E3%81%8D%E5%B1%85%E9%85%92%E5%B1%8B_%2839394233682%29.jpg
+  撮影者: 極地狐
+  ライセンス: CC BY 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-keeki.jpg  ケーキ
+  元の写真: 苺ショートケーキ.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3A%E8%8B%BA%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%B1%E3%83%BC%E3%82%AD.jpg
+  撮影者: Syced
+  ライセンス: CC0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-aisu.jpg  アイスクリーム
+  元の写真: Soft Serve Ice Cream in cone (28966999042).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ASoft_Serve_Ice_Cream_in_cone_%2828966999042%29.jpg
+  撮影者: Willis Lam
+  ライセンス: CC BY-SA 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-shinkansen.jpg  しんかんせん
+  元の写真: Shinkansen N700 z15.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AShinkansen_N700_z15.jpg
+  撮影者: TC411-507 at Japanese Wikipedia You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate 
+  ライセンス: GFDL / CC BY 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-densha.jpg  でんしゃ
+  元の写真: Yamanote-Line-E235.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AYamanote-Line-E235.jpg
+  撮影者: MaedaAkihiko
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kikansha.jpg  きかんしゃ
+  元の写真: JNR C57 180 20070818.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AJNR_C57_180_20070818.jpg
+  撮影者: ja:User:TC411-507 aka JobanLineE531
+  ライセンス: CC BY-SA 3.0 / GFDL
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-patokaa.jpg  パトカー
+  元の写真: Japanese TOYOTA CROWN GRS180 police car.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AJapanese_TOYOTA_CROWN_GRS180_police_car.jpg
+  撮影者: PRiMENON
+  ライセンス: GFDL / CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kyuukyuusha.jpg  きゅうきゅうしゃ
+  元の写真: Nago Okinawa Ambulance-02.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ANago_Okinawa_Ambulance-02.jpg
+  撮影者: Photo by CEphoto, Uwe Aranas or alternatively © CEphoto, Uwe Aranas You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attr
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-shoubousha.jpg  しょうぼうしゃ
+  元の写真: Yokohama Fire Department North-Yamata pump.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AYokohama_Fire_Department_North-Yamata_pump.jpg
+  撮影者: Ypy31
+  ライセンス: Public domain
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-yuubinsha.jpg  ゆうびんしゃ
+  元の写真: Nakijin Okinawa Japan Post-Van-01.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ANakijin_Okinawa_Japan_Post-Van-01.jpg
+  撮影者: Photo by CEphoto, Uwe Aranas or alternatively © CEphoto, Uwe Aranas You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attr
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-takushii.jpg  タクシー
+  元の写真: Toyo Kotsu 3301 at Akihabara Sta. South (20230806110237).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AToyo_Kotsu_3301_at_Akihabara_Sta._South_%2820230806110237%29.jpg
+  撮影者: N509FZ
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-basu.jpg  バス
+  元の写真: ToeiBus A-R554a.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AToeiBus_A-R554a.jpg
+  撮影者: 103momo ( talk · contribs )
+  ライセンス: GFDL / CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-kuruma.jpg  くるま
+  元の写真: Toyota Aqua 101 (cropped).JPG
+  ページ: https://commons.wikimedia.org/wiki/File%3AToyota_Aqua_101_%28cropped%29.JPG
+  撮影者: Tennen-Gas
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-torakku.jpg  トラック
+  元の写真: Fuso Canter 3C13, 8th Generation.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AFuso_Canter_3C13%2C_8th_Generation.jpg
+  撮影者: Juligarcibs
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-baiku.jpg  バイク
+  元の写真: Honda super cub, 1st Gen. 1958, Left side.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AHonda_super_cub%2C_1st_Gen._1958%2C_Left_side.jpg
+  撮影者: Mj-bird
+  ライセンス: CC BY-SA 3.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-jitensha.jpg  じてんしゃ
+  元の写真: Raleigh lady's loop frame bicycle 1930s.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ARaleigh_lady%27s_loop_frame_bicycle_1930s.jpg
+  撮影者: DeFacto
+  ライセンス: CC BY-SA 4.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-hikouki.jpg  ひこうき
+  元の写真: All Nippon Airways, Boeing 787-8 JA828A NRT (23661189691).jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3AAll_Nippon_Airways%2C_Boeing_787-8_JA828A_NRT_%2823661189691%29.jpg
+  撮影者: Masakatsu Ukon
+  ライセンス: CC BY-SA 2.0
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+card-herikoputaa.jpg  ヘリコプター
+  元の写真: LAPD Bell 206 Jetranger.jpg
+  ページ: https://commons.wikimedia.org/wiki/File%3ALAPD_Bell_206_Jetranger.jpg
+  撮影者: Mfield - Matthew Field, http://www.photography.mattfield.com
+  ライセンス: GFDL / CC BY-SA 3.0 / CC BY 2.5
+  入手元: Wikimedia Commons
+  加工: 背景を除去して白に置き換え、トリミング・縮小
+
+国旗（flag-○○.svg）：パブリックドメイン。Wikimedia Commons をもとにした https://github.com/hampusborgos/country-flags のデータを使っています。
