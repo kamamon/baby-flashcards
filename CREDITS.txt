@@ -1727,3 +1727,6 @@ card-tanbarin.jpg  タンバリン
   加工: 背景を除去して白に置き換え、トリミング・縮小
 
 国旗（flag-○○.svg）：パブリックドメイン。Wikimedia Commons をもとにした https://github.com/hampusborgos/country-flags のデータを使っています。
+
+あいうえおの文字（kana.woff2）：Klee One SemiBold（Copyright 2020 The Klee Project Authors, https://github.com/fontworks-fonts/Klee）。
+  SIL Open Font License 1.1（全文：OFL-KleeOne.txt）。ひらがな・カタカナだけを取り出して使っています。
