@@ -265,16 +265,15 @@ a{color:inherit}
 .ktbtn{font-size:16px;font-weight:900;padding:11px 16px;border-radius:999px;background:#f3eee7;color:#5a5047}
 .ktbtn.primary{background:var(--accent);color:#fff}
 .ktbtn.go2{animation:kglow .8s ease-in-out infinite}
+.ktbtn.ok{background:#43A047;color:#fff;font-size:20px;padding:12px 26px;box-shadow:0 3px 0 rgba(0,0,0,.15)}
+.ktbtn:active{transform:scale(.95)}
+.kthelp{font-size:13px;font-weight:800;color:#b0a494;text-align:center}
+#ktHint{opacity:0}
+#ktHint.show{animation:khint 2.2s ease-in-out forwards}
+@keyframes khint{0%{opacity:0}15%{opacity:1}35%{opacity:.3}55%{opacity:1}75%{opacity:.3}100%{opacity:.75}}
+.ktstars i.on:nth-child(2){animation-delay:.18s}.ktstars i.on:nth-child(3){animation-delay:.36s}
 
 /* シール */
-.kgift{position:fixed;inset:0;z-index:25;background:rgba(40,30,20,.45);display:flex;align-items:center;justify-content:center;padding:20px}
-.kgbox{background:#fff;border-radius:28px;padding:22px 22px 18px;text-align:center;width:min(86vw,360px);box-shadow:0 10px 40px rgba(0,0,0,.25);animation:kin .45s both}
-.kgt{font-size:26px;font-weight:900;color:#E65100}
-.kgs{width:min(56vw,220px);height:min(56vw,220px);margin:12px auto 6px;border-radius:50%;background:#fff;box-shadow:0 0 0 8px #fff,0 0 0 11px #FFD54F,0 8px 20px rgba(0,0,0,.18);position:relative;overflow:hidden;animation:kspin .8s .1s both}
-.kgs img{position:absolute;inset:9%;width:82%;height:82%;object-fit:contain}
-@keyframes kspin{from{transform:rotate(-200deg) scale(.2)}to{transform:none}}
-.kgn{font-size:22px;font-weight:900;margin-top:6px}
-.kgok{margin-top:14px;background:var(--accent)!important}
 .kbgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
 @media(min-width:600px){.kbgrid{grid-template-columns:repeat(5,1fr)}}
 .kst{position:relative;aspect-ratio:1/1;border-radius:50%;background:#fff;box-shadow:0 0 0 5px #fff,0 4px 10px rgba(0,0,0,.14);transform:rotate(var(--r))}
@@ -294,6 +293,118 @@ a{color:inherit}
   .ktstars{grid-area:stars;align-self:end;justify-content:center}
   .ktbar{grid-area:bar;align-self:start}
 }
+
+/* ---------- あたらしい あそび ---------- */
+.kmodes{grid-template-columns:1fr 1fr}
+@media(min-width:600px){.kmodes{grid-template-columns:repeat(3,1fr)}}
+.kmode{flex-direction:column;align-items:flex-start;gap:8px;padding:12px 14px 14px}
+.kmode b{font-size:min(17px,4.2vw);white-space:nowrap}
+.kmode span{font-size:min(11.5px,3vw);white-space:nowrap}
+.kmode.m4{background:#BA68C8}.kmode.m5{background:#A1887F}.kmode.m6{background:#4DB6AC}
+.krow2{display:flex;gap:10px;margin-top:12px}
+.krow2 .kstk{margin-top:0;flex:1;font-size:16px;padding:12px 6px;flex-direction:column;gap:4px}
+.krow2 .l1{white-space:nowrap}
+.krow2 .kcnt{font-size:14px}.krow2 .kcnt b{font-size:20px;margin-right:2px}
+.kgbtn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:12px 6px;border-radius:20px;background:#FF7043;color:#fff;font-size:17px;font-weight:900;box-shadow:0 3px 0 rgba(0,0,0,.12)}
+.kgbtn .kcoin{background:#fff;color:#8a5a00;border-radius:999px;padding:2px 12px;font-size:14px}.kgbtn .kcoin b{font-size:18px;margin-right:2px}
+.kgbtn:active,.krow2 .kstk:active{transform:scale(.96)}
+.kcoinpop{position:fixed;left:50%;top:40%;z-index:26;pointer-events:none;text-align:center;transform:translate(-50%,-50%);animation:kcoin 1.9s ease-out forwards}
+.kcoinpop .cc{font-size:92px;line-height:1;animation:kcspin .9s ease-out}
+.kcoinpop .ct{display:inline-block;font-size:22px;font-weight:900;color:#E65100;background:#fff;border-radius:999px;padding:6px 16px;box-shadow:0 4px 14px rgba(0,0,0,.15);margin-top:6px;white-space:nowrap}
+@keyframes kcoin{0%{opacity:0;transform:translate(-50%,-30%) scale(.5)}15%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}25%{transform:translate(-50%,-50%) scale(1)}80%{opacity:1;transform:translate(-50%,-50%)}100%{opacity:0;transform:translate(-50%,-80%) scale(.85)}}
+@keyframes kcspin{from{transform:rotateY(0)}to{transform:rotateY(720deg)}}
+
+/* カード あわせ */
+#kmem{background:#F3E5F5}
+.kmboard{position:absolute;left:12px;right:12px;top:calc(70px + env(safe-area-inset-top));bottom:calc(16px + env(safe-area-inset-bottom));display:grid;justify-content:center;align-content:center;gap:10px}
+.mcard{perspective:900px;padding:0;width:100%;height:100%}
+.mcard .mi{position:relative;width:100%;height:100%;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;transition:transform .45s cubic-bezier(.3,1.3,.5,1)}
+.mcard.open .mi,.mcard.got .mi{transform:rotateY(180deg)}
+.mf{position:absolute;inset:0;border-radius:16px;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
+.mfront{background:repeating-linear-gradient(45deg,#CE93D8 0 12px,#BA68C8 12px 24px);box-shadow:inset 0 0 0 5px #fff,0 3px 0 rgba(0,0,0,.12)}
+.mfront span{font-size:calc(var(--cw)*.32);line-height:1}
+.mback{background:#fff;transform:rotateY(180deg);box-shadow:inset 0 0 0 5px var(--t),0 3px 0 rgba(0,0,0,.08)}
+.mk{font-family:var(--kana);font-size:calc(var(--cw)*.66);line-height:1;color:var(--c)}
+.mp{position:relative;flex:1 1 auto;width:100%}
+.mp img{position:absolute;inset:8% 8% 2%;width:84%;height:90%;object-fit:contain}
+.mw{flex:none;font-family:var(--kana);font-size:calc(var(--cw)*.17);line-height:1.2;padding:0 4px 8%;white-space:nowrap;color:#4a4540}
+.mw em{font-style:normal;color:var(--c)}
+.mcard.got .mback{box-shadow:inset 0 0 0 6px var(--c),0 0 16px var(--c)}
+.mcard.got{animation:kbounce .6s}
+
+/* ひょっこり タッチ */
+#kpeek{background:linear-gradient(#BDE5FF 0,#E3F5FF 26%,#C5E1A5 26%,#9CCC65 100%)}
+.kptarget{position:absolute;left:50%;transform:translateX(-50%);background:#fff;border-radius:999px;padding:4px 16px;font-size:17px;font-weight:900;white-space:nowrap;box-shadow:0 2px 0 rgba(0,0,0,.08);display:flex;align-items:center;gap:6px}
+.kptarget b{font-family:var(--kana);font-size:34px;line-height:1;color:var(--c)}
+.kptarget.pop2{animation:kpt .5s}
+@keyframes kpt{40%{transform:translateX(-50%) scale(1.25)}100%{transform:translateX(-50%)}}
+.kptime{position:absolute;left:16px;right:16px;top:calc(64px + env(safe-area-inset-top));height:10px;border-radius:99px;background:rgba(255,255,255,.75);overflow:hidden;z-index:2}
+.kptime i{display:block;height:100%;width:100%;background:#FFB300;border-radius:99px}
+.kpfield{position:absolute;left:8px;right:8px;top:calc(84px + env(safe-area-inset-top));bottom:calc(14px + env(safe-area-inset-bottom));display:grid;gap:6px;align-items:center;justify-items:center;isolation:isolate}
+.hole{position:relative;overflow:hidden}
+.hole::before{content:"";position:absolute;left:6%;right:6%;bottom:5%;height:22%;border-radius:50%;background:#4E342E;z-index:0}
+.kpop{position:absolute;left:12%;right:12%;bottom:9%;height:84%;z-index:1;transform:translateY(108%);transition:transform .3s cubic-bezier(.3,1.4,.6,1);display:flex;flex-direction:column;align-items:center;padding:0}
+.hole.up .kpop{transform:translateY(0)}
+.kps{position:relative;z-index:2;margin-bottom:-12%;background:#FFF8E1;border:3px solid #8D6E63;border-radius:12px;padding:0 .3em;font-family:var(--kana);font-size:calc(var(--hw,110px)*.3);line-height:1.15;color:#5D4037;box-shadow:0 3px 0 rgba(0,0,0,.15)}
+.kpb{position:relative;width:100%;aspect-ratio:1/1;border-radius:50%;background:#fff;box-shadow:0 0 0 4px #fff,0 4px 10px rgba(0,0,0,.2);overflow:hidden}
+.kpb img{position:absolute;inset:9%;width:82%;height:82%;object-fit:contain}
+.mound{position:absolute;left:0;right:0;bottom:0;height:17%;border-radius:50% 50% 14px 14px/70% 70% 14px 14px;background:#8D6E63;box-shadow:inset 0 5px 0 #A1887F;z-index:3}
+.hole.hit .kpop{animation:kjump .55s}
+@keyframes kjump{30%{transform:translateY(-12%) scale(1.08) rotate(-6deg)}60%{transform:translateY(-3%) rotate(5deg)}100%{transform:translateY(0)}}
+.hole.miss .kpb{animation:kshake .45s}
+
+/* ことば つくり */
+#kwb{background:#FFFDF7}
+.kwwrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.4vh;padding:calc(66px + env(safe-area-inset-top)) 16px calc(18px + env(safe-area-inset-bottom))}
+.kwpic{position:relative;width:min(62vw,32vh,300px);aspect-ratio:1/1;border-radius:28px;background:#fff;box-shadow:0 0 0 6px var(--t),0 6px 18px rgba(0,0,0,.08)}
+.kwpic img{position:absolute;inset:7%;width:86%;height:86%;object-fit:contain}
+.kwpic.yay{animation:kjump .7s}
+.kwright{display:flex;flex-direction:column;align-items:center;gap:2.4vh}
+.kwslots{display:flex;gap:10px}
+.kslot{width:min(22vw,12vh,110px);aspect-ratio:1/1;border-radius:18px;border:4px dashed #e2d7c7;background:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--kana);font-size:min(15vw,8.4vh,76px);line-height:1}
+.kslot .kg{color:#eee6da}
+.kslot.on{border-style:solid;border-color:var(--c);background:var(--t);animation:kin .35s}
+.kslot.on .kg{color:var(--c)}
+.kwtiles{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:min(92vw,520px)}
+.ktile{width:min(19vw,10.5vh,96px);aspect-ratio:1/1;border-radius:18px;background:var(--t);box-shadow:inset 0 0 0 4px var(--c),0 4px 0 rgba(0,0,0,.1);font-family:var(--kana);font-size:min(12.5vw,7vh,64px);color:var(--c);line-height:1}
+.ktile.used{visibility:hidden}
+.ktile.shake{animation:kshake .45s}
+.ktile.glow{animation:kglow .8s ease-in-out infinite}
+@media (orientation:landscape) and (max-height:600px){
+  .kwwrap{flex-direction:row;gap:5vw}
+  .kwpic{width:min(40vw,60vh)}
+  .kwright{gap:4vh}
+  .kslot{width:min(13vw,20vh);font-size:min(9.5vw,14vh)}.ktile{width:min(11vw,17vh);font-size:min(7.5vw,11.5vh)}
+}
+
+/* ガチャガチャ */
+#kgacha{background:radial-gradient(circle at 50% 30%,#FFF8E1,#FFE0B2)}
+.kgwrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:calc(66px + env(safe-area-inset-top)) 16px calc(20px + env(safe-area-inset-bottom))}
+.kgm{width:min(72vw,50vh,320px)}
+.kgm svg{display:block;width:100%;height:auto;overflow:visible}
+.kgm .hd{transform-box:view-box;transform-origin:100px 224px}
+.kgm.turn .hd{animation:kturn 1s ease-in-out}
+@keyframes kturn{to{transform:rotate(360deg)}}
+.kgm.turn .cps{animation:kshake .5s 2}
+.kgturn{max-width:330px;background:#FF7043!important}
+.kgturn:active{transform:scale(.97)}
+.kgmsg{font-size:15px;font-weight:800;color:#8c6d4f;min-height:1.4em;text-align:center}
+.kcap{position:absolute;inset:0;z-index:4;background:#FFF8EE;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:20px}
+.kcapmsg{font-size:24px;font-weight:900;color:#E65100}
+.cball{position:relative;width:min(62vw,40vh,280px);aspect-ratio:1/1;animation:kdrop .9s cubic-bezier(.3,1.35,.5,1) both,kwig 1.4s 1.2s ease-in-out infinite}
+@keyframes kdrop{from{transform:translateY(-60vh) rotate(-220deg) scale(.4)}to{transform:none}}
+@keyframes kwig{0%,100%{transform:rotate(0)}20%{transform:rotate(-7deg)}40%{transform:rotate(6deg)}60%{transform:rotate(-3deg)}}
+.kcap.opened .cball{animation:none}
+.ctop,.cbot{position:absolute;left:0;right:0;height:50%;transition:transform .6s cubic-bezier(.5,-.3,.6,1.3),opacity .6s}
+.ctop{top:0;border-radius:999px 999px 0 0;background:var(--cc);box-shadow:inset 0 -6px 0 rgba(0,0,0,.08)}
+.ctop::after{content:"";position:absolute;left:18%;top:18%;width:20%;height:34%;border-radius:50%;background:rgba(255,255,255,.45);transform:rotate(30deg)}
+.cbot{bottom:0;border-radius:0 0 999px 999px;background:#fff;box-shadow:inset 0 0 0 4px #eee}
+.cstk{position:absolute;inset:6%;border-radius:50%;background:#fff;box-shadow:0 0 0 6px #fff,0 0 0 10px #FFD54F,0 8px 20px rgba(0,0,0,.15);opacity:0;transform:scale(.2);transition:transform .6s .25s cubic-bezier(.3,1.5,.5,1),opacity .3s .25s;overflow:hidden}
+.cstk img{position:absolute;inset:10%;width:80%;height:80%;object-fit:contain}
+.kcap.opened .ctop{transform:translateY(-75%) rotate(-25deg);opacity:0}
+.kcap.opened .cbot{transform:translateY(75%) rotate(15deg);opacity:0}
+.kcap.opened .cstk{opacity:1;transform:none}
+.kcn{font-size:26px;font-weight:900;min-height:1.3em}
 </style>
 </head>
 <body>
@@ -392,14 +503,20 @@ a{color:inherit}
   <div class="ktabs" id="kScript"><button data-v="hira">あ ひらがな</button><button data-v="kata">ア カタカナ</button></div>
   <div class="ktabs small" id="kSet"></div>
   <div class="kmodes">
-    <button class="kmode m1" id="kGoFlash"><i class="kcardic">あ</i><div><b>めくって カード</b><span>じを タップすると しゃしんが でるよ</span></div></button>
-    <button class="kmode m2" id="kGoQuiz"><i>🎈</i><div><b>ふうせん クイズ</b><span>おとを きいて ふうせんを わろう</span></div></button>
-    <button class="kmode m3" id="kGoTrace"><i>✏️</i><div><b>なぞって かこう</b><span>ゆびで なぞって はなまるを もらおう</span></div></button>
+    <button class="kmode m1" id="kGoFlash"><i class="kcardic">あ</i><div><b>めくって カード</b><span>しゃしんが でるよ</span></div></button>
+    <button class="kmode m2" id="kGoQuiz"><i>🎈</i><div><b>ふうせん クイズ</b><span>おとを きいて わろう</span></div></button>
+    <button class="kmode m3" id="kGoTrace"><i>✏️</i><div><b>なぞって かこう</b><span>はなまるを もらおう</span></div></button>
+    <button class="kmode m4" id="kGoMem"><i>🎴</i><div><b>カード あわせ</b><span>じと しゃしんで ペア</span></div></button>
+    <button class="kmode m5" id="kGoPeek"><i>🐹</i><div><b>ひょっこり タッチ</b><span>でてきた こを タッチ</span></div></button>
+    <button class="kmode m6" id="kGoWord"><i>🧩</i><div><b>ことば つくり</b><span>じを ならべよう</span></div></button>
+  </div>
+  <div class="krow2">
+    <button class="kgbtn" id="kGacha"><span class="l1">🎁 ガチャガチャ</span><span class="kcoin">🪙 <b id="kCoinN">0</b>まい</span></button>
+    <button class="kstk" id="kStk"><span class="l1">📒 シールちょう</span><span class="kcnt"><b id="kStkN">0</b>まい</span></button>
   </div>
   <div class="sec"><h3>あいうえお ひょう<span class="klegend">タップで よむよ ・ 💮なぞれた ・ ⭐クイズ</span></h3><div class="kchart" id="kChart"></div></div>
-  <button class="kstk" id="kStk">📒 シールちょう <b id="kStkN">0</b>まい</button>
   <div class="sec"><h3>せってい</h3><div class="chips" id="kOpts"></div>
-    <div class="note">シールは「めくって カード」を さいごまで みたとき・クイズが おわったとき・はじめて はなまるを もらったときに もらえます。</div></div>
+    <div class="note">🪙 コインは あそぶと もらえます（めくって カードを さいごまで・クイズ・はじめての はなまる・カード あわせ・ひょっこり タッチ・ことば つくり）。コイン 1まいで ガチャガチャを 1かい まわせて、しゃしんの シールが 1まい でます。</div></div>
 </div></div>
 
 <!-- ===== あいうえお：めくって カード ===== -->
@@ -447,8 +564,8 @@ a{color:inherit}
   </div>
   <div class="ktwrap">
     <div class="ktstars" id="ktStars"><i>⭐</i><i>⭐</i><i>⭐</i></div>
-    <div class="ktpaper" id="ktPaper"><canvas id="ktGuide"></canvas><canvas id="ktInk"></canvas><svg id="ktMaru" viewBox="0 0 100 100"></svg></div>
-    <div class="ktbar"><div class="ktcolors" id="ktColors"></div><div class="ktrow"><button class="ktbtn" id="ktClear">🧽 けす</button><button class="ktbtn primary" id="ktNext">つぎ ▶</button></div></div>
+    <div class="ktpaper" id="ktPaper"><canvas id="ktGuide"></canvas><canvas id="ktHint"></canvas><canvas id="ktInk"></canvas><svg id="ktMaru" viewBox="0 0 100 100"></svg></div>
+    <div class="ktbar"><div class="ktcolors" id="ktColors"></div><div class="ktrow"><button class="ktbtn" id="ktClear">🧽 けす</button><button class="ktbtn ok" id="ktOk">⭕ OK</button><button class="ktbtn" id="ktNext">つぎ ▶</button></div><div class="kthelp">なぞりおわったら「OK」を おしてね</div></div>
   </div>
 </div>
 
@@ -459,7 +576,67 @@ a{color:inherit}
   <div class="kbgrid" id="kbGrid"></div>
 </div></div>
 
-<div id="kgift" class="kgift" hidden><div class="kgbox"><div class="kgt">🎉 シール ゲット！</div><div class="kgs"><img id="kgImg" alt=""></div><div class="kgn" id="kgName"></div><button class="go kgok" id="kgOk">やったね！</button></div></div>
+<!-- ===== カード あわせ ===== -->
+<div id="kmem" class="screen">
+  <div class="topbar"><button class="ibtn" id="kmmBack" aria-label="もどる">↩︎</button><div class="counter" id="kmmCount">0 / 4</div><span></span></div>
+  <div class="kmboard" id="kmBoard"></div>
+  <div class="kend" id="kmEnd" hidden></div>
+</div>
+
+<!-- ===== ひょっこり タッチ ===== -->
+<div id="kpeek" class="screen">
+  <div class="topbar"><button class="ibtn" id="kpBack" aria-label="もどる">↩︎</button><button class="kptarget" id="kpTarget"></button><div class="badge" id="kpScore"></div></div>
+  <div class="kptime"><i id="kpTime"></i></div>
+  <div class="kpfield" id="kpField"></div>
+  <div class="kend" id="kpEnd" hidden></div>
+</div>
+
+<!-- ===== ことば つくり ===== -->
+<div id="kwb" class="screen">
+  <div class="prog" id="kwProg"></div>
+  <div class="topbar"><button class="ibtn" id="kwBack" aria-label="もどる">↩︎</button><div class="counter" id="kwCount">1 / 5</div><button class="ibtn" id="kwSay" aria-label="よむ">🔈</button></div>
+  <div class="kwwrap"><div class="kwpic" id="kwPic"></div><div class="kwright"><div class="kwslots" id="kwSlots"></div><div class="kwtiles" id="kwTiles"></div></div></div>
+  <div class="kend" id="kwEnd" hidden></div>
+</div>
+
+<!-- ===== ガチャガチャ ===== -->
+<div id="kgacha" class="screen">
+  <div class="topbar"><button class="ibtn" id="kgBack" aria-label="もどる">↩︎</button><div class="counter">🎁 ガチャガチャ</div><div class="badge" id="kgCoins"></div></div>
+  <div class="kgwrap">
+    <div class="kgm" id="kgMachine"><svg viewBox="0 0 200 280" aria-hidden="true">
+      <rect x="62" y="146" width="76" height="18" rx="4" fill="#B71C1C"/>
+      <circle cx="100" cy="86" r="80" fill="#E3F2FD" stroke="#fff" stroke-width="6"/>
+      <g class="cps">
+        <g transform="translate(62 70)"><circle r="17" fill="#EF5350"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
+        <g transform="translate(100 52)"><circle r="17" fill="#42A5F5"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
+        <g transform="translate(138 72)"><circle r="17" fill="#FFCA28"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
+        <g transform="translate(48 108)"><circle r="17" fill="#66BB6A"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
+        <g transform="translate(84 96)"><circle r="17" fill="#AB47BC"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
+        <g transform="translate(120 104)"><circle r="17" fill="#FF7043"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
+        <g transform="translate(152 116)"><circle r="17" fill="#26C6DA"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
+        <g transform="translate(70 134)"><circle r="17" fill="#EC407A"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
+        <g transform="translate(108 136)"><circle r="17" fill="#9CCC65"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
+      </g>
+      <ellipse cx="72" cy="46" rx="16" ry="26" fill="#fff" opacity=".55" transform="rotate(35 72 46)"/>
+      <rect x="28" y="160" width="144" height="114" rx="18" fill="#E53935"/>
+      <rect x="52" y="172" width="96" height="26" rx="13" fill="#fff"/>
+      <text x="100" y="191" text-anchor="middle" font-size="17" font-weight="900" fill="#E53935">ガチャ</text>
+      <rect x="140" y="210" width="10" height="24" rx="3" fill="#7f0000"/>
+      <rect x="76" y="250" width="48" height="20" rx="8" fill="#7f0000"/>
+      <g class="hd"><circle cx="100" cy="224" r="22" fill="#fff" stroke="#FFCDD2" stroke-width="4"/><rect x="78" y="218" width="44" height="12" rx="6" fill="#FFB300"/></g>
+    </svg></div>
+    <button class="go kgturn" id="kgTurn">まわす（🪙 1まい）</button>
+    <div class="kgmsg" id="kgMsg"></div>
+  </div>
+  <div class="kcap" id="kgCap" hidden>
+    <div class="kcapmsg" id="kgCapMsg"></div>
+    <div class="cball" id="kgBall"><div class="ctop"></div><div class="cbot"></div><div class="cstk"><img alt=""></div></div>
+    <div class="kcn" id="kgName"></div>
+    <div class="endbtns" id="kgCapBtns" hidden><button class="primary" id="kgAgain">🎁 もう いっかい</button><button id="kgBook">📒 シールちょう</button></div>
+  </div>
+</div>
+
+<div id="kcoin" class="kcoinpop" hidden><div class="cc">🪙</div><div class="ct" id="kcoinT">コイン ゲット！</div></div>
 <canvas id="fx"></canvas>
 
 <div id="toast"></div>
@@ -467,7 +644,7 @@ a{color:inherit}
 <script>
 const GROUPS=["🐾 どうぶつ", "🍎 たべもの", "🚃 のりもの", "🏠 みのまわり", "🌸 はな・しぜん", "🎏 にっぽん・がっき", "🌏 せかいの こっき", "🎨 いろ・かたち"];
 const DECKS=[{"g":0,"name":"ペット・ぼくじょう","en":"Pets & Farm","icon":"🐶","color":"#FFE0B2","thumb":"card-inu.jpg","items":[{"j":"いぬ","e":"Dog","img":"card-inu.jpg","c":{"file":"2011-04-02 a Shiba Inu in Japan.jpg","url":"https://commons.wikimedia.org/wiki/File%3A2011-04-02_a_Shiba_Inu_in_Japan.jpg","author":"Alf Melin","license":"CC BY-SA 2.0"}},{"j":"ねこ","e":"Cat","img":"card-neko.jpg","c":{"file":"EUR cat transparent.png","url":"https://commons.wikimedia.org/wiki/File%3AEUR_cat_transparent.png","author":"Heikki Siltala from catza.net","license":"CC BY-SA 4.0"}},{"j":"うさぎ","e":"Rabbit","img":"card-usagi.jpg","c":{"file":"Нидерландский карликовый кролик черного окраса.jpg","url":"https://commons.wikimedia.org/wiki/File%3A%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D1%80%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2%D1%8B%D0%B9_%D0%BA%D1%80%D0%BE%D0%BB%D0%B8%D0%BA_%D1%87%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D0%B0%D1%81%D0%B0.jpg","author":"Наталья Олехнович","license":"CC BY-SA 4.0"}},{"j":"ハムスター","e":"Hamster","img":"card-hamster.jpg","c":{"file":"Golden hamster front 1.jpg","url":"https://commons.wikimedia.org/wiki/File%3AGolden_hamster_front_1.jpg","author":"Adamjennison111 at English Wikipedia","license":"CC BY-SA 3.0 / GFDL / CC BY 2.5"}},{"j":"インコ","e":"Budgerigar","img":"card-inko.jpg","c":{"file":"Budgerigar-strzelecki-qld.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABudgerigar-strzelecki-qld.jpg","author":"Benjamint444","license":"GFDL 1.2"}},{"j":"きんぎょ","e":"Goldfish","img":"card-kingyo.jpg","c":{"file":"Carassius wild golden fish 2013 G1 (white background).jpg","url":"https://commons.wikimedia.org/wiki/File%3ACarassius_wild_golden_fish_2013_G1_%28white_background%29.jpg","author":"George Chernilevsky","license":"Public domain"}},{"j":"うし","e":"Cow","img":"card-ushi.jpg","c":{"file":"HF in der Rhön auf der Weide.jpg","url":"https://commons.wikimedia.org/wiki/File%3AHF_in_der_Rh%C3%B6n_auf_der_Weide.jpg","author":"Verum","license":"CC BY-SA 3.0"}},{"j":"ぶた","e":"Pig","img":"card-buta.jpg","c":{"file":"Sow with piglet.jpg","url":"https://commons.wikimedia.org/wiki/File%3ASow_with_piglet.jpg","author":"Scott Bauer, USDA","license":"Public domain"}},{"j":"ひつじ","e":"Sheep","img":"card-hitsuji.jpg","c":{"file":"File:Sheep (33625876592).jpg","url":"https://commons.wikimedia.org/wiki/File:Sheep_(33625876592).jpg","author":"Rob Mitchell","license":"CC0 1.0（パブリックドメイン）"}},{"j":"うま","e":"Horse","img":"card-uma.jpg","c":{"file":"Pixabay: horses-iceland-landmannalaugar-584519","url":"https://pixabay.com/en/horses-iceland-landmannalaugar-584519/","author":"Pixabay","license":"CC0 1.0（Pixabay／StockSnap、2015年公開）"}},{"j":"やぎ","e":"Goat","img":"card-yagi.jpg","c":{"file":"Saanen goat standing.jpg","url":"https://commons.wikimedia.org/wiki/File%3ASaanen_goat_standing.jpg","author":"ChristianNawroth","license":"CC BY-SA 4.0"}},{"j":"にわとり","e":"Chicken","img":"card-niwatori.jpg","c":{"file":"White Leghorn Rooster.jpg","url":"https://commons.wikimedia.org/wiki/File%3AWhite_Leghorn_Rooster.jpg","author":"Just chaos","license":"CC BY 2.0"}},{"j":"ひよこ","e":"Chick","img":"card-hiyoko.jpg","c":{"file":"Day old chick.jpg","url":"https://commons.wikimedia.org/wiki/File%3ADay_old_chick.jpg","author":"Fir0002/Flagstaffotos","license":"GFDL 1.2 / CC BY-NC 3.0（非営利）"}},{"j":"あひる","e":"Duck","img":"card-ahiru.jpg","c":{"file":"Amerikanische Pekingenten 2013 01, cropped.jpg","url":"https://commons.wikimedia.org/wiki/File%3AAmerikanische_Pekingenten_2013_01%2C_cropped.jpg","author":"Martin Backert You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a","license":"CC BY-SA 3.0"}},{"j":"モルモット","e":"Guinea pig","img":"card-morumotto.jpg","c":{"file":"Guinea Pig 01.jpg","url":"https://commons.wikimedia.org/wiki/File%3AGuinea_Pig_01.jpg","author":"Ganesh Mohan T","license":"CC BY-SA 4.0"}},{"j":"ハリネズミ","e":"Hedgehog","img":"card-harinezumi.jpg","c":{"file":"Atelerix albiventris in Spain.jpg","url":"https://commons.wikimedia.org/wiki/File%3AAtelerix_albiventris_in_Spain.jpg","author":"Nacaru","license":"CC BY-SA 4.0"}},{"j":"ねずみ","e":"Mouse","img":"card-nezumi.jpg","c":{"file":"Домовая мышь (Mus musculus), Москва.jpg","url":"https://commons.wikimedia.org/wiki/File%3A%D0%94%D0%BE%D0%BC%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D1%8B%D1%88%D1%8C_%28Mus_musculus%29%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0.jpg","author":"Dion Art","license":"CC BY-SA 4.0"}},{"j":"ロバ","e":"Donkey","img":"card-roba.jpg","c":{"file":"Donkey in Clovelly, North Devon, England.jpg","url":"https://commons.wikimedia.org/wiki/File%3ADonkey_in_Clovelly%2C_North_Devon%2C_England.jpg","author":"Adrian Pingstone","license":"Public domain"}}]},{"g":0,"name":"どうぶつえん","en":"Zoo Animals","icon":"🦁","color":"#FFD8A8","thumb":"card-raion.jpg","items":[{"j":"ライオン","e":"Lion","img":"card-raion.jpg","c":{"file":"Lion in masai mara.jpg","url":"https://commons.wikimedia.org/wiki/File%3ALion_in_masai_mara.jpg","author":"Sumit.pamnani at English Wikipedia","license":"Public domain"}},{"j":"とら","e":"Tiger","img":"card-tora.jpg","c":{"file":"Adult male Royal Bengal tiger.jpg","url":"https://commons.wikimedia.org/wiki/File%3AAdult_male_Royal_Bengal_tiger.jpg","author":"Seemaleena","license":"CC BY-SA 4.0"}},{"j":"ぞう","e":"Elephant","img":"card-zou.jpg","c":{"file":"178 Male African bush elephant in Etosha National Park Photo by Giles Laurent.jpg","url":"https://commons.wikimedia.org/wiki/File%3A178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg","author":"Giles Laurent","license":"CC BY-SA 4.0"}},{"j":"きりん","e":"Giraffe","img":"card-kirin.jpg","c":{"file":"Giraffe-solo Koure-NIGER.jpg","url":"https://commons.wikimedia.org/wiki/File%3AGiraffe-solo_Koure-NIGER.jpg","author":"Eric.dane","license":"GFDL / CC BY-SA 3.0"}},{"j":"しまうま","e":"Zebra","img":"card-shimauma.jpg","c":{"file":"Plains Zebra Equus quagga.jpg","url":"https://commons.wikimedia.org/wiki/File%3APlains_Zebra_Equus_quagga.jpg","author":"Muhammad Mahdi Karim","license":"GFDL 1.2"}},{"j":"かば","e":"Hippo","img":"card-kaba.jpg","c":{"file":"Hippopotamus-2780699 1280.png","url":"https://commons.wikimedia.org/wiki/File%3AHippopotamus-2780699_1280.png","author":"Capri23auto","license":"CC0"}},{"j":"さい","e":"Rhino","img":"card-sai.jpg","c":{"file":"081 White rhinoceros (male) in the Kalahari Desert of Namibia Photo by Giles Laurent.jpg","url":"https://commons.wikimedia.org/wiki/File%3A081_White_rhinoceros_%28male%29_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg","author":"Giles Laurent","license":"CC BY-SA 4.0"}},{"j":"ゴリラ","e":"Gorilla","img":"card-gorira.jpg","c":{"file":"Gorille.jpg","url":"https://commons.wikimedia.org/wiki/File%3AGorille.jpg","author":"Macinate","license":"CC BY 2.0"}},{"j":"パンダ","e":"Panda","img":"card-panda.jpg","c":{"file":"Giant panda on a white background.png","url":"https://commons.wikimedia.org/wiki/File%3AGiant_panda_on_a_white_background.png","author":"Harald","license":"CC BY 2.0"}},{"j":"レッサーパンダ","e":"Red panda","img":"card-ressaapanda.jpg","c":{"file":"Red Panda (25193861686).jpg","url":"https://commons.wikimedia.org/wiki/File%3ARed_Panda_%2825193861686%29.jpg","author":"Mathias Appel","license":"CC0"}},{"j":"しろくま","e":"Polar bear","img":"card-shirokuma.jpg","c":{"file":"Polar Bear - Alaska (cropped).jpg","url":"https://commons.wikimedia.org/wiki/File%3APolar_Bear_-_Alaska_%28cropped%29.jpg","author":"Alan Wilson","license":"CC BY-SA 3.0"}},{"j":"コアラ","e":"Koala","img":"card-koara.jpg","c":{"file":"File:Koala Perth Zoo.jpg","url":"https://commons.wikimedia.org/wiki/File:Koala_Perth_Zoo.jpg","author":"BurningWell","license":"パブリックドメイン（Unlicense）"}},{"j":"カンガルー","e":"Kangaroo","img":"card-kangaruu.jpg","c":{"file":"Red kangaroo - melbourne zoo.jpg","url":"https://commons.wikimedia.org/wiki/File%3ARed_kangaroo_-_melbourne_zoo.jpg","author":"Fir0002/Flagstaffotos","license":"GFDL 1.2 / CC BY-NC 3.0（非営利）"}},{"j":"ペンギン","e":"Penguin","img":"card-pengin.jpg","c":{"file":"Spheniscus humboldti (54905367722).jpg","url":"https://commons.wikimedia.org/wiki/File%3ASpheniscus_humboldti_%2854905367722%29.jpg","author":"Christian Ursilva from København, Danmark","license":"CC BY-SA 4.0"}},{"j":"フラミンゴ","e":"Flamingo","img":"card-furamingo.jpg","c":{"file":"Phoenicopterus ruber Bonaire 1.jpg","url":"https://commons.wikimedia.org/wiki/File%3APhoenicopterus_ruber_Bonaire_1.jpg","author":"Paul Asman and Jill Lenoble","license":"CC BY 2.0"}},{"j":"カピバラ","e":"Capybara","img":"card-kapibara.jpg","c":{"file":"046 Capybara by the river in Encontro das Águas State Park Photo by Giles Laurent.jpg","url":"https://commons.wikimedia.org/wiki/File%3A046_Capybara_by_the_river_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg","author":"© Giles Laurent , gileslaurent.com , License CC BY-SA You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You ","license":"CC BY-SA 4.0"}},{"j":"らくだ","e":"Camel","img":"card-rakuda.jpg","c":{"file":"Transparent Background Dromedary Camel.png","url":"https://commons.wikimedia.org/wiki/File%3ATransparent_Background_Dromedary_Camel.png","author":"Jjron , MrNoble.xyz","license":"CC BY-SA 4.0"}},{"j":"チーター","e":"Cheetah","img":"card-chiitaa.jpg","c":{"file":"TheCheethcat.jpg","url":"https://commons.wikimedia.org/wiki/File%3ATheCheethcat.jpg","author":"James Temple","license":"CC BY 2.0"}},{"j":"ヒョウ","e":"Leopard","img":"card-hyou.jpg","c":{"file":"Male leopard - Mara.jpg","url":"https://commons.wikimedia.org/wiki/File%3AMale_leopard_-_Mara.jpg","author":"Sumeet Moghe","license":"CC BY-SA 4.0"}},{"j":"オランウータン","e":"Orangutan","img":"card-oranuutan.jpg","c":{"file":"Pongo abelli white background.jpg","url":"https://commons.wikimedia.org/wiki/File%3APongo_abelli_white_background.jpg","author":"Ezhuttukari","license":"CC BY-SA 3.0"}},{"j":"チンパンジー","e":"Chimpanzee","img":"card-chinpanjii.jpg","c":{"file":"Pan troglodytes (male).jpg","url":"https://commons.wikimedia.org/wiki/File%3APan_troglodytes_%28male%29.jpg","author":"Hans Hillewaert","license":"CC BY-SA 3.0"}},{"j":"アルパカ","e":"Alpaca","img":"card-arupaka.jpg","c":{"file":"Dülmen, Börnste, Alpakas -- 2020 -- 5462.jpg","url":"https://commons.wikimedia.org/wiki/File%3AD%C3%BClmen%2C_B%C3%B6rnste%2C_Alpakas_--_2020_--_5462.jpg","author":"Dietmar Rabich You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a","license":"CC BY-SA 4.0"}},{"j":"ナマケモノ","e":"Sloth","img":"card-namakemono.jpg","c":{"file":"Linnaeuss.two-toed.sloth.arp.jpg","url":"https://commons.wikimedia.org/wiki/File%3ALinnaeuss.two-toed.sloth.arp.jpg","author":"Arpingstone","license":"Public domain"}},{"j":"バク","e":"Tapir","img":"card-baku.jpg","c":{"file":"Malayan Tapir.JPG","url":"https://commons.wikimedia.org/wiki/File%3AMalayan_Tapir.JPG","author":"Bluemoose (en.wikipedia)","license":"GFDL / CC BY-SA 3.0"}},{"j":"オオカミ","e":"Wolf","img":"card-ookami.jpg","c":{"file":"Eurasian wolf 2.jpg","url":"https://commons.wikimedia.org/wiki/File%3AEurasian_wolf_2.jpg","author":"User:Mas3cf","license":"CC BY-SA 4.0"}},{"j":"ミーアキャット","e":"Meerkat","img":"card-miiakyatto.jpg","c":{"file":"Standing meerkat looking behind.jpg","url":"https://commons.wikimedia.org/wiki/File%3AStanding_meerkat_looking_behind.jpg","author":"Basile Morin","license":"CC BY-SA 4.0"}}]},{"g":0,"name":"にほんの どうぶつ","en":"Animals of Japan","icon":"🦊","color":"#DCEDC8","thumb":"card-saru.jpg","items":[{"j":"おさる","e":"Monkey","img":"card-saru.jpg","c":{"file":"Snow Monkey at Jigokudani Monkey Park.jpg","url":"https://commons.wikimedia.org/wiki/File%3ASnow_Monkey_at_Jigokudani_Monkey_Park.jpg","author":"Ashley98lee","license":"CC BY 4.0"}},{"j":"きつね","e":"Fox","img":"card-kitsune.jpg","c":{"file":"Pixabay: fox-nature-animals-roux-fauna-715588","url":"https://pixabay.com/en/fox-nature-animals-roux-fauna-715588/","author":"Pixabay","license":"CC0 1.0（Pixabay／StockSnap、2015年公開）"}},{"j":"しか","e":"Deer","img":"card-shika.jpg","c":{"file":"Cervus nippon dybowski Solo.jpg","url":"https://commons.wikimedia.org/wiki/File%3ACervus_nippon_dybowski_Solo.jpg","author":"Altaileopard ; modified by Wildfeuer","license":"GFDL / CC BY-SA 3.0"}},{"j":"りす","e":"Squirrel","img":"card-risu.jpg","c":{"file":"Pixabay: squirrel-wildlife-nature-animal-498139","url":"https://pixabay.com/en/squirrel-wildlife-nature-animal-498139/","author":"Pixabay","license":"CC0 1.0（Pixabay／StockSnap、2015年公開）"}},{"j":"イノシシ","e":"Wild boar","img":"card-inoshishi.jpg","c":{"file":"Dzik na Czerwonych Makach w Krakowie, 20241127 1058 2793.jpg","url":"https://commons.wikimedia.org/wiki/File%3ADzik_na_Czerwonych_Makach_w_Krakowie%2C_20241127_1058_2793.jpg","author":"Jakub Hałun","license":"CC BY 4.0"}},{"j":"カモシカ","e":"Japanese serow","img":"card-kamoshika.jpg","c":{"file":"Capricornis crispus in Mount Sanpoiwa.JPG","url":"https://commons.wikimedia.org/wiki/File%3ACapricornis_crispus_in_Mount_Sanpoiwa.JPG","author":"Alpsdake","license":"CC BY-SA 3.0"}}]},{"g":0,"name":"とり","en":"Birds","icon":"🦉","color":"#FFF9C4","thumb":"card-suzume.jpg","items":[{"j":"すずめ","e":"Sparrow","img":"card-suzume.jpg","c":{"file":"Tree Sparrow August 2007 Osaka Japan.jpg","url":"https://commons.wikimedia.org/wiki/File%3ATree_Sparrow_August_2007_Osaka_Japan.jpg","author":"Laitche","license":"Public domain"}},{"j":"はと","e":"Pigeon","img":"card-hato.jpg","c":{"file":"Feral pigeon (Columba livia domestica), 2017-05-27.jpg","url":"https://commons.wikimedia.org/wiki/File%3AFeral_pigeon_%28Columba_livia_domestica%29%2C_2017-05-27.jpg","author":"Lewis Hulbert","license":"CC BY-SA 4.0"}},{"j":"からす","e":"Crow","img":"card-karasu.jpg","c":{"file":"Carrion crow 20090612 white background.png","url":"https://commons.wikimedia.org/wiki/File%3ACarrion_crow_20090612_white_background.png","author":"Aomorikuma（あおもりくま）","license":"GFDL / CC BY-SA 3.0"}},{"j":"ふくろう","e":"Owl","img":"card-fukurou.jpg","c":{"file":"2012-11-01 Ural Owl, Novosibirsk Oblast, Russia.jpg","url":"https://commons.wikimedia.org/wiki/File%3A2012-11-01_Ural_Owl%2C_Novosibirsk_Oblast%2C_Russia.jpg","author":"Tatiana Bulyonkova from Novosibirsk, Russia","license":"CC BY-SA 2.0"}},{"j":"わし","e":"Eagle","img":"card-washi.jpg","c":{"file":"Bald Eagle (Haliaeetus leucocephalus) Kachemak Bay, Alaska.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABald_Eagle_%28Haliaeetus_leucocephalus%29_Kachemak_Bay%2C_Alaska.jpg","author":"Andy Morffew from Itchen Abbas, Hampshire, UK","license":"CC BY 2.0"}},{"j":"つる","e":"Crane","img":"card-tsuru.jpg","c":{"file":"Red-crowned Crane at the Cincinnati Zoo.png","url":"https://commons.wikimedia.org/wiki/File%3ARed-crowned_Crane_at_the_Cincinnati_Zoo.png","author":"HAV0Xunderscore","license":"CC0"}},{"j":"はくちょう","e":"Swan","img":"card-hakuchou.jpg","c":{"file":"Mute Swan Emsworth2.JPG","url":"https://commons.wikimedia.org/wiki/File%3AMute_Swan_Emsworth2.JPG","author":"Geni","license":"GFDL / CC BY-SA 4.0"}},{"j":"オウム","e":"Parrot","img":"card-oumu.jpg","c":{"file":"File:Scarlet macaw at Cougar Mountain Zoological Park.jpg","url":"https://commons.wikimedia.org/wiki/File:Scarlet_macaw_at_Cougar_Mountain_Zoological_Park.jpg","author":"Dcoetzee","license":"CC0 1.0（パブリックドメイン）"}},{"j":"ダチョウ","e":"Ostrich","img":"card-dachou.jpg","c":{"file":"North African Ostrich - Masai Ostrich (Struthio camelus massaicus) - Flickr - Lip Kee.jpg","url":"https://commons.wikimedia.org/wiki/File%3ANorth_African_Ostrich_-_Masai_Ostrich_%28Struthio_camelus_massaicus%29_-_Flickr_-_Lip_Kee.jpg","author":"Lip Kee from Singapore, Republic of Singapore","license":"CC BY-SA 2.0"}},{"j":"クジャク","e":"Peacock","img":"card-kujaku.jpg","c":{"file":"Indian Peacock in Tholpetty Wildlife Sanctuary 01.JPG","url":"https://commons.wikimedia.org/wiki/File%3AIndian_Peacock_in_Tholpetty_Wildlife_Sanctuary_01.JPG","author":"Praveenp","license":"CC BY-SA 4.0"}},{"j":"ツバメ","e":"Swallow","img":"card-tsubame.jpg","c":{"file":"Hirundo-rustica-001.jpg","url":"https://commons.wikimedia.org/wiki/File%3AHirundo-rustica-001.jpg","author":"Mdf at the English-language Wikipedia","license":"CC BY-SA 3.0 / GFDL"}},{"j":"カワセミ","e":"Kingfisher","img":"card-kawasemi.jpg","c":{"file":"♂ Common Kingfisher (Alcedo atthis) Photograph By Shantanu Kuveskar, Mangaon, Maharashtra, India.jpg","url":"https://commons.wikimedia.org/wiki/File%3A%E2%99%82_Common_Kingfisher_%28Alcedo_atthis%29_Photograph_By_Shantanu_Kuveskar%2C_Mangaon%2C_Maharashtra%2C_India.jpg","author":"Shantanu Kuveskar","license":"CC BY-SA 4.0"}},{"j":"キツツキ","e":"Woodpecker","img":"card-kitsutsuki.jpg","c":{"file":"Dendrocopos major EM1B2679 (35219263071).jpg","url":"https://commons.wikimedia.org/wiki/File%3ADendrocopos_major_EM1B2679_%2835219263071%29.jpg","author":"Bengt Nyman from Vaxholm, Sweden","license":"CC BY 2.0"}},{"j":"メジロ","e":"White-eye","img":"card-mejiro.jpg","c":{"file":"Japanese white-eye at Tennōji Park in Osaka, January 2016 II.jpg","url":"https://commons.wikimedia.org/wiki/File%3AJapanese_white-eye_at_Tenn%C5%8Dji_Park_in_Osaka%2C_January_2016_II.jpg","author":"Photo by Laitche You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide","license":"CC BY-SA 4.0 / FAL"}}]},{"g":0,"name":"うみ・かわ","en":"Sea & River","icon":"🐬","color":"#B3E5FC","thumb":"card-iruka.jpg","items":[{"j":"いるか","e":"Dolphin","img":"card-iruka.jpg","c":{"file":"Pixabay: dolphin-aquarium-jumping-fish-906176","url":"https://pixabay.com/en/dolphin-aquarium-jumping-fish-906176/","author":"Pixabay","license":"CC0 1.0（Pixabay／StockSnap、2015年公開）"}},{"j":"くじら","e":"Whale","img":"card-kujira.jpg","c":{"file":"Humpback whales in singing position.jpg","url":"https://commons.wikimedia.org/wiki/File%3AHumpback_whales_in_singing_position.jpg","author":"Dr. Louis M. Herman.","license":"Public domain"}},{"j":"ジンベエザメ","e":"Whale shark","img":"card-jinbeezame.jpg","c":{"file":"Male whale shark at Georgia Aquarium.jpg","url":"https://commons.wikimedia.org/wiki/File%3AMale_whale_shark_at_Georgia_Aquarium.jpg","author":"Zac Wolf","license":"CC BY-SA 2.5"}},{"j":"さめ","e":"Shark","img":"card-same.jpg","c":{"file":"Blacktip reef shark (Carcharhinus melanopterus) Moorea.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABlacktip_reef_shark_%28Carcharhinus_melanopterus%29_Moorea.jpg","author":".mw-parser-output .commons-creator-table{background-color:#f0f0ff;box-sizing:border-box;font-size:95%;text-align:start;color:inherit}.mw-parser-output .commons-","license":"CC BY-SA 4.0"}},{"j":"たこ","e":"Octopus","img":"card-tako.jpg","c":{"file":"Red Octopus rescued.jpg","url":"https://commons.wikimedia.org/wiki/File%3ARed_Octopus_rescued.jpg","author":"Jerry Kirkhart from Los Osos, Calif.","license":"CC BY 2.0"}},{"j":"えび","e":"Shrimp","img":"card-ebi.jpg","c":{"file":"伊勢海老.jpg","url":"https://commons.wikimedia.org/wiki/File%3A%E4%BC%8A%E5%8B%A2%E6%B5%B7%E8%80%81.jpg","author":"Syced","license":"CC0"}},{"j":"ひとで","e":"Starfish","img":"card-hitode.jpg","c":{"file":"Patiria pectinifera 03.jpg","url":"https://commons.wikimedia.org/wiki/File%3APatiria_pectinifera_03.jpg","author":"Σ64","license":"GFDL / CC BY 3.0"}},{"j":"アザラシ","e":"Seal","img":"card-azarashi.jpg","c":{"file":"Common Seal Phoca vitulina.jpg","url":"https://commons.wikimedia.org/wiki/File%3ACommon_Seal_Phoca_vitulina.jpg","author":"Andreas Trepte","license":"CC BY-SA 2.5"}},{"j":"アシカ","e":"Sea lion","img":"card-ashika.jpg","c":{"file":"California sea lion in La Jolla (70568).jpg","url":"https://commons.wikimedia.org/wiki/File%3ACalifornia_sea_lion_in_La_Jolla_%2870568%29.jpg","author":"Rhododendrites","license":"CC BY-SA 4.0"}},{"j":"クマノミ","e":"Clownfish","img":"card-kumanomi.jpg","c":{"file":"Clownfisch (Amphiprion ocellaris).jpg","url":"https://commons.wikimedia.org/wiki/File%3AClownfisch_%28Amphiprion_ocellaris%29.jpg","author":"© Raimond Spekking / CC BY-SA 4.0 (via Wikimedia Commons) You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – ","license":"CC BY-SA 4.0"}},{"j":"タツノオトシゴ","e":"Seahorse","img":"card-tatsunootoshigo.jpg","c":{"file":"Hippocampus sindonis SI.jpg","url":"https://commons.wikimedia.org/wiki/File%3AHippocampus_sindonis_SI.jpg","author":"Sandra Raredon/Smithsonian Institution","license":"Public domain"}},{"j":"エイ","e":"Ray","img":"card-ei.jpg","c":{"file":"Manta birostris-Thailand4.jpg","url":"https://commons.wikimedia.org/wiki/File%3AManta_birostris-Thailand4.jpg","author":"jon hanson from london, UK","license":"CC BY-SA 2.0"}},{"j":"カエル","e":"Frog","img":"card-kaeru.jpg","c":{"file":"Green treefrog.jpg","url":"https://commons.wikimedia.org/wiki/File%3AGreen_treefrog.jpg","author":"Brian Gratwicke","license":"CC BY 2.0"}},{"j":"ザリガニ","e":"Crayfish","img":"card-zarigani.jpg","c":{"file":"Procambarus clarkii.jpg","url":"https://commons.wikimedia.org/wiki/File%3AProcambarus_clarkii.jpg","author":"No machine-readable author provided. MikeMurphy assumed (based on copyright claims).","license":"Public domain"}}]},{"g":0,"name":"むし","en":"Bugs","icon":"🦋","color":"#E6EE9C","thumb":"card-chouchou.jpg","items":[{"j":"ちょうちょ","e":"Butterfly","img":"card-chouchou.jpg","c":{"file":"Danaus plexippus MHNT.jpg","url":"https://commons.wikimedia.org/wiki/File%3ADanaus_plexippus_MHNT.jpg","author":"Didier Descouens","license":"CC BY-SA 4.0"}},{"j":"てんとうむし","e":"Ladybug","img":"card-tentoumushi.jpg","c":{"file":"BIEDRONA.JPG","url":"https://commons.wikimedia.org/wiki/File%3ABIEDRONA.JPG","author":"","license":"GFDL / CC BY-SA 3.0"}},{"j":"かぶとむし","e":"Rhinoceros beetle","img":"card-kabutomushi.jpg","c":{"file":"Japanese rhinoceros beetle 1.jpg","url":"https://commons.wikimedia.org/wiki/File%3AJapanese_rhinoceros_beetle_1.jpg","author":"Nayan j Nath","license":"CC BY-SA 4.0"}},{"j":"くわがた","e":"Stag beetle","img":"card-kuwagata.jpg","c":{"file":"Cerf-volant MHNT male et femelle.jpg","url":"https://commons.wikimedia.org/wiki/File%3ACerf-volant_MHNT_male_et_femelle.jpg","author":"Didier Descouens","license":"CC BY-SA 4.0"}},{"j":"とんぼ","e":"Dragonfly","img":"card-tonbo.jpg","c":{"file":"Sympetrum flaveolum - side (aka).jpg","url":"https://commons.wikimedia.org/wiki/File%3ASympetrum_flaveolum_-_side_%28aka%29.jpg","author":"","license":"CC BY-SA 2.5"}},{"j":"せみ","e":"Cicada","img":"card-semi.jpg","c":{"file":"Fidicina mannifera MHNT.jpg","url":"https://commons.wikimedia.org/wiki/File%3AFidicina_mannifera_MHNT.jpg","author":"Didier Descouens","license":"CC BY-SA 3.0"}},{"j":"ばった","e":"Grasshopper","img":"card-batta.jpg","c":{"file":"Atractomorpha lata, Burdwan, West Bengal, India 27 10 2012.jpg","url":"https://commons.wikimedia.org/wiki/File%3AAtractomorpha_lata%2C_Burdwan%2C_West_Bengal%2C_India_27_10_2012.jpg","author":"Joydeep Chakraborty You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, prov","license":"CC BY-SA 3.0"}},{"j":"かまきり","e":"Mantis","img":"card-kamakiri.jpg","c":{"file":"Praying mantis india.jpg","url":"https://commons.wikimedia.org/wiki/File%3APraying_mantis_india.jpg","author":"Shiva shankar","license":"CC BY-SA 2.0"}},{"j":"かたつむり","e":"Snail","img":"card-katatsumuri.jpg","c":{"file":"Pixabay: nature-snail-wood-wood-pile-750344","url":"https://pixabay.com/en/nature-snail-wood-wood-pile-750344/","author":"Pixabay","license":"CC0 1.0（Pixabay／StockSnap、2015年公開）"}},{"j":"あり","e":"Ant","img":"card-ari.jpg","c":{"file":"Meat eater ant feeding on honey02.jpg","url":"https://commons.wikimedia.org/wiki/File%3AMeat_eater_ant_feeding_on_honey02.jpg","author":"Fir0002/Flagstaffotos","license":"GFDL 1.2 / CC BY-NC 3.0（非営利）"}},{"j":"みつばち","e":"Bee","img":"card-mitsubachi.jpg","c":{"file":"CSIRO ScienceImage 2317 An Adult Female Worker Honey Bee.jpg","url":"https://commons.wikimedia.org/wiki/File%3ACSIRO_ScienceImage_2317_An_Adult_Female_Worker_Honey_Bee.jpg","author":"CSIRO You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to ","license":"CC BY 3.0"}},{"j":"ダンゴムシ","e":"Pill bug","img":"card-dangomushi.jpg","c":{"file":"Armadillidium vulgare 001.jpg","url":"https://commons.wikimedia.org/wiki/File%3AArmadillidium_vulgare_001.jpg","author":"Franco Folini","license":"GFDL / CC BY-SA 3.0 / CC BY 2.5"}},{"j":"クモ","e":"Spider","img":"card-kumo.jpg","c":{"file":"PlatycryptusUndatusFemale.jpg","url":"https://commons.wikimedia.org/wiki/File%3APlatycryptusUndatusFemale.jpg","author":"Kevincollins123","license":"CC BY-SA 3.0"}}]},{"g":1,"name":"くだもの","en":"Fruits","icon":"🍎","color":"#FFCDD2","thumb":"card-ringo.jpg","items":[{"j":"りんご","e":"Apple","img":"card-ringo.jpg","c":{"file":"Red Apple.jpg","url":"https://commons.wikimedia.org/wiki/File%3ARed_Apple.jpg","author":"Abhijit Tembhekar from Mumbai, India","license":"CC BY 2.0"}},{"j":"みかん","e":"Mandarin","img":"card-mikan.jpg","c":{"file":"Citrus unshiu 20101118 a.jpg","url":"https://commons.wikimedia.org/wiki/File%3ACitrus_unshiu_20101118_a.jpg","author":"Batholith ( talk )","license":"Public domain"}},{"j":"バナナ","e":"Banana","img":"card-banana.jpg","c":{"file":"Banana-Single.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABanana-Single.jpg","author":"Evan-Amos","license":"CC BY-SA 3.0"}},{"j":"いちご","e":"Strawberry","img":"card-ichigo.jpg","c":{"file":"Strawberry (transparent background).png","url":"https://commons.wikimedia.org/wiki/File%3AStrawberry_%28transparent_background%29.png","author":"Paolo Neo","license":"CC0"}},{"j":"ぶどう","e":"Grapes","img":"card-budou.jpg","c":{"file":"巨峰.jpg","url":"https://commons.wikimedia.org/wiki/File%3A%E5%B7%A8%E5%B3%B0.jpg","author":"GGGLS","license":"CC BY-SA 4.0"}},{"j":"なし","e":"Pear","img":"card-nashi.jpg","c":{"file":"Nashi pear.jpg","url":"https://commons.wikimedia.org/wiki/File%3ANashi_pear.jpg","author":"","license":"CC BY-SA 3.0 / GFDL"}},{"j":"かき","e":"Persimmon","img":"card-kaki.jpg","c":{"file":"Persimmon (fuyu).jpg","url":"https://commons.wikimedia.org/wiki/File%3APersimmon_%28fuyu%29.jpg","author":"Rhododendrites","license":"CC BY-SA 4.0"}},{"j":"さくらんぼ","e":"Cherries","img":"card-sakuranbo.jpg","c":{"file":"Cherry fruit on white background.jpg","url":"https://commons.wikimedia.org/wiki/File%3ACherry_fruit_on_white_background.jpg","author":"Paolo Neo","license":"Public domain"}},{"j":"パイナップル","e":"Pineapple","img":"card-painappuru.jpg","c":{"file":"Pineapple on white table.jpg","url":"https://commons.wikimedia.org/wiki/File%3APineapple_on_white_table.jpg","author":"Julien Pianetti","license":"CC0"}},{"j":"レモン","e":"Lemon","img":"card-remon.jpg","c":{"file":"Lemon with white background.jpg","url":"https://commons.wikimedia.org/wiki/File%3ALemon_with_white_background.jpg","author":"Bordercolliez","license":"CC0"}},{"j":"キウイ","e":"Kiwifruit","img":"card-kiui.jpg","c":{"file":"Kiwi (Actinidia chinensis) 1 Luc Viatour.jpg","url":"https://commons.wikimedia.org/wiki/File%3AKiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg","author":"I, Luc Viatour You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a","license":"GFDL / CC BY-SA 2.5"}},{"j":"マンゴー","e":"Mango","img":"card-mangoo.jpg","c":{"file":"Mangos - single and halved.jpg","url":"https://commons.wikimedia.org/wiki/File%3AMangos_-_single_and_halved.jpg","author":"Ivar Leidus","license":"CC BY-SA 4.0"}},{"j":"ブルーベリー","e":"Blueberries","img":"card-buruuberii.jpg","c":{"file":"Blueberries in Austria.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABlueberries_in_Austria.jpg","author":"Tiia Monto You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a lin","license":"CC BY-SA 3.0"}},{"j":"くり","e":"Chestnut","img":"card-kuri.jpg","c":{"file":"Chestnuts.jpg","url":"https://commons.wikimedia.org/wiki/File%3AChestnuts.jpg","author":"Fir0002/Flagstaffotos","license":"GFDL 1.2 / CC BY-NC 3.0（非営利）"}}]},{"g":1,"name":"やさい","en":"Vegetables","icon":"🥕","color":"#C8E6C9","thumb":"card-tomato.jpg","items":[{"j":"トマト","e":"Tomato","img":"card-tomato.jpg","c":{"file":"Bright red tomato and cross section02.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABright_red_tomato_and_cross_section02.jpg","author":"Fir0002/Flagstaffotos","license":"GFDL 1.2 / CC BY-NC 3.0（非営利）"}},{"j":"きゅうり","e":"Cucumber","img":"card-kyuuri.jpg","c":{"file":"Cucumber from Denmark.jpg","url":"https://commons.wikimedia.org/wiki/File%3ACucumber_from_Denmark.jpg","author":"WiseMan42","license":"CC0"}},{"j":"なす","e":"Eggplant","img":"card-nasu.jpg","c":{"file":"Aubergine.jpg","url":"https://commons.wikimedia.org/wiki/File%3AAubergine.jpg","author":"Horst Frank","license":"GFDL / CC BY-SA 3.0"}},{"j":"じゃがいも","e":"Potato","img":"card-jagaimo.jpg","c":{"file":"Potato (3780830486).jpg","url":"https://commons.wikimedia.org/wiki/File%3APotato_%283780830486%29.jpg","author":"ben dalton from leeds, uk","license":"CC BY 2.0"}},{"j":"たまねぎ","e":"Onion","img":"card-tamanegi.jpg","c":{"file":"Onion on White.JPG","url":"https://commons.wikimedia.org/wiki/File%3AOnion_on_White.JPG","author":"Colin","license":"CC BY-SA 3.0"}},{"j":"キャベツ","e":"Cabbage","img":"card-kyabetsu.jpg","c":{"file":"Witte kool.jpg","url":"https://commons.wikimedia.org/wiki/File%3AWitte_kool.jpg","author":"Rasbak","license":"GFDL / CC BY-SA 3.0"}},{"j":"ブロッコリー","e":"Broccoli","img":"card-burokkorii.jpg","c":{"file":"Broccoli and cross section edit.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABroccoli_and_cross_section_edit.jpg","author":"Fir0002/Flagstaffotos","license":"GFDL 1.2 / CC BY-NC 3.0（非営利）"}},{"j":"ピーマン","e":"Green pepper","img":"card-piiman.jpg","c":{"file":"Green bell pepper 2017 A.jpg","url":"https://commons.wikimedia.org/wiki/File%3AGreen_bell_pepper_2017_A.jpg","author":"Fructibus","license":"CC0"}},{"j":"えだまめ","e":"Edamame","img":"card-edamame.jpg","c":{"file":"Edamame by Zesmerelda in Chicago.jpg","url":"https://commons.wikimedia.org/wiki/File%3AEdamame_by_Zesmerelda_in_Chicago.jpg","author":"Tammy Green (aka Zesmerelda) from Chicago Upscale Dining + Lounge Republic Pan-Asian Restaurant [1] in Ontario & Rush Street, Chicago, Illinois 60611","license":"CC BY-SA 2.0"}},{"j":"しいたけ","e":"Shiitake","img":"card-shiitake.jpg","c":{"file":"Shiitakegrowing.jpg","url":"https://commons.wikimedia.org/wiki/File%3AShiitakegrowing.jpg","author":"frankenstoen from Portland, Oregon","license":"CC BY 2.0"}},{"j":"れんこん","e":"Lotus root","img":"card-renkon.jpg","c":{"file":"Lotus root 3.jpg","url":"https://commons.wikimedia.org/wiki/File%3ALotus_root_3.jpg","author":"국립국어원 You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to ","license":"CC BY-SA 2.0 kr"}},{"j":"ほうれんそう","e":"Spinach","img":"card-hourensou.jpg","c":{"file":"Bunch of Spinach (16752368240).jpg","url":"https://commons.wikimedia.org/wiki/File%3ABunch_of_Spinach_%2816752368240%29.jpg","author":"Willis Lam","license":"CC BY-SA 2.0"}},{"j":"レタス","e":"Lettuce","img":"card-retasu.jpg","c":{"file":"Romaine lettuce.jpg","url":"https://commons.wikimedia.org/wiki/File%3ARomaine_lettuce.jpg","author":"Rainer Zenz","license":"GFDL / CC BY-SA 3.0 / CC BY-SA 2.5"}},{"j":"はくさい","e":"Napa cabbage","img":"card-hakusai.jpg","c":{"file":"ChineseCabbage.jpg","url":"https://commons.wikimedia.org/wiki/File%3AChineseCabbage.jpg","author":"Jamie Nettles","license":"GFDL / CC BY-SA 3.0 / CC BY-SA 2.5"}}]},{"g":1,"name":"たべもの","en":"Foods","icon":"🍙","color":"#FFECB3","thumb":"card-gohan.jpg","items":[{"j":"ごはん","e":"Rice","img":"card-gohan.jpg","c":{"file":"Steamed rice in bowl 01.jpg","url":"https://commons.wikimedia.org/wiki/File%3ASteamed_rice_in_bowl_01.jpg","author":"Anna Frodesiak","license":"CC0"}},{"j":"おにぎり","e":"Rice ball","img":"card-onigiri.jpg","c":{"file":"Onigiri 001.jpg","url":"https://commons.wikimedia.org/wiki/File%3AOnigiri_001.jpg","author":"Ocdp","license":"CC0"}},{"j":"パン","e":"Bread","img":"card-pan.jpg","c":{"file":"Croissant-Petr Kratochvil.jpg","url":"https://commons.wikimedia.org/wiki/File%3ACroissant-Petr_Kratochvil.jpg","author":"Petr Kratochvil","license":"CC0"}},{"j":"うどん","e":"Udon","img":"card-udon.jpg","c":{"file":"Kakeudon.jpg","url":"https://commons.wikimedia.org/wiki/File%3AKakeudon.jpg","author":"Lusheeta at Japanese Wikipedia","license":"CC BY-SA 3.0 / GFDL"}},{"j":"ラーメン","e":"Ramen","img":"card-raamen.jpg","c":{"file":"Ramen, sopa de fideus.jpg","url":"https://commons.wikimedia.org/wiki/File%3ARamen%2C_sopa_de_fideus.jpg","author":"Mariaaa05","license":"CC BY-SA 4.0"}},{"j":"おすし","e":"Sushi","img":"card-osushi.jpg","c":{"file":"Nigiri Sushi (25966163204).jpg","url":"https://commons.wikimedia.org/wiki/File%3ANigiri_Sushi_%2825966163204%29.jpg","author":"Tim Reckmann from Hamm, Deutschland","license":"CC BY 2.0"}},{"j":"カレーライス","e":"Curry rice","img":"card-karee.jpg","c":{"file":"Beef curry rice 003.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABeef_curry_rice_003.jpg","author":"Ocdp","license":"CC0"}},{"j":"みそしる","e":"Miso soup","img":"card-misoshiru.jpg","c":{"file":"Miso Soup 001.jpg","url":"https://commons.wikimedia.org/wiki/File%3AMiso_Soup_001.jpg","author":"Ocdp","license":"CC0"}},{"j":"たまごやき","e":"Rolled omelette","img":"card-tamagoyaki.jpg","c":{"file":"鳥焼き居酒屋 (39394233682).jpg","url":"https://commons.wikimedia.org/wiki/File%3A%E9%B3%A5%E7%84%BC%E3%81%8D%E5%B1%85%E9%85%92%E5%B1%8B_%2839394233682%29.jpg","author":"極地狐","license":"CC BY 2.0"}},{"j":"ケーキ","e":"Cake","img":"card-keeki.jpg","c":{"file":"苺ショートケーキ.jpg","url":"https://commons.wikimedia.org/wiki/File%3A%E8%8B%BA%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%B1%E3%83%BC%E3%82%AD.jpg","author":"Syced","license":"CC0"}},{"j":"アイスクリーム","e":"Ice cream","img":"card-aisu.jpg","c":{"file":"Soft Serve Ice Cream in cone (28966999042).jpg","url":"https://commons.wikimedia.org/wiki/File%3ASoft_Serve_Ice_Cream_in_cone_%2828966999042%29.jpg","author":"Willis Lam","license":"CC BY-SA 2.0"}},{"j":"たまご","e":"Egg","img":"card-tamago.jpg","c":{"file":"A brown chicken egg on white background.png","url":"https://commons.wikimedia.org/wiki/File%3AA_brown_chicken_egg_on_white_background.png","author":"Leo219","license":"CC BY-SA 4.0"}},{"j":"なっとう","e":"Natto","img":"card-nattou.jpg","c":{"file":"Natto mixed.jpg","url":"https://commons.wikimedia.org/wiki/File%3ANatto_mixed.jpg","author":"User:Gleam","license":"CC BY-SA 3.0 / GFDL"}},{"j":"とうふ","e":"Tofu","img":"card-toufu.jpg","c":{"file":"Hiya-yakko 001.jpg","url":"https://commons.wikimedia.org/wiki/File%3AHiya-yakko_001.jpg","author":"Ocdp","license":"CC0"}},{"j":"ぎょうざ","e":"Gyoza","img":"card-gyouza.jpg","c":{"file":"Baked gyoza of Gyoza-no-Manshu.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABaked_gyoza_of_Gyoza-no-Manshu.jpg","author":"毒島みるく","license":"CC0"}},{"j":"からあげ","e":"Fried chicken","img":"card-karaage.jpg","c":{"file":"Chicken karaage 006.jpg","url":"https://commons.wikimedia.org/wiki/File%3AChicken_karaage_006.jpg","author":"Ocdp","license":"CC0"}},{"j":"ハンバーグ","e":"Hamburg steak","img":"card-hanbaagu.jpg","c":{"file":"Hamburg-Steak.jpg","url":"https://commons.wikimedia.org/wiki/File%3AHamburg-Steak.jpg","author":"MaedaAkihiko","license":"CC BY-SA 4.0"}},{"j":"スパゲッティ","e":"Spaghetti","img":"card-supagetti.jpg","c":{"file":"Pasta (23727887804).jpg","url":"https://commons.wikimedia.org/wiki/File%3APasta_%2823727887804%29.jpg","author":"Tim Reckmann from Hamm, Deutschland","license":"CC BY 2.0"}},{"j":"ピザ","e":"Pizza","img":"card-piza.jpg","c":{"file":"Eq it-na pizza-margherita sep2005 sml.jpg","url":"https://commons.wikimedia.org/wiki/File%3AEq_it-na_pizza-margherita_sep2005_sml.jpg","author":"Valerio Capello at English Wikipedia","license":"GFDL / CC BY-SA 3.0"}},{"j":"サンドイッチ","e":"Sandwich","img":"card-sandoicchi.jpg","c":{"file":"Egg Sandwich 001.jpg","url":"https://commons.wikimedia.org/wiki/File%3AEgg_Sandwich_001.jpg","author":"Ocdp","license":"CC0"}},{"j":"プリン","e":"Pudding","img":"card-purin.jpg","c":{"file":"Putchin Pudding 001.jpg","url":"https://commons.wikimedia.org/wiki/File%3APutchin_Pudding_001.jpg","author":"Ocdp","license":"CC0"}},{"j":"ドーナツ","e":"Doughnut","img":"card-doonatsu.jpg","c":{"file":"Fat-Doughnut-Brooklyn-Chocolate-Frosted.jpg","url":"https://commons.wikimedia.org/wiki/File%3AFat-Doughnut-Brooklyn-Chocolate-Frosted.jpg","author":"Evan-Amos","license":"Public domain"}},{"j":"せんべい","e":"Rice cracker","img":"card-senbei.jpg","c":{"file":"Ginza-mochi 001.jpg","url":"https://commons.wikimedia.org/wiki/File%3AGinza-mochi_001.jpg","author":"Ocdp","license":"CC0"}},{"j":"だんご","e":"Dango","img":"card-dango.jpg","c":{"file":"Sanshoku Dango 001.jpg","url":"https://commons.wikimedia.org/wiki/File%3ASanshoku_Dango_001.jpg","author":"Ocdp","license":"CC0"}}]},{"g":2,"name":"のりもの","en":"Vehicles","icon":"🚃","color":"#BBDEFB","thumb":"card-shinkansen.jpg","items":[{"j":"しんかんせん","e":"Bullet train","img":"card-shinkansen.jpg","c":{"file":"Shinkansen N700 z15.jpg","url":"https://commons.wikimedia.org/wiki/File%3AShinkansen_N700_z15.jpg","author":"TC411-507 at Japanese Wikipedia You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate ","license":"GFDL / CC BY 3.0"}},{"j":"でんしゃ","e":"Train","img":"card-densha.jpg","c":{"file":"Yamanote-Line-E235.jpg","url":"https://commons.wikimedia.org/wiki/File%3AYamanote-Line-E235.jpg","author":"MaedaAkihiko","license":"CC BY-SA 4.0"}},{"j":"きかんしゃ","e":"Steam locomotive","img":"card-kikansha.jpg","c":{"file":"JNR C57 180 20070818.jpg","url":"https://commons.wikimedia.org/wiki/File%3AJNR_C57_180_20070818.jpg","author":"ja:User:TC411-507 aka JobanLineE531","license":"CC BY-SA 3.0 / GFDL"}},{"j":"パトカー","e":"Police car","img":"card-patokaa.jpg","c":{"file":"Japanese TOYOTA CROWN GRS180 police car.jpg","url":"https://commons.wikimedia.org/wiki/File%3AJapanese_TOYOTA_CROWN_GRS180_police_car.jpg","author":"PRiMENON","license":"GFDL / CC BY-SA 3.0"}},{"j":"きゅうきゅうしゃ","e":"Ambulance","img":"card-kyuukyuusha.jpg","c":{"file":"Nago Okinawa Ambulance-02.jpg","url":"https://commons.wikimedia.org/wiki/File%3ANago_Okinawa_Ambulance-02.jpg","author":"Photo by CEphoto, Uwe Aranas or alternatively © CEphoto, Uwe Aranas You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attr","license":"CC BY-SA 3.0"}},{"j":"しょうぼうしゃ","e":"Fire engine","img":"card-shoubousha.jpg","c":{"file":"Yokohama Fire Department North-Yamata pump.jpg","url":"https://commons.wikimedia.org/wiki/File%3AYokohama_Fire_Department_North-Yamata_pump.jpg","author":"Ypy31","license":"Public domain"}},{"j":"ゆうびんしゃ","e":"Mail van","img":"card-yuubinsha.jpg","c":{"file":"Nakijin Okinawa Japan Post-Van-01.jpg","url":"https://commons.wikimedia.org/wiki/File%3ANakijin_Okinawa_Japan_Post-Van-01.jpg","author":"Photo by CEphoto, Uwe Aranas or alternatively © CEphoto, Uwe Aranas You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attr","license":"CC BY-SA 3.0"}},{"j":"タクシー","e":"Taxi","img":"card-takushii.jpg","c":{"file":"Toyo Kotsu 3301 at Akihabara Sta. South (20230806110237).jpg","url":"https://commons.wikimedia.org/wiki/File%3AToyo_Kotsu_3301_at_Akihabara_Sta._South_%2820230806110237%29.jpg","author":"N509FZ","license":"CC BY-SA 4.0"}},{"j":"バス","e":"Bus","img":"card-basu.jpg","c":{"file":"ToeiBus A-R554a.jpg","url":"https://commons.wikimedia.org/wiki/File%3AToeiBus_A-R554a.jpg","author":"103momo ( talk · contribs )","license":"GFDL / CC BY-SA 3.0"}},{"j":"くるま","e":"Car","img":"card-kuruma.jpg","c":{"file":"Toyota Aqua 101 (cropped).JPG","url":"https://commons.wikimedia.org/wiki/File%3AToyota_Aqua_101_%28cropped%29.JPG","author":"Tennen-Gas","license":"CC BY-SA 3.0"}},{"j":"トラック","e":"Truck","img":"card-torakku.jpg","c":{"file":"Fuso Canter 3C13, 8th Generation.jpg","url":"https://commons.wikimedia.org/wiki/File%3AFuso_Canter_3C13%2C_8th_Generation.jpg","author":"Juligarcibs","license":"CC BY-SA 4.0"}},{"j":"バイク","e":"Motorcycle","img":"card-baiku.jpg","c":{"file":"Honda super cub, 1st Gen. 1958, Left side.jpg","url":"https://commons.wikimedia.org/wiki/File%3AHonda_super_cub%2C_1st_Gen._1958%2C_Left_side.jpg","author":"Mj-bird","license":"CC BY-SA 3.0"}},{"j":"じてんしゃ","e":"Bicycle","img":"card-jitensha.jpg","c":{"file":"Raleigh lady's loop frame bicycle 1930s.jpg","url":"https://commons.wikimedia.org/wiki/File%3ARaleigh_lady%27s_loop_frame_bicycle_1930s.jpg","author":"DeFacto","license":"CC BY-SA 4.0"}},{"j":"ひこうき","e":"Airplane","img":"card-hikouki.jpg","c":{"file":"All Nippon Airways, Boeing 787-8 JA828A NRT (23661189691).jpg","url":"https://commons.wikimedia.org/wiki/File%3AAll_Nippon_Airways%2C_Boeing_787-8_JA828A_NRT_%2823661189691%29.jpg","author":"Masakatsu Ukon","license":"CC BY-SA 2.0"}},{"j":"ヘリコプター","e":"Helicopter","img":"card-herikoputaa.jpg","c":{"file":"LAPD Bell 206 Jetranger.jpg","url":"https://commons.wikimedia.org/wiki/File%3ALAPD_Bell_206_Jetranger.jpg","author":"Mfield - Matthew Field, http://www.photography.mattfield.com","license":"GFDL / CC BY-SA 3.0 / CC BY 2.5"}},{"j":"ブルドーザー","e":"Bulldozer","img":"card-burudoozaa.jpg","c":{"file":"Komatsu bulldozer D37P.jpg","url":"https://commons.wikimedia.org/wiki/File%3AKomatsu_bulldozer_D37P.jpg","author":"High Contrast","license":"CC BY 3.0 de"}},{"j":"ミキサーしゃ","e":"Concrete mixer","img":"card-mikisaasha.jpg","c":{"file":"ISUZU FORWARD, Cement Mixer Truck, Light Green.jpg","url":"https://commons.wikimedia.org/wiki/File%3AISUZU_FORWARD%2C_Cement_Mixer_Truck%2C_Light_Green.jpg","author":"Mj-bird","license":"CC BY-SA 3.0"}},{"j":"はしごしゃ","e":"Ladder truck","img":"card-hashigosha.jpg","c":{"file":"Ladder truck nishishinjuku.jpg","url":"https://commons.wikimedia.org/wiki/File%3ALadder_truck_nishishinjuku.jpg","author":"鋸香具師","license":"CC0"}},{"j":"ドクターイエロー","e":"Doctor Yellow","img":"card-dokutaaieroo.jpg","c":{"file":"Shinkansen 923 series Doctor Yellow set T4 at Fukuyama station, 8 April 2023.jpg","url":"https://commons.wikimedia.org/wiki/File%3AShinkansen_923_series_Doctor_Yellow_set_T4_at_Fukuyama_station%2C_8_April_2023.jpg","author":"Takeshi Aida","license":"CC BY-SA 2.0"}},{"j":"ききゅう","e":"Hot air balloon","img":"card-kikyuu.jpg","c":{"file":"Balloon free image.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABalloon_free_image.jpg","author":"Bryan Kennedy","license":"Public domain"}}]},{"g":3,"name":"おうちの もの","en":"Things at Home","icon":"🥄","color":"#E0F2F1","thumb":"card-koppu.jpg","items":[{"j":"コップ","e":"Cup","img":"card-koppu.jpg","c":{"file":"A yellow plastic cup.jpg","url":"https://commons.wikimedia.org/wiki/File%3AA_yellow_plastic_cup.jpg","author":"Aip Saripudin","license":"CC BY-SA 4.0"}},{"j":"スプーン","e":"Spoon","img":"card-supuun.jpg","c":{"file":"Nickel silver teaspoon.jpg","url":"https://commons.wikimedia.org/wiki/File%3ANickel_silver_teaspoon.jpg","author":"Smirkybec","license":"CC BY-SA 4.0"}},{"j":"フォーク","e":"Fork","img":"card-fooku.jpg","c":{"file":"Plastikgabel.jpg","url":"https://commons.wikimedia.org/wiki/File%3APlastikgabel.jpg","author":"VSchagow","license":"CC BY-SA 4.0"}},{"j":"おはし","e":"Chopsticks","img":"card-ohashi.jpg","c":{"file":"Chopstick.png","url":"https://commons.wikimedia.org/wiki/File%3AChopstick.png","author":"Chopstick.JPG : 毛抜き derivative work: Richardprins ( talk )","license":"CC BY-SA 3.0 / GFDL"}},{"j":"おさら","e":"Plate","img":"card-osara.jpg","c":{"file":"Dish with crane design. Edo, 19th c. Musée Guimet MG 5324.JPG","url":"https://commons.wikimedia.org/wiki/File%3ADish_with_crane_design._Edo%2C_19th_c._Mus%C3%A9e_Guimet_MG_5324.JPG","author":"Ismoon ( talk ) 21:02, 10 December 2018 (UTC)","license":"GFDL / CC BY-SA 4.0"}},{"j":"いす","e":"Chair","img":"card-isu.jpg","c":{"file":"Green Painted Windsor Side Chair - DPLA - 6894caa5eeb8739423a4fd0ddabb4ed7 (page 4).jpg","url":"https://commons.wikimedia.org/wiki/File%3AGreen_Painted_Windsor_Side_Chair_-_DPLA_-_6894caa5eeb8739423a4fd0ddabb4ed7_%28page_4%29.jpg","author":"Missouri History Museum (DPLA)","license":"No restrictions"}},{"j":"とけい","e":"Clock","img":"card-tokei.jpg","c":{"file":"Red Clock.jpg","url":"https://commons.wikimedia.org/wiki/File%3ARed_Clock.jpg","author":"Wilfredor","license":"CC0"}},{"j":"でんわ","e":"Telephone","img":"card-denwa.jpg","c":{"file":"Telefon BW 2012-02-18 13-44-32.JPG","url":"https://commons.wikimedia.org/wiki/File%3ATelefon_BW_2012-02-18_13-44-32.JPG","author":"Berthold Werner","license":"GFDL / CC BY-SA 3.0"}},{"j":"かぎ","e":"Key","img":"card-kagi.jpg","c":{"file":"Llave bronce.jpg","url":"https://commons.wikimedia.org/wiki/File%3ALlave_bronce.jpg","author":"Jorge Barrios","license":"Public domain"}},{"j":"はブラシ","e":"Toothbrush","img":"card-haburashi.jpg","c":{"file":"Toothbrush BNC.jpg","url":"https://commons.wikimedia.org/wiki/File%3AToothbrush_BNC.jpg","author":"Prathyush Thomas","license":"GFDL 1.2 / FAL"}},{"j":"タオル","e":"Towel","img":"card-taoru.jpg","c":{"file":"Zusammengelegte Handtücher.jpg","url":"https://commons.wikimedia.org/wiki/File%3AZusammengelegte_Handt%C3%BCcher.jpg","author":"User:Mattes","license":"Public domain"}},{"j":"テレビ","e":"Television","img":"card-terebi.jpg","c":{"file":"세계 명화가 LG 스마트 TV 속으로.jpg","url":"https://commons.wikimedia.org/wiki/File%3A%EC%84%B8%EA%B3%84_%EB%AA%85%ED%99%94%EA%B0%80_LG_%EC%8A%A4%EB%A7%88%ED%8A%B8_TV_%EC%86%8D%EC%9C%BC%EB%A1%9C.jpg","author":"LG전자","license":"CC BY 2.0"}}]},{"g":3,"name":"みにつける もの・おもちゃ","en":"Clothes & Toys","icon":"🧸","color":"#FCE4EC","thumb":"card-kutsu.jpg","items":[{"j":"くつ","e":"Shoes","img":"card-kutsu.jpg","c":{"file":"CrystaRunning.jpg","url":"https://commons.wikimedia.org/wiki/File%3ACrystaRunning.jpg","author":"dfgfdd","license":"CC BY-SA 4.0"}},{"j":"ぼうし","e":"Hat","img":"card-boushi.jpg","c":{"file":"5tashabbus kepka.jpg","url":"https://commons.wikimedia.org/wiki/File%3A5tashabbus_kepka.jpg","author":"Abdurraxmon Abdumajidov","license":"CC BY-SA 4.0"}},{"j":"かさ","e":"Umbrella","img":"card-kasa.jpg","c":{"file":"Red Umbrella 1.jpg","url":"https://commons.wikimedia.org/wiki/File%3ARed_Umbrella_1.jpg","author":"DLG Images","license":"CC BY 2.0"}},{"j":"めがね","e":"Glasses","img":"card-megane.jpg","c":{"file":"Glasses black.jpg","url":"https://commons.wikimedia.org/wiki/File%3AGlasses_black.jpg","author":"عدنان حليم","license":"CC BY-SA 4.0"}},{"j":"くつした","e":"Socks","img":"card-kutsushita.jpg","c":{"file":"Socken farbig.jpeg","url":"https://commons.wikimedia.org/wiki/File%3ASocken_farbig.jpeg","author":"Scott Bauer","license":"Public domain"}},{"j":"ボール","e":"Ball","img":"card-booru.jpg","c":{"file":"Football Pallo valmiina-cropped.jpg","url":"https://commons.wikimedia.org/wiki/File%3AFootball_Pallo_valmiina-cropped.jpg","author":"Pallo_valmiina.jpg : Christopher Bruno","license":"CC BY-SA 2.5 / CC BY-SA 3.0 / GFDL"}},{"j":"つみき","e":"Blocks","img":"card-tsumiki.jpg","c":{"file":"Block tower on narrow base.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABlock_tower_on_narrow_base.jpg","author":"Reseletti","license":"CC0"}},{"j":"クレヨン","e":"Crayons","img":"card-kureyon.jpg","c":{"file":"Crayones cera.jpg","url":"https://commons.wikimedia.org/wiki/File%3ACrayones_cera.jpg","author":"Jorge Barrios","license":"Public domain"}},{"j":"えんぴつ","e":"Pencil","img":"card-enpitsu.jpg","c":{"file":"Unsharpened Pencil.jpg","url":"https://commons.wikimedia.org/wiki/File%3AUnsharpened_Pencil.jpg","author":"CookieAreTheBest","license":"CC0"}},{"j":"はさみ","e":"Scissors","img":"card-hasami.jpg","c":{"file":"Small pair of blue scissors.jpg","url":"https://commons.wikimedia.org/wiki/File%3ASmall_pair_of_blue_scissors.jpg","author":"ZooFari","license":"CC BY-SA 3.0"}}]},{"g":4,"name":"はな","en":"Flowers","icon":"🌷","color":"#F8BBD0","thumb":"card-sakura.jpg","items":[{"j":"さくら","e":"Cherry blossom","img":"card-sakura.jpg","c":{"file":".00 3019 Japanische Blütenkirsche (Prunus serrulata).jpg","url":"https://commons.wikimedia.org/wiki/File%3A.00_3019_Japanische_Bl%C3%BCtenkirsche_%28Prunus_serrulata%29.jpg","author":"W. Bulach","license":"CC BY-SA 4.0"}},{"j":"たんぽぽ","e":"Dandelion","img":"card-tanpopo.jpg","c":{"file":"Flowering Dandelion (Taraxacum officinale) in Shimla.jpg","url":"https://commons.wikimedia.org/wiki/File%3AFlowering_Dandelion_%28Taraxacum_officinale%29_in_Shimla.jpg","author":"Sapna Sony","license":"CC BY-SA 4.0"}},{"j":"あじさい","e":"Hydrangea","img":"card-ajisai.jpg","c":{"file":"Hydrangea macrophylla 03.JPG","url":"https://commons.wikimedia.org/wiki/File%3AHydrangea_macrophylla_03.JPG","author":"Dominicus Johannes Bergsma","license":"CC BY-SA 3.0"}},{"j":"コスモス","e":"Cosmos","img":"card-kosumosu.jpg","c":{"file":"Blueten 002 2021 08 23.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABlueten_002_2021_08_23.jpg","author":"Friedrich Haag You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a","license":"CC BY-SA 4.0"}}]},{"g":4,"name":"しぜん","en":"Nature","icon":"🍁","color":"#DCEDC8","thumb":"card-momiji.jpg","items":[{"j":"もみじ","e":"Maple leaf","img":"card-momiji.jpg","c":{"file":"Red maple leaf on a white background.jpg","url":"https://commons.wikimedia.org/wiki/File%3ARed_maple_leaf_on_a_white_background.jpg","author":"Wilfredor","license":"CC0"}},{"j":"いちょう","e":"Ginkgo leaf","img":"card-ichou.jpg","c":{"file":"Autumn Ginkgo Leaf.jpg","url":"https://commons.wikimedia.org/wiki/File%3AAutumn_Ginkgo_Leaf.jpg","author":"Ninjatacoshell","license":"CC BY-SA 3.0 / GFDL"}},{"j":"どんぐり","e":"Acorn","img":"card-donguri.jpg","c":{"file":"Acorn (2881856339).jpg","url":"https://commons.wikimedia.org/wiki/File%3AAcorn_%282881856339%29.jpg","author":"Randi Hausken from Bærum, Norway","license":"CC BY-SA 2.0"}},{"j":"まつぼっくり","e":"Pine cone","img":"card-matsubokkuri.jpg","c":{"file":"Pinus nigra cone.jpg","url":"https://commons.wikimedia.org/wiki/File%3APinus_nigra_cone.jpg","author":"Menchi","license":"GFDL / CC BY-SA 3.0"}},{"j":"きのこ","e":"Mushroom","img":"card-kinoko.jpg","c":{"file":"Vliegenzwam (Amanita muscaria). Locatie De Famberhorst. 27-09-2020 (d.j.b.).jpg","url":"https://commons.wikimedia.org/wiki/File%3AVliegenzwam_%28Amanita_muscaria%29._Locatie_De_Famberhorst._27-09-2020_%28d.j.b.%29.jpg","author":"Dominicus Johannes Bergsma","license":"CC BY-SA 4.0"}},{"j":"つき","e":"Moon","img":"card-tsuki.jpg","c":{"file":"FullMoon2010.jpg","url":"https://commons.wikimedia.org/wiki/File%3AFullMoon2010.jpg","author":"Gregory H. Revera You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provid","license":"CC BY-SA 3.0 / GFDL"}},{"j":"ゆきだるま","e":"Snowman","img":"card-yukidaruma.jpg","c":{"file":"Bonhomme de neige 2.jpg","url":"https://commons.wikimedia.org/wiki/File%3ABonhomme_de_neige_2.jpg","author":"Sphiiix","license":"CC BY-SA 4.0"}}]},{"g":5,"name":"にっぽんの もの","en":"Things of Japan","icon":"🎏","color":"#FFE0B2","thumb":"card-koinobori.jpg","items":[{"j":"こいのぼり","e":"Carp streamer","img":"card-koinobori.jpg","c":{"file":"150425 Koinobori Chizu Tottori pref Japan01bs.jpg","url":"https://commons.wikimedia.org/wiki/File%3A150425_Koinobori_Chizu_Tottori_pref_Japan01bs.jpg","author":"663highland You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a li","license":"GFDL / CC BY-SA 3.0 / CC BY 2.5"}},{"j":"だるま","e":"Daruma","img":"card-daruma.jpg","c":{"file":"Daruma doll, cut out, 03.jpg","url":"https://commons.wikimedia.org/wiki/File%3ADaruma_doll%2C_cut_out%2C_03.jpg","author":"Crisco 1492","license":"CC BY-SA 4.0 / Public domain"}},{"j":"けんだま","e":"Kendama","img":"card-kendama.jpg","c":{"file":"Kendama.jpg","url":"https://commons.wikimedia.org/wiki/File%3AKendama.jpg","author":"Tomomarusan","license":"GFDL / CC BY-SA 3.0 / CC BY 2.5"}},{"j":"ひなにんぎょう","e":"Hina dolls","img":"card-hinaningyou.jpg","c":{"file":"Hina-ningyo Hina-matsuri20160226 125043.jpg","url":"https://commons.wikimedia.org/wiki/File%3AHina-ningyo_Hina-matsuri20160226_125043.jpg","author":"Advancemirror","license":"CC BY-SA 4.0"}},{"j":"かぶと","e":"Kabuto helmet","img":"card-kabuto.jpg","c":{"file":"F-20153 E0022664.jpg","url":"https://commons.wikimedia.org/wiki/File%3AF-20153_E0022664.jpg","author":"ColBase: 国立博物館所蔵品統合検索システム (Integrated Collections Database of the National Museums, Japan) You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the fol","license":"CC BY 4.0"}},{"j":"まねきねこ","e":"Maneki-neko","img":"card-manekineko.jpg","c":{"file":"Maneki-neko-ja.jpg","url":"https://commons.wikimedia.org/wiki/File%3AManeki-neko-ja.jpg","author":"Searobin","license":"GFDL / CC BY-SA 3.0 / CC BY-SA 2.1 jp"}},{"j":"ふうりん","e":"Wind chime","img":"card-fuurin.jpg","c":{"file":"Glass windchime.JPG","url":"https://commons.wikimedia.org/wiki/File%3AGlass_windchime.JPG","author":"100yen 04:47, 28 October 2006 (UTC)","license":"GFDL / CC BY-SA 3.0 / CC BY-SA 2.5"}},{"j":"うちわ","e":"Fan","img":"card-uchiwa.jpg","c":{"file":"Uchiwa.jpg","url":"https://commons.wikimedia.org/wiki/File%3AUchiwa.jpg","author":"Haragayato","license":"GFDL / CC BY-SA 3.0"}},{"j":"げた","e":"Geta","img":"card-geta.jpg","c":{"file":"Geta.png","url":"https://commons.wikimedia.org/wiki/File%3AGeta.png","author":"Haragayato","license":"GFDL / CC BY-SA 3.0"}},{"j":"かがみもち","e":"Kagami mochi","img":"card-kagamimochi.jpg","c":{"file":"Kagami mochi Yahata Royal.JPG","url":"https://commons.wikimedia.org/wiki/File%3AKagami_mochi_Yahata_Royal.JPG","author":"Nissy-KITAQ","license":"CC BY-SA 3.0"}}]},{"g":5,"name":"がっき","en":"Instruments","icon":"🎹","color":"#E1BEE7","thumb":"card-piano.jpg","items":[{"j":"ピアノ","e":"Piano","img":"card-piano.jpg","c":{"file":"Steinway & Sons concert grand piano, model D-274, manufactured at Steinway's factory in Hamburg, Germany.png","url":"https://commons.wikimedia.org/wiki/File%3ASteinway_%26_Sons_concert_grand_piano%2C_model_D-274%2C_manufactured_at_Steinway%27s_factory_in_Hamburg%2C_Germany.png","author":"\"Photo: ©","license":"CC BY-SA 3.0"}},{"j":"たいこ","e":"Drum","img":"card-taiko.jpg","c":{"file":"Miya Daiko drum - Taiko drums.jpg","url":"https://commons.wikimedia.org/wiki/File%3AMiya_Daiko_drum_-_Taiko_drums.jpg","author":"Taiko-Kaiser-Drums","license":"CC BY-SA 3.0"}},{"j":"ギター","e":"Guitar","img":"card-gitaa.jpg","c":{"file":"Classical Guitar two views.jpg","url":"https://commons.wikimedia.org/wiki/File%3AClassical_Guitar_two_views.jpg","author":"Martin Möller","license":"CC BY-SA 2.0 de"}},{"j":"バイオリン","e":"Violin","img":"card-baiorin.jpg","c":{"file":"German, maple Violin.JPG","url":"https://commons.wikimedia.org/wiki/File%3AGerman%2C_maple_Violin.JPG","author":"Pianoplonkers","license":"CC BY-SA 3.0 / GFDL"}},{"j":"トランペット","e":"Trumpet","img":"card-toranpetto.jpg","c":{"file":"Trumpet 1.png","url":"https://commons.wikimedia.org/wiki/File%3ATrumpet_1.png","author":"PJ , background cropped by EWikist","license":"GFDL / CC BY-SA 3.0 / CC BY-SA 2.5"}},{"j":"トライアングル","e":"Triangle","img":"card-toraianguru.jpg","c":{"file":"Triangle instrument and stick.png","url":"https://commons.wikimedia.org/wiki/File%3ATriangle_instrument_and_stick.png","author":"Hannes Grobe","license":"CC BY-SA 3.0"}},{"j":"ハーモニカ","e":"Harmonica","img":"card-haamonika.jpg","c":{"file":"Harmonijka ustna 580 20MS G Meisterclasse firmy Hohner.jpg","url":"https://commons.wikimedia.org/wiki/File%3AHarmonijka_ustna_580_20MS_G_Meisterclasse_firmy_Hohner.jpg","author":"http://muzyczny.pl","license":"CC BY-SA 4.0"}},{"j":"リコーダー","e":"Recorder","img":"card-rikoodaa.jpg","c":{"file":"Flautas doces soprano e contralto, de igual modelo.jpg","url":"https://commons.wikimedia.org/wiki/File%3AFlautas_doces_soprano_e_contralto%2C_de_igual_modelo.jpg","author":"Igorflautista4","license":"CC BY-SA 4.0"}},{"j":"タンバリン","e":"Tambourine","img":"card-tanbarin.jpg","c":{"file":"Instrument perkusyjny pandeiro PA10ABS-BK-NH firmy Meinl.jpg","url":"https://commons.wikimedia.org/wiki/File%3AInstrument_perkusyjny_pandeiro_PA10ABS-BK-NH_firmy_Meinl.jpg","author":"http://muzyczny.pl","license":"CC BY-SA 4.0"}}]},{"g":6,"name":"アジア・オセアニア","en":"Asia & Oceania","icon":"🏳️","color":"#FFE4E1","thumb":"flag-jp.svg","flag":1,"items":[{"j":"にほん","e":"Japan","img":"flag-jp.svg","flag":1},{"j":"ちゅうごく","e":"China","img":"flag-cn.svg","flag":1},{"j":"かんこく","e":"South Korea","img":"flag-kr.svg","flag":1},{"j":"モンゴル","e":"Mongolia","img":"flag-mn.svg","flag":1},{"j":"タイ","e":"Thailand","img":"flag-th.svg","flag":1},{"j":"ベトナム","e":"Vietnam","img":"flag-vn.svg","flag":1},{"j":"フィリピン","e":"Philippines","img":"flag-ph.svg","flag":1},{"j":"インドネシア","e":"Indonesia","img":"flag-id.svg","flag":1},{"j":"マレーシア","e":"Malaysia","img":"flag-my.svg","flag":1},{"j":"シンガポール","e":"Singapore","img":"flag-sg.svg","flag":1},{"j":"インド","e":"India","img":"flag-in.svg","flag":1},{"j":"サウジアラビア","e":"Saudi Arabia","img":"flag-sa.svg","flag":1},{"j":"トルコ","e":"Turkey","img":"flag-tr.svg","flag":1},{"j":"オーストラリア","e":"Australia","img":"flag-au.svg","flag":1},{"j":"ニュージーランド","e":"New Zealand","img":"flag-nz.svg","flag":1}]},{"g":6,"name":"ヨーロッパ","en":"Europe","icon":"🏳️","color":"#E3F2FD","thumb":"flag-gb.svg","flag":1,"items":[{"j":"イギリス","e":"United Kingdom","img":"flag-gb.svg","flag":1},{"j":"フランス","e":"France","img":"flag-fr.svg","flag":1},{"j":"ドイツ","e":"Germany","img":"flag-de.svg","flag":1},{"j":"イタリア","e":"Italy","img":"flag-it.svg","flag":1},{"j":"スペイン","e":"Spain","img":"flag-es.svg","flag":1},{"j":"ポルトガル","e":"Portugal","img":"flag-pt.svg","flag":1},{"j":"オランダ","e":"Netherlands","img":"flag-nl.svg","flag":1},{"j":"ベルギー","e":"Belgium","img":"flag-be.svg","flag":1},{"j":"スイス","e":"Switzerland","img":"flag-ch.svg","flag":1},{"j":"オーストリア","e":"Austria","img":"flag-at.svg","flag":1},{"j":"スウェーデン","e":"Sweden","img":"flag-se.svg","flag":1},{"j":"ノルウェー","e":"Norway","img":"flag-no.svg","flag":1},{"j":"フィンランド","e":"Finland","img":"flag-fi.svg","flag":1},{"j":"デンマーク","e":"Denmark","img":"flag-dk.svg","flag":1},{"j":"アイルランド","e":"Ireland","img":"flag-ie.svg","flag":1},{"j":"ギリシャ","e":"Greece","img":"flag-gr.svg","flag":1},{"j":"ポーランド","e":"Poland","img":"flag-pl.svg","flag":1},{"j":"ロシア","e":"Russia","img":"flag-ru.svg","flag":1},{"j":"ウクライナ","e":"Ukraine","img":"flag-ua.svg","flag":1}]},{"g":6,"name":"アメリカ・アフリカ","en":"Americas & Africa","icon":"🏳️","color":"#E8F5E9","thumb":"flag-us.svg","flag":1,"items":[{"j":"アメリカ","e":"United States","img":"flag-us.svg","flag":1},{"j":"カナダ","e":"Canada","img":"flag-ca.svg","flag":1},{"j":"メキシコ","e":"Mexico","img":"flag-mx.svg","flag":1},{"j":"ブラジル","e":"Brazil","img":"flag-br.svg","flag":1},{"j":"アルゼンチン","e":"Argentina","img":"flag-ar.svg","flag":1},{"j":"エジプト","e":"Egypt","img":"flag-eg.svg","flag":1},{"j":"ケニア","e":"Kenya","img":"flag-ke.svg","flag":1},{"j":"みなみアフリカ","e":"South Africa","img":"flag-za.svg","flag":1}]},{"g":7,"name":"いろ","en":"Colors","icon":"🎨","color":"#E1BEE7","drawn":1,"items":[{"v":{"color":"#E53935"},"j":"あか","e":"Red"},{"v":{"color":"#1E88E5"},"j":"あお","e":"Blue"},{"v":{"color":"#FDD835"},"j":"きいろ","e":"Yellow"},{"v":{"color":"#43A047"},"j":"みどり","e":"Green"},{"v":{"color":"#FB8C00"},"j":"オレンジ","e":"Orange"},{"v":{"color":"#8E24AA"},"j":"むらさき","e":"Purple"},{"v":{"color":"#F06292"},"j":"ピンク","e":"Pink"},{"v":{"color":"#8D6E63"},"j":"ちゃいろ","e":"Brown"},{"v":{"color":"#212121"},"j":"くろ","e":"Black"},{"v":{"color":"#FFFFFF"},"j":"しろ","e":"White"},{"v":{"color":"#9E9E9E"},"j":"はいいろ","e":"Gray"},{"v":{"color":"#4FC3F7"},"j":"みずいろ","e":"Light blue"}]},{"g":7,"name":"かたち","en":"Shapes","icon":"🔷","color":"#C5CAE9","drawn":1,"items":[{"v":{"shape":"circle","fill":"#EF5350"},"j":"まる","e":"Circle"},{"v":{"shape":"triangle","fill":"#42A5F5"},"j":"さんかく","e":"Triangle"},{"v":{"shape":"square","fill":"#66BB6A"},"j":"しかく","e":"Square"},{"v":{"shape":"star","fill":"#FFCA28"},"j":"ほし","e":"Star"},{"v":{"shape":"heart","fill":"#EC407A"},"j":"ハート","e":"Heart"},{"v":{"shape":"diamond","fill":"#26C6DA"},"j":"ひしがた","e":"Diamond"},{"v":{"shape":"oval","fill":"#FF7043"},"j":"だえん","e":"Oval"},{"v":{"shape":"crescent","fill":"#FFD54F"},"j":"みかづき","e":"Crescent"},{"v":{"shape":"rect","fill":"#AB47BC"},"j":"ながしかく","e":"Rectangle"},{"v":{"shape":"hexagon","fill":"#7E57C2"},"j":"ろっかっけい","e":"Hexagon"}]}];
-const KANA={"hira":{"label":"ひらがな","sets":[{"key":"s","name":"あ〜ん","rows":[["あ","い","う","え","お"],["か","き","く","け","こ"],["さ","し","す","せ","そ"],["た","ち","つ","て","と"],["な","に","ぬ","ね","の"],["は","ひ","ふ","へ","ほ"],["ま","み","む","め","も"],["や","","ゆ","","よ"],["ら","り","る","れ","ろ"],["わ","","を","","ん"]]},{"key":"d","name":"が〜ぽ","rows":[["が","ぎ","ぐ","げ","ご"],["ざ","じ","ず","ぜ","ぞ"],["だ","","","で","ど"],["ば","び","ぶ","べ","ぼ"],["ぱ","ぴ","ぷ","ぺ","ぽ"]]}]},"kata":{"label":"カタカナ","sets":[{"key":"s","name":"ア〜ン","rows":[["ア","イ","ウ","エ","オ"],["カ","キ","ク","ケ","コ"],["サ","シ","ス","セ","ソ"],["タ","チ","ツ","テ","ト"],["ナ","ニ","ヌ","ネ","ノ"],["ハ","ヒ","フ","ヘ","ホ"],["マ","ミ","ム","メ","モ"],["ヤ","","ユ","","ヨ"],["ラ","リ","ル","レ","ロ"],["ワ","","","","ン"]]},{"key":"d","name":"ガ〜ポ","rows":[["ガ","ギ","グ","ゲ","ゴ"],["ザ","ジ","ズ","ゼ","ゾ"],["ダ","","","デ","ド"],["バ","ビ","ブ","ベ","ボ"],["パ","ピ","プ","ペ","ポ"]]}]},"W":{"あ":{"w":"あひる","h":0,"img":"card-ahiru.jpg","e":"Duck"},"い":{"w":"いぬ","h":0,"img":"card-inu.jpg","e":"Dog"},"う":{"w":"うさぎ","h":0,"img":"card-usagi.jpg","e":"Rabbit"},"え":{"w":"えんぴつ","h":0,"img":"card-enpitsu.jpg","e":"Pencil"},"お":{"w":"おにぎり","h":0,"img":"card-onigiri.jpg","e":"Rice ball"},"か":{"w":"かさ","h":0,"img":"card-kasa.jpg","e":"Umbrella"},"き":{"w":"きりん","h":0,"img":"card-kirin.jpg","e":"Giraffe"},"く":{"w":"くじら","h":0,"img":"card-kujira.jpg","e":"Whale"},"け":{"w":"けんだま","h":0,"img":"card-kendama.jpg","e":"Kendama"},"こ":{"w":"こいのぼり","h":0,"img":"card-koinobori.jpg","e":"Carp streamer"},"さ":{"w":"さくらんぼ","h":0,"img":"card-sakuranbo.jpg","e":"Cherries"},"し":{"w":"しまうま","h":0,"img":"card-shimauma.jpg","e":"Zebra"},"す":{"w":"すずめ","h":0,"img":"card-suzume.jpg","e":"Sparrow"},"せ":{"w":"せみ","h":0,"img":"card-semi.jpg","e":"Cicada"},"そ":{"w":"みそしる","h":1,"img":"card-misoshiru.jpg","e":"Miso soup"},"た":{"w":"たまご","h":0,"img":"card-tamago.jpg","e":"Egg"},"ち":{"w":"いちご","h":1,"img":"card-ichigo.jpg","e":"Strawberry"},"つ":{"w":"つき","h":0,"img":"card-tsuki.jpg","e":"Moon"},"て":{"w":"てんとうむし","h":0,"img":"card-tentoumushi.jpg","e":"Ladybug"},"と":{"w":"とけい","h":0,"img":"card-tokei.jpg","e":"Clock"},"な":{"w":"なす","h":0,"img":"card-nasu.jpg","e":"Eggplant"},"に":{"w":"にわとり","h":0,"img":"card-niwatori.jpg","e":"Chicken"},"ぬ":{"w":"いぬ","h":1,"img":"card-inu.jpg","e":"Dog"},"ね":{"w":"ねこ","h":0,"img":"card-neko.jpg","e":"Cat"},"の":{"w":"きのこ","h":1,"img":"card-kinoko.jpg","e":"Mushroom"},"は":{"w":"はさみ","h":0,"img":"card-hasami.jpg","e":"Scissors"},"ひ":{"w":"ひこうき","h":0,"img":"card-hikouki.jpg","e":"Airplane"},"ふ":{"w":"ふうりん","h":0,"img":"card-fuurin.jpg","e":"Wind chime"},"へ":{"w":"へりこぷたー","h":0,"img":"card-herikoputaa.jpg","e":"Helicopter"},"ほ":{"w":"ほうれんそう","h":0,"img":"card-hourensou.jpg","e":"Spinach"},"ま":{"w":"まねきねこ","h":0,"img":"card-manekineko.jpg","e":"Maneki-neko"},"み":{"w":"みつばち","h":0,"img":"card-mitsubachi.jpg","e":"Bee"},"む":{"w":"かぶとむし","h":3,"img":"card-kabutomushi.jpg","e":"Rhinoceros beetle"},"め":{"w":"めがね","h":0,"img":"card-megane.jpg","e":"Glasses"},"も":{"w":"もみじ","h":0,"img":"card-momiji.jpg","e":"Maple leaf"},"や":{"w":"やぎ","h":0,"img":"card-yagi.jpg","e":"Goat"},"ゆ":{"w":"ゆきだるま","h":0,"img":"card-yukidaruma.jpg","e":"Snowman"},"よ":{"w":"ひよこ","h":1,"img":"card-hiyoko.jpg","e":"Chick"},"ら":{"w":"らくだ","h":0,"img":"card-rakuda.jpg","e":"Camel"},"り":{"w":"りんご","h":0,"img":"card-ringo.jpg","e":"Apple"},"る":{"w":"くるま","h":1,"img":"card-kuruma.jpg","e":"Car"},"れ":{"w":"れんこん","h":0,"img":"card-renkon.jpg","e":"Lotus root"},"ろ":{"w":"ふくろう","h":2,"img":"card-fukurou.jpg","e":"Owl"},"わ":{"w":"わし","h":0,"img":"card-washi.jpg","e":"Eagle"},"を":{"w":"りんごを たべる","h":3,"img":"card-ringo.jpg","e":"Eat an apple","say":"を。 りんごを たべる。"},"ん":{"w":"みかん","h":2,"img":"card-mikan.jpg","e":"Mandarin"},"が":{"w":"かがみもち","h":1,"img":"card-kagamimochi.jpg","e":"Kagami mochi"},"ぎ":{"w":"うさぎ","h":2,"img":"card-usagi.jpg","e":"Rabbit"},"ぐ":{"w":"どんぐり","h":2,"img":"card-donguri.jpg","e":"Acorn"},"げ":{"w":"げた","h":0,"img":"card-geta.jpg","e":"Geta"},"ご":{"w":"ごはん","h":0,"img":"card-gohan.jpg","e":"Rice"},"ざ":{"w":"ぎょうざ","h":3,"img":"card-gyouza.jpg","e":"Gyoza"},"じ":{"w":"じてんしゃ","h":0,"img":"card-jitensha.jpg","e":"Bicycle"},"ず":{"w":"すずめ","h":1,"img":"card-suzume.jpg","e":"Sparrow"},"ぜ":{"w":"かぜ","h":1,"e":"Wind"},"ぞ":{"w":"ぞう","h":0,"img":"card-zou.jpg","e":"Elephant"},"だ":{"w":"だるま","h":0,"img":"card-daruma.jpg","e":"Daruma"},"で":{"w":"でんしゃ","h":0,"img":"card-densha.jpg","e":"Train"},"ど":{"w":"どんぐり","h":0,"img":"card-donguri.jpg","e":"Acorn"},"ば":{"w":"ばった","h":0,"img":"card-batta.jpg","e":"Grasshopper"},"び":{"w":"えび","h":1,"img":"card-ebi.jpg","e":"Shrimp"},"ぶ":{"w":"ぶどう","h":0,"img":"card-budou.jpg","e":"Grapes"},"べ":{"w":"きゃべつ","h":2,"img":"card-kyabetsu.jpg","e":"Cabbage"},"ぼ":{"w":"ぼうし","h":0,"img":"card-boushi.jpg","e":"Hat"},"ぱ":{"w":"らっぱ","h":2,"img":"card-toranpetto.jpg","e":"Trumpet"},"ぴ":{"w":"ぴよぴよ","h":0,"img":"card-hiyoko.jpg","e":"Cheep cheep"},"ぷ":{"w":"ぷりん","h":0,"img":"card-purin.jpg","e":"Pudding"},"ぺ":{"w":"ぺんぎん","h":0,"img":"card-pengin.jpg","e":"Penguin"},"ぽ":{"w":"たんぽぽ","h":2,"img":"card-tanpopo.jpg","e":"Dandelion"},"ア":{"w":"アイスクリーム","h":0,"img":"card-aisu.jpg","e":"Ice cream"},"イ":{"w":"インコ","h":0,"img":"card-inko.jpg","e":"Budgerigar"},"ウ":{"w":"ウサギ","h":0,"img":"card-usagi.jpg","e":"Rabbit"},"エ":{"w":"エビ","h":0,"img":"card-ebi.jpg","e":"Shrimp"},"オ":{"w":"オウム","h":0,"img":"card-oumu.jpg","e":"Parrot"},"カ":{"w":"カピバラ","h":0,"img":"card-kapibara.jpg","e":"Capybara"},"キ":{"w":"キリン","h":0,"img":"card-kirin.jpg","e":"Giraffe"},"ク":{"w":"クジャク","h":0,"img":"card-kujaku.jpg","e":"Peacock"},"ケ":{"w":"ケーキ","h":0,"img":"card-keeki.jpg","e":"Cake"},"コ":{"w":"コアラ","h":0,"img":"card-koara.jpg","e":"Koala"},"サ":{"w":"サンドイッチ","h":0,"img":"card-sandoicchi.jpg","e":"Sandwich"},"シ":{"w":"シマウマ","h":0,"img":"card-shimauma.jpg","e":"Zebra"},"ス":{"w":"スプーン","h":0,"img":"card-supuun.jpg","e":"Spoon"},"セ":{"w":"セミ","h":0,"img":"card-semi.jpg","e":"Cicada"},"ソ":{"w":"ソフトクリーム","h":0,"img":"card-aisu.jpg","e":"Soft serve"},"タ":{"w":"タクシー","h":0,"img":"card-takushii.jpg","e":"Taxi"},"チ":{"w":"チーター","h":0,"img":"card-chiitaa.jpg","e":"Cheetah"},"ツ":{"w":"ツバメ","h":0,"img":"card-tsubame.jpg","e":"Swallow"},"テ":{"w":"テレビ","h":0,"img":"card-terebi.jpg","e":"Television"},"ト":{"w":"トマト","h":0,"img":"card-tomato.jpg","e":"Tomato"},"ナ":{"w":"バナナ","h":1,"img":"card-banana.jpg","e":"Banana"},"ニ":{"w":"ニワトリ","h":0,"img":"card-niwatori.jpg","e":"Chicken"},"ヌ":{"w":"イヌ","h":1,"img":"card-inu.jpg","e":"Dog"},"ネ":{"w":"ネコ","h":0,"img":"card-neko.jpg","e":"Cat"},"ノ":{"w":"ナマケモノ","h":4,"img":"card-namakemono.jpg","e":"Sloth"},"ハ":{"w":"ハムスター","h":0,"img":"card-hamster.jpg","e":"Hamster"},"ヒ":{"w":"ヒヨコ","h":0,"img":"card-hiyoko.jpg","e":"Chick"},"フ":{"w":"フラミンゴ","h":0,"img":"card-furamingo.jpg","e":"Flamingo"},"ヘ":{"w":"ヘリコプター","h":0,"img":"card-herikoputaa.jpg","e":"Helicopter"},"ホ":{"w":"ホウレンソウ","h":0,"img":"card-hourensou.jpg","e":"Spinach"},"マ":{"w":"マンゴー","h":0,"img":"card-mangoo.jpg","e":"Mango"},"ミ":{"w":"ミーアキャット","h":0,"img":"card-miiakyatto.jpg","e":"Meerkat"},"ム":{"w":"ダンゴムシ","h":3,"img":"card-dangomushi.jpg","e":"Pill bug"},"メ":{"w":"メジロ","h":0,"img":"card-mejiro.jpg","e":"White-eye"},"モ":{"w":"モルモット","h":0,"img":"card-morumotto.jpg","e":"Guinea pig"},"ヤ":{"w":"ヤギ","h":0,"img":"card-yagi.jpg","e":"Goat"},"ユ":{"w":"ユキダルマ","h":0,"img":"card-yukidaruma.jpg","e":"Snowman"},"ヨ":{"w":"クレヨン","h":2,"img":"card-kureyon.jpg","e":"Crayons"},"ラ":{"w":"ライオン","h":0,"img":"card-raion.jpg","e":"Lion"},"リ":{"w":"リス","h":0,"img":"card-risu.jpg","e":"Squirrel"},"ル":{"w":"ボール","h":2,"img":"card-booru.jpg","e":"Ball"},"レ":{"w":"レモン","h":0,"img":"card-remon.jpg","e":"Lemon"},"ロ":{"w":"ロバ","h":0,"img":"card-roba.jpg","e":"Donkey"},"ワ":{"w":"ワシ","h":0,"img":"card-washi.jpg","e":"Eagle"},"ン":{"w":"パン","h":1,"img":"card-pan.jpg","e":"Bread"},"ガ":{"w":"カンガルー","h":2,"img":"card-kangaruu.jpg","e":"Kangaroo"},"ギ":{"w":"ギター","h":0,"img":"card-gitaa.jpg","e":"Guitar"},"グ":{"w":"ハンバーグ","h":4,"img":"card-hanbaagu.jpg","e":"Hamburg steak"},"ゲ":{"w":"スパゲッティ","h":2,"img":"card-supagetti.jpg","e":"Spaghetti"},"ゴ":{"w":"ゴリラ","h":0,"img":"card-gorira.jpg","e":"Gorilla"},"ザ":{"w":"ザリガニ","h":0,"img":"card-zarigani.jpg","e":"Crayfish"},"ジ":{"w":"ジンベエザメ","h":0,"img":"card-jinbeezame.jpg","e":"Whale shark"},"ズ":{"w":"ハリネズミ","h":3,"img":"card-harinezumi.jpg","e":"Hedgehog"},"ゼ":{"w":"ゼリー","h":0,"e":"Jelly"},"ゾ":{"w":"ゾウ","h":0,"img":"card-zou.jpg","e":"Elephant"},"ダ":{"w":"ダチョウ","h":0,"img":"card-dachou.jpg","e":"Ostrich"},"デ":{"w":"デンシャ","h":0,"img":"card-densha.jpg","e":"Train"},"ド":{"w":"ドーナツ","h":0,"img":"card-doonatsu.jpg","e":"Doughnut"},"バ":{"w":"バス","h":0,"img":"card-basu.jpg","e":"Bus"},"ビ":{"w":"エビ","h":1,"img":"card-ebi.jpg","e":"Shrimp"},"ブ":{"w":"ブロッコリー","h":0,"img":"card-burokkorii.jpg","e":"Broccoli"},"ベ":{"w":"キャベツ","h":2,"img":"card-kyabetsu.jpg","e":"Cabbage"},"ボ":{"w":"ボール","h":0,"img":"card-booru.jpg","e":"Ball"},"パ":{"w":"パンダ","h":0,"img":"card-panda.jpg","e":"Panda"},"ピ":{"w":"ピアノ","h":0,"img":"card-piano.jpg","e":"Piano"},"プ":{"w":"プリン","h":0,"img":"card-purin.jpg","e":"Pudding"},"ペ":{"w":"ペンギン","h":0,"img":"card-pengin.jpg","e":"Penguin"},"ポ":{"w":"タンポポ","h":2,"img":"card-tanpopo.jpg","e":"Dandelion"}}};
+const KANA={"hira":{"label":"ひらがな","sets":[{"key":"s","name":"あ〜ん","rows":[["あ","い","う","え","お"],["か","き","く","け","こ"],["さ","し","す","せ","そ"],["た","ち","つ","て","と"],["な","に","ぬ","ね","の"],["は","ひ","ふ","へ","ほ"],["ま","み","む","め","も"],["や","","ゆ","","よ"],["ら","り","る","れ","ろ"],["わ","","を","","ん"]]},{"key":"d","name":"が〜ぽ","rows":[["が","ぎ","ぐ","げ","ご"],["ざ","じ","ず","ぜ","ぞ"],["だ","","","で","ど"],["ば","び","ぶ","べ","ぼ"],["ぱ","ぴ","ぷ","ぺ","ぽ"]]}]},"kata":{"label":"カタカナ","sets":[{"key":"s","name":"ア〜ン","rows":[["ア","イ","ウ","エ","オ"],["カ","キ","ク","ケ","コ"],["サ","シ","ス","セ","ソ"],["タ","チ","ツ","テ","ト"],["ナ","ニ","ヌ","ネ","ノ"],["ハ","ヒ","フ","ヘ","ホ"],["マ","ミ","ム","メ","モ"],["ヤ","","ユ","","ヨ"],["ラ","リ","ル","レ","ロ"],["ワ","","","","ン"]]},{"key":"d","name":"ガ〜ポ","rows":[["ガ","ギ","グ","ゲ","ゴ"],["ザ","ジ","ズ","ゼ","ゾ"],["ダ","","","デ","ド"],["バ","ビ","ブ","ベ","ボ"],["パ","ピ","プ","ペ","ポ"]]}]},"W":{"あ":{"w":"あひる","h":0,"img":"card-ahiru.jpg","e":"Duck"},"い":{"w":"いぬ","h":0,"img":"card-inu.jpg","e":"Dog"},"う":{"w":"うさぎ","h":0,"img":"card-usagi.jpg","e":"Rabbit"},"え":{"w":"えんぴつ","h":0,"img":"card-enpitsu.jpg","e":"Pencil"},"お":{"w":"おにぎり","h":0,"img":"card-onigiri.jpg","e":"Rice ball"},"か":{"w":"かさ","h":0,"img":"card-kasa.jpg","e":"Umbrella"},"き":{"w":"きりん","h":0,"img":"card-kirin.jpg","e":"Giraffe"},"く":{"w":"くじら","h":0,"img":"card-kujira.jpg","e":"Whale"},"け":{"w":"けんだま","h":0,"img":"card-kendama.jpg","e":"Kendama"},"こ":{"w":"こいのぼり","h":0,"img":"card-koinobori.jpg","e":"Carp streamer"},"さ":{"w":"さくらんぼ","h":0,"img":"card-sakuranbo.jpg","e":"Cherries"},"し":{"w":"しまうま","h":0,"img":"card-shimauma.jpg","e":"Zebra"},"す":{"w":"すずめ","h":0,"img":"card-suzume.jpg","e":"Sparrow"},"せ":{"w":"せみ","h":0,"img":"card-semi.jpg","e":"Cicada"},"そ":{"w":"みそしる","h":1,"img":"card-misoshiru.jpg","e":"Miso soup"},"た":{"w":"たまご","h":0,"img":"card-tamago.jpg","e":"Egg"},"ち":{"w":"いちご","h":1,"img":"card-ichigo.jpg","e":"Strawberry"},"つ":{"w":"つき","h":0,"img":"card-tsuki.jpg","e":"Moon"},"て":{"w":"てんとうむし","h":0,"img":"card-tentoumushi.jpg","e":"Ladybug"},"と":{"w":"とけい","h":0,"img":"card-tokei.jpg","e":"Clock"},"な":{"w":"なす","h":0,"img":"card-nasu.jpg","e":"Eggplant"},"に":{"w":"にわとり","h":0,"img":"card-niwatori.jpg","e":"Chicken"},"ぬ":{"w":"いぬ","h":1,"img":"card-inu.jpg","e":"Dog"},"ね":{"w":"ねこ","h":0,"img":"card-neko.jpg","e":"Cat"},"の":{"w":"きのこ","h":1,"img":"card-kinoko.jpg","e":"Mushroom"},"は":{"w":"はさみ","h":0,"img":"card-hasami.jpg","e":"Scissors"},"ひ":{"w":"ひこうき","h":0,"img":"card-hikouki.jpg","e":"Airplane"},"ふ":{"w":"ふうりん","h":0,"img":"card-fuurin.jpg","e":"Wind chime"},"へ":{"w":"へりこぷたー","h":0,"img":"card-herikoputaa.jpg","e":"Helicopter"},"ほ":{"w":"ほうれんそう","h":0,"img":"card-hourensou.jpg","e":"Spinach"},"ま":{"w":"まねきねこ","h":0,"img":"card-manekineko.jpg","e":"Maneki-neko"},"み":{"w":"みつばち","h":0,"img":"card-mitsubachi.jpg","e":"Bee"},"む":{"w":"かぶとむし","h":3,"img":"card-kabutomushi.jpg","e":"Rhinoceros beetle"},"め":{"w":"めがね","h":0,"img":"card-megane.jpg","e":"Glasses"},"も":{"w":"もみじ","h":0,"img":"card-momiji.jpg","e":"Maple leaf"},"や":{"w":"やぎ","h":0,"img":"card-yagi.jpg","e":"Goat"},"ゆ":{"w":"ゆきだるま","h":0,"img":"card-yukidaruma.jpg","e":"Snowman"},"よ":{"w":"ひよこ","h":1,"img":"card-hiyoko.jpg","e":"Chick"},"ら":{"w":"らくだ","h":0,"img":"card-rakuda.jpg","e":"Camel"},"り":{"w":"りんご","h":0,"img":"card-ringo.jpg","e":"Apple"},"る":{"w":"くるま","h":1,"img":"card-kuruma.jpg","e":"Car"},"れ":{"w":"れんこん","h":0,"img":"card-renkon.jpg","e":"Lotus root"},"ろ":{"w":"ふくろう","h":2,"img":"card-fukurou.jpg","e":"Owl"},"わ":{"w":"わし","h":0,"img":"card-washi.jpg","e":"Eagle"},"を":{"w":"りんごを たべる","h":3,"img":"card-ringo.jpg","e":"Eat an apple","say":"を。 りんごを たべる。"},"ん":{"w":"みかん","h":2,"img":"card-mikan.jpg","e":"Mandarin"},"が":{"w":"かがみもち","h":1,"img":"card-kagamimochi.jpg","e":"Kagami mochi"},"ぎ":{"w":"うさぎ","h":2,"img":"card-usagi.jpg","e":"Rabbit"},"ぐ":{"w":"どんぐり","h":2,"img":"card-donguri.jpg","e":"Acorn"},"げ":{"w":"げた","h":0,"img":"card-geta.jpg","e":"Geta"},"ご":{"w":"ごはん","h":0,"img":"card-gohan.jpg","e":"Rice"},"ざ":{"w":"ぎょうざ","h":3,"img":"card-gyouza.jpg","e":"Gyoza"},"じ":{"w":"じてんしゃ","h":0,"img":"card-jitensha.jpg","e":"Bicycle"},"ず":{"w":"すずめ","h":1,"img":"card-suzume.jpg","e":"Sparrow"},"ぜ":{"w":"かぜ","h":1,"e":"Wind"},"ぞ":{"w":"ぞう","h":0,"img":"card-zou.jpg","e":"Elephant"},"だ":{"w":"だるま","h":0,"img":"card-daruma.jpg","e":"Daruma"},"で":{"w":"でんしゃ","h":0,"img":"card-densha.jpg","e":"Train"},"ど":{"w":"どんぐり","h":0,"img":"card-donguri.jpg","e":"Acorn"},"ば":{"w":"ばった","h":0,"img":"card-batta.jpg","e":"Grasshopper"},"び":{"w":"えび","h":1,"img":"card-ebi.jpg","e":"Shrimp"},"ぶ":{"w":"ぶどう","h":0,"img":"card-budou.jpg","e":"Grapes"},"べ":{"w":"きゃべつ","h":2,"img":"card-kyabetsu.jpg","e":"Cabbage"},"ぼ":{"w":"ぼうし","h":0,"img":"card-boushi.jpg","e":"Hat"},"ぱ":{"w":"らっぱ","h":2,"img":"card-toranpetto.jpg","e":"Trumpet"},"ぴ":{"w":"ぴよぴよ","h":0,"img":"card-hiyoko.jpg","e":"Cheep cheep"},"ぷ":{"w":"ぷりん","h":0,"img":"card-purin.jpg","e":"Pudding"},"ぺ":{"w":"ぺんぎん","h":0,"img":"card-pengin.jpg","e":"Penguin"},"ぽ":{"w":"たんぽぽ","h":2,"img":"card-tanpopo.jpg","e":"Dandelion"},"ア":{"w":"アイスクリーム","h":0,"img":"card-aisu.jpg","e":"Ice cream"},"イ":{"w":"インコ","h":0,"img":"card-inko.jpg","e":"Budgerigar"},"ウ":{"w":"ウサギ","h":0,"img":"card-usagi.jpg","e":"Rabbit"},"エ":{"w":"エビ","h":0,"img":"card-ebi.jpg","e":"Shrimp"},"オ":{"w":"オウム","h":0,"img":"card-oumu.jpg","e":"Parrot"},"カ":{"w":"カピバラ","h":0,"img":"card-kapibara.jpg","e":"Capybara"},"キ":{"w":"キリン","h":0,"img":"card-kirin.jpg","e":"Giraffe"},"ク":{"w":"クジャク","h":0,"img":"card-kujaku.jpg","e":"Peacock"},"ケ":{"w":"ケーキ","h":0,"img":"card-keeki.jpg","e":"Cake"},"コ":{"w":"コアラ","h":0,"img":"card-koara.jpg","e":"Koala"},"サ":{"w":"サンドイッチ","h":0,"img":"card-sandoicchi.jpg","e":"Sandwich"},"シ":{"w":"シマウマ","h":0,"img":"card-shimauma.jpg","e":"Zebra"},"ス":{"w":"スプーン","h":0,"img":"card-supuun.jpg","e":"Spoon"},"セ":{"w":"セミ","h":0,"img":"card-semi.jpg","e":"Cicada"},"ソ":{"w":"ソフトクリーム","h":0,"img":"card-aisu.jpg","e":"Soft serve"},"タ":{"w":"タクシー","h":0,"img":"card-takushii.jpg","e":"Taxi"},"チ":{"w":"チーター","h":0,"img":"card-chiitaa.jpg","e":"Cheetah"},"ツ":{"w":"ツバメ","h":0,"img":"card-tsubame.jpg","e":"Swallow"},"テ":{"w":"テレビ","h":0,"img":"card-terebi.jpg","e":"Television"},"ト":{"w":"トマト","h":0,"img":"card-tomato.jpg","e":"Tomato"},"ナ":{"w":"バナナ","h":1,"img":"card-banana.jpg","e":"Banana"},"ニ":{"w":"ニワトリ","h":0,"img":"card-niwatori.jpg","e":"Chicken"},"ヌ":{"w":"イヌ","h":1,"img":"card-inu.jpg","e":"Dog"},"ネ":{"w":"ネコ","h":0,"img":"card-neko.jpg","e":"Cat"},"ノ":{"w":"ナマケモノ","h":4,"img":"card-namakemono.jpg","e":"Sloth"},"ハ":{"w":"ハムスター","h":0,"img":"card-hamster.jpg","e":"Hamster"},"ヒ":{"w":"ヒヨコ","h":0,"img":"card-hiyoko.jpg","e":"Chick"},"フ":{"w":"フラミンゴ","h":0,"img":"card-furamingo.jpg","e":"Flamingo"},"ヘ":{"w":"ヘリコプター","h":0,"img":"card-herikoputaa.jpg","e":"Helicopter"},"ホ":{"w":"ホウレンソウ","h":0,"img":"card-hourensou.jpg","e":"Spinach"},"マ":{"w":"マンゴー","h":0,"img":"card-mangoo.jpg","e":"Mango"},"ミ":{"w":"ミーアキャット","h":0,"img":"card-miiakyatto.jpg","e":"Meerkat"},"ム":{"w":"ダンゴムシ","h":3,"img":"card-dangomushi.jpg","e":"Pill bug"},"メ":{"w":"メジロ","h":0,"img":"card-mejiro.jpg","e":"White-eye"},"モ":{"w":"モルモット","h":0,"img":"card-morumotto.jpg","e":"Guinea pig"},"ヤ":{"w":"ヤギ","h":0,"img":"card-yagi.jpg","e":"Goat"},"ユ":{"w":"ユキダルマ","h":0,"img":"card-yukidaruma.jpg","e":"Snowman"},"ヨ":{"w":"クレヨン","h":2,"img":"card-kureyon.jpg","e":"Crayons"},"ラ":{"w":"ライオン","h":0,"img":"card-raion.jpg","e":"Lion"},"リ":{"w":"リス","h":0,"img":"card-risu.jpg","e":"Squirrel"},"ル":{"w":"ボール","h":2,"img":"card-booru.jpg","e":"Ball"},"レ":{"w":"レモン","h":0,"img":"card-remon.jpg","e":"Lemon"},"ロ":{"w":"ロバ","h":0,"img":"card-roba.jpg","e":"Donkey"},"ワ":{"w":"ワシ","h":0,"img":"card-washi.jpg","e":"Eagle"},"ン":{"w":"パン","h":1,"img":"card-pan.jpg","e":"Bread"},"ガ":{"w":"カンガルー","h":2,"img":"card-kangaruu.jpg","e":"Kangaroo"},"ギ":{"w":"ギター","h":0,"img":"card-gitaa.jpg","e":"Guitar"},"グ":{"w":"ハンバーグ","h":4,"img":"card-hanbaagu.jpg","e":"Hamburg steak"},"ゲ":{"w":"スパゲッティ","h":2,"img":"card-supagetti.jpg","e":"Spaghetti"},"ゴ":{"w":"ゴリラ","h":0,"img":"card-gorira.jpg","e":"Gorilla"},"ザ":{"w":"ザリガニ","h":0,"img":"card-zarigani.jpg","e":"Crayfish"},"ジ":{"w":"ジンベエザメ","h":0,"img":"card-jinbeezame.jpg","e":"Whale shark"},"ズ":{"w":"ハリネズミ","h":3,"img":"card-harinezumi.jpg","e":"Hedgehog"},"ゼ":{"w":"ゼリー","h":0,"e":"Jelly"},"ゾ":{"w":"ゾウ","h":0,"img":"card-zou.jpg","e":"Elephant"},"ダ":{"w":"ダチョウ","h":0,"img":"card-dachou.jpg","e":"Ostrich"},"デ":{"w":"デンシャ","h":0,"img":"card-densha.jpg","e":"Train"},"ド":{"w":"ドーナツ","h":0,"img":"card-doonatsu.jpg","e":"Doughnut"},"バ":{"w":"バス","h":0,"img":"card-basu.jpg","e":"Bus"},"ビ":{"w":"エビ","h":1,"img":"card-ebi.jpg","e":"Shrimp"},"ブ":{"w":"ブロッコリー","h":0,"img":"card-burokkorii.jpg","e":"Broccoli"},"ベ":{"w":"キャベツ","h":2,"img":"card-kyabetsu.jpg","e":"Cabbage"},"ボ":{"w":"ボール","h":0,"img":"card-booru.jpg","e":"Ball"},"パ":{"w":"パンダ","h":0,"img":"card-panda.jpg","e":"Panda"},"ピ":{"w":"ピアノ","h":0,"img":"card-piano.jpg","e":"Piano"},"プ":{"w":"プリン","h":0,"img":"card-purin.jpg","e":"Pudding"},"ペ":{"w":"ペンギン","h":0,"img":"card-pengin.jpg","e":"Penguin"},"ポ":{"w":"タンポポ","h":2,"img":"card-tanpopo.jpg","e":"Dandelion"}},"WB":{"hira":[["いぬ","card-inu.jpg","Dog"],["ねこ","card-neko.jpg","Cat"],["うさぎ","card-usagi.jpg","Rabbit"],["うし","card-ushi.jpg","Cow"],["ぶた","card-buta.jpg","Pig"],["ひつじ","card-hitsuji.jpg","Sheep"],["うま","card-uma.jpg","Horse"],["やぎ","card-yagi.jpg","Goat"],["ひよこ","card-hiyoko.jpg","Chick"],["あひる","card-ahiru.jpg","Duck"],["ねずみ","card-nezumi.jpg","Mouse"],["とら","card-tora.jpg","Tiger"],["ぞう","card-zou.jpg","Elephant"],["きりん","card-kirin.jpg","Giraffe"],["かば","card-kaba.jpg","Hippo"],["さい","card-sai.jpg","Rhino"],["らくだ","card-rakuda.jpg","Camel"],["おさる","card-saru.jpg","Monkey"],["きつね","card-kitsune.jpg","Fox"],["しか","card-shika.jpg","Deer"],["りす","card-risu.jpg","Squirrel"],["すずめ","card-suzume.jpg","Sparrow"],["はと","card-hato.jpg","Pigeon"],["からす","card-karasu.jpg","Crow"],["わし","card-washi.jpg","Eagle"],["つる","card-tsuru.jpg","Crane"],["いるか","card-iruka.jpg","Dolphin"],["くじら","card-kujira.jpg","Whale"],["さめ","card-same.jpg","Shark"],["たこ","card-tako.jpg","Octopus"],["えび","card-ebi.jpg","Shrimp"],["ひとで","card-hitode.jpg","Starfish"],["とんぼ","card-tonbo.jpg","Dragonfly"],["せみ","card-semi.jpg","Cicada"],["あり","card-ari.jpg","Ant"],["りんご","card-ringo.jpg","Apple"],["みかん","card-mikan.jpg","Mandarin"],["いちご","card-ichigo.jpg","Strawberry"],["ぶどう","card-budou.jpg","Grapes"],["なし","card-nashi.jpg","Pear"],["かき","card-kaki.jpg","Persimmon"],["くり","card-kuri.jpg","Chestnut"],["なす","card-nasu.jpg","Eggplant"],["ごはん","card-gohan.jpg","Rice"],["うどん","card-udon.jpg","Udon"],["おすし","card-osushi.jpg","Sushi"],["たまご","card-tamago.jpg","Egg"],["とうふ","card-toufu.jpg","Tofu"],["だんご","card-dango.jpg","Dango"],["くるま","card-kuruma.jpg","Car"],["おはし","card-ohashi.jpg","Chopsticks"],["おさら","card-osara.jpg","Plate"],["いす","card-isu.jpg","Chair"],["とけい","card-tokei.jpg","Clock"],["でんわ","card-denwa.jpg","Telephone"],["かぎ","card-kagi.jpg","Key"],["くつ","card-kutsu.jpg","Shoes"],["ぼうし","card-boushi.jpg","Hat"],["かさ","card-kasa.jpg","Umbrella"],["めがね","card-megane.jpg","Glasses"],["つみき","card-tsumiki.jpg","Blocks"],["はさみ","card-hasami.jpg","Scissors"],["さくら","card-sakura.jpg","Cherry blossom"],["もみじ","card-momiji.jpg","Maple leaf"],["きのこ","card-kinoko.jpg","Mushroom"],["つき","card-tsuki.jpg","Moon"],["だるま","card-daruma.jpg","Daruma"],["かぶと","card-kabuto.jpg","Kabuto helmet"],["うちわ","card-uchiwa.jpg","Fan"],["げた","card-geta.jpg","Geta"],["たいこ","card-taiko.jpg","Drum"]],"kata":[["インコ","card-inko.jpg","Budgerigar"],["ロバ","card-roba.jpg","Donkey"],["ゴリラ","card-gorira.jpg","Gorilla"],["パンダ","card-panda.jpg","Panda"],["コアラ","card-koara.jpg","Koala"],["バク","card-baku.jpg","Tapir"],["オウム","card-oumu.jpg","Parrot"],["ツバメ","card-tsubame.jpg","Swallow"],["メジロ","card-mejiro.jpg","White-eye"],["アシカ","card-ashika.jpg","Sea lion"],["エイ","card-ei.jpg","Ray"],["カエル","card-kaeru.jpg","Frog"],["クモ","card-kumo.jpg","Spider"],["バナナ","card-banana.jpg","Banana"],["レモン","card-remon.jpg","Lemon"],["キウイ","card-kiui.jpg","Kiwifruit"],["トマト","card-tomato.jpg","Tomato"],["レタス","card-retasu.jpg","Lettuce"],["パン","card-pan.jpg","Bread"],["ピザ","card-piza.jpg","Pizza"],["プリン","card-purin.jpg","Pudding"],["バス","card-basu.jpg","Bus"],["バイク","card-baiku.jpg","Motorcycle"],["タオル","card-taoru.jpg","Towel"],["テレビ","card-terebi.jpg","Television"],["ピアノ","card-piano.jpg","Piano"],["イヌ","card-inu.jpg","Dog"],["ネコ","card-neko.jpg","Cat"],["ウサギ","card-usagi.jpg","Rabbit"],["ウシ","card-ushi.jpg","Cow"],["ブタ","card-buta.jpg","Pig"],["ヒツジ","card-hitsuji.jpg","Sheep"],["ウマ","card-uma.jpg","Horse"],["ヤギ","card-yagi.jpg","Goat"],["ヒヨコ","card-hiyoko.jpg","Chick"],["アヒル","card-ahiru.jpg","Duck"],["ネズミ","card-nezumi.jpg","Mouse"],["トラ","card-tora.jpg","Tiger"],["ゾウ","card-zou.jpg","Elephant"],["キリン","card-kirin.jpg","Giraffe"],["カバ","card-kaba.jpg","Hippo"],["サイ","card-sai.jpg","Rhino"],["ラクダ","card-rakuda.jpg","Camel"],["キツネ","card-kitsune.jpg","Fox"],["シカ","card-shika.jpg","Deer"],["リス","card-risu.jpg","Squirrel"],["スズメ","card-suzume.jpg","Sparrow"],["ハト","card-hato.jpg","Pigeon"],["カラス","card-karasu.jpg","Crow"],["ワシ","card-washi.jpg","Eagle"],["ツル","card-tsuru.jpg","Crane"],["イルカ","card-iruka.jpg","Dolphin"],["クジラ","card-kujira.jpg","Whale"],["サメ","card-same.jpg","Shark"],["タコ","card-tako.jpg","Octopus"],["エビ","card-ebi.jpg","Shrimp"],["ヒトデ","card-hitode.jpg","Starfish"],["トンボ","card-tonbo.jpg","Dragonfly"],["セミ","card-semi.jpg","Cicada"],["アリ","card-ari.jpg","Ant"]]}};
 </script>
 <script>
 const $=s=>document.querySelector(s);
@@ -822,11 +999,11 @@ document.addEventListener('keydown',e=>{
   }else if(kflash.classList.contains('show')){
     if(e.key==='ArrowRight'||e.key===' '||e.key==='Enter'){e.preventDefault();kfTap();}
     else if(e.key==='ArrowLeft')kfPrev();else if(e.key==='Escape')kToMenu();
-  }else if(e.key==='Escape'&&(kquiz.classList.contains('show')||ktrace.classList.contains('show')||kbook.classList.contains('show')))kToMenu();
+  }else if(e.key==='Escape'&&[kquiz,ktrace,kbook,kmem,kpeek,kwb,kgacha].some(x=>x.classList.contains('show')))kToMenu();
   else if(e.key==='Escape'&&kmenu.classList.contains('show'))$('#kmBack').click();
   else if(e.key==='Escape'&&credits.classList.contains('show'))$('#crBack').click();
 });
-document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&(card.classList.contains('show')||dots.classList.contains('show')||kflash.classList.contains('show')||kquiz.classList.contains('show')||ktrace.classList.contains('show')))keepAwake();});
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&(card.classList.contains('show')||dots.classList.contains('show')||[kflash,kquiz,ktrace,kmem,kpeek,kwb].some(x=>x.classList.contains('show'))))keepAwake();});
 
 /* ---- オフライン（sw.js が しゃしんを ぜんぶ ほぞん） ---- */
 let healing=false;
@@ -892,6 +1069,8 @@ const SFX={
   ok(){beep(1319,0,.15,'sine',.2);beep(1047,.15,.38,'sine',.2);},
   ng(){beep(330,0,.16,'triangle',.16,220);beep(262,.17,.24,'triangle',.16,175);},
   star(){[1568,2093,2637].forEach((f,i)=>beep(f,i*.07,.15,'sine',.1));},
+  soft(){beep(523,0,.14,'sine',.16,659);beep(659,.15,.22,'sine',.14,587);},
+  coin(){beep(988,0,.08,'square',.07);beep(1319,.08,.4,'square',.07);},
   fan(){[523,659,784,1047].forEach((f,i)=>beep(f,i*.12,.2,'triangle',.16));beep(1047,.5,.65,'triangle',.14);beep(1319,.5,.65,'sine',.07);}
 };
 
@@ -922,7 +1101,7 @@ function fxLoop(){
 function bigConfetti(){const w=innerWidth,h=innerHeight;confetti(w*.2,h*.4,40,11);confetti(w*.8,h*.4,40,11);setTimeout(()=>confetti(w*.5,h*.3,50,12),250);}
 
 /* ---- がめんの きりかえ ---- */
-function kHideAll(){[kmenu,kbook,kflash,kquiz,ktrace].forEach(e=>e.classList.remove('show'));kClosePop();}
+function kHideAll(){kStopGames();[kmenu,kbook,kflash,kquiz,ktrace,kmem,kpeek,kwb,kgacha].forEach(e=>e.classList.remove('show'));kClosePop();}
 function kOpenMenu(script){
   if(script){KS.script=script;ksave();}
   home.hidden=true;kHideAll();kmenu.classList.add('show');kmenu.scrollTop=0;kRenderMenu();
@@ -958,7 +1137,7 @@ function kRenderMenu(){
     else b.disabled=true;
     ch.appendChild(b);
   }));
-  $('#kStkN').textContent=KST.length;
+  $('#kStkN').textContent=KST.length;$('#kCoinN').textContent=KC;
   const o=$('#kOpts');o.innerHTML='';
   [['voice',KS.voice,KS.voice?'🔈 こえ・おと：オン':'🔇 こえ・おと：オフ'],['order',KS.order==='rand',KS.order==='rand'?'🔀 じゅんばん：ばらばら':'➡️ じゅんばん：あいうえお']].forEach(([k,on,t])=>{
     const b=document.createElement('button');b.className='chip'+(on?' on':'');b.textContent=t;
@@ -1014,7 +1193,7 @@ function kfEnd(){
     <div class="endbtns"><button class="primary" id="kfAgain">🔁 もういちど</button><button id="kfMenu">もどる</button></div>`;
   $('#kfAgain').onclick=()=>kStartFlash();$('#kfMenu').onclick=kToMenu;
   SFX.fan();bigConfetti();ksay('おしまい！ よく できました！');
-  if(KF.seen.size>=5)setTimeout(giveSticker,1300);
+  if(KF.seen.size>=5)setTimeout(()=>giveCoin(1),1300);
 }
 $('#kfBack').onclick=kToMenu;
 $('#kfSay').onclick=()=>{if(!KF||KF.ended)return;actx();const k=KF.list[KF.i];ksay(KF.back?kSayWord(k):k,.85,true);};
@@ -1102,7 +1281,7 @@ function kqEnd(){
     <div class="endbtns"><button class="primary" id="kqAgain">🎈 もういっかい</button><button id="kqMenu">もどる</button></div>`;
   $('#kqAgain').onclick=()=>{actx();kStartQuiz();};$('#kqMenu').onclick=kToMenu;
   SFX.fan();bigConfetti();ksay('やったね！ ぜんぶ できたよ！');
-  kqLater(giveSticker,1400);
+  kqLater(()=>giveCoin(first>=8?2:1),1400);
 }
 $('#kqBack').onclick=kToMenu;
 
@@ -1125,7 +1304,7 @@ function ktLayout(){
   const s=Math.floor(Math.max(160,Math.min(availW,availH,560)));
   $('#ktPaper').style.setProperty('--s',s+'px');
   const r=Math.min(3,window.devicePixelRatio||1);
-  ['#ktGuide','#ktInk'].forEach(id=>{const c=$(id);c.width=Math.round(s*r);c.height=Math.round(s*r);c.getContext('2d').setTransform(r,0,0,r,0,0);});
+  ['#ktGuide','#ktHint','#ktInk'].forEach(id=>{const c=$(id);c.width=Math.round(s*r);c.height=Math.round(s*r);c.getContext('2d').setTransform(r,0,0,r,0,0);});
   KT.S=s;
 }
 function kGlyphPos(ctx,S,k){
@@ -1148,12 +1327,21 @@ function ktDrawGuide(){
   g.lineJoin='round';g.lineWidth=N*.14;g.strokeStyle='#000';g.strokeText(k,q.x,q.y);
   const b=g.getImageData(0,0,N,N).data,near=new Uint8Array(N*N);for(let i=0;i<N*N;i++)if(b[i*4+3]>40)near[i]=1;
   KT.mask=mask;KT.mn=mn;KT.near=near;
+  // はなれた ぶぶん（「い」の 2ほん など）ごとに わける
+  const lab=new Int16Array(N*N).fill(-1),sizes=[];
+  for(let i=0;i<N*N;i++){
+    if(!mask[i]||lab[i]>=0)continue;const id=sizes.length,st=[i];let cnt=0;lab[i]=id;
+    while(st.length){const j=st.pop(),x=j%N,y=(j-x)/N;cnt++;
+      if(x>0&&mask[j-1]&&lab[j-1]<0){lab[j-1]=id;st.push(j-1);}if(x<N-1&&mask[j+1]&&lab[j+1]<0){lab[j+1]=id;st.push(j+1);}
+      if(y>0&&mask[j-N]&&lab[j-N]<0){lab[j-N]=id;st.push(j-N);}if(y<N-1&&mask[j+N]&&lab[j+N]<0){lab[j+N]=id;st.push(j+N);}}
+    sizes.push(cnt);
+  }
+  KT.lab=lab;KT.sizes=sizes;
 }
 function ktShow(talk){
   const k=KT.list[KT.i];kStyle(ktrace,k);KT.done=false;KT.stars=0;
   $('#ktCount').textContent=`${KT.i+1} / ${KT.list.length}`;$('#ktProg').style.width=((KT.i+1)/KT.list.length*100)+'%';
-  $('#ktMaru').innerHTML='';$('#ktNext').classList.remove('go2');
-  ktInk.getContext('2d').clearRect(0,0,KT.S,KT.S);
+  $('#ktMaru').innerHTML='';ktReset();
   ktDrawGuide();ktStars();ktColors();
   if(talk)ksay([k+'。','なぞって みよう！'],.85);
 }
@@ -1163,7 +1351,7 @@ function ktColors(){
   KTCOL.forEach((c,i)=>{const b=document.createElement('button');b.style.setProperty('--k',c);b.className=i===KT.col?'on':'';b.setAttribute('aria-label','いろ '+(i+1));
     b.onclick=()=>{KT.col=i;KS.tcol=i;ksave();SFX.tap();ktColors();};w.appendChild(b);});
 }
-let ktPid=null,ktLast=null,ktChk=0;
+let ktPid=null,ktLast=null;
 function ktPt(e){const r=ktInk.getBoundingClientRect();return {x:(e.clientX-r.left)*KT.S/r.width,y:(e.clientY-r.top)*KT.S/r.height};}
 function ktLine(a,b){const c=ktInk.getContext('2d');c.lineCap='round';c.lineJoin='round';c.lineWidth=KT.S*.078;c.strokeStyle=KTCOL[KT.col];c.beginPath();c.moveTo(a.x,a.y);c.lineTo(b.x+.01,b.y+.01);c.stroke();}
 ktInk.addEventListener('pointerdown',e=>{
@@ -1175,30 +1363,48 @@ ktInk.addEventListener('pointermove',e=>{
   if(e.pointerId!==ktPid||!KT||KT.done)return;e.preventDefault();
   const evs=e.getCoalescedEvents?e.getCoalescedEvents():[e];
   (evs.length?evs:[e]).forEach(ev=>{const p=ktPt(ev);ktLine(ktLast,p);ktLast=p;});
-  const now=Date.now();if(now-ktChk>200){ktChk=now;ktCheck(false);}
 });
-function ktUp(e){if(e.pointerId!==ktPid)return;ktPid=null;ktCheck(true);}
+function ktUp(e){if(e.pointerId!==ktPid)return;ktPid=null;}   // かいている とちゅうでは はんていしない（OK で はんてい）
 ktInk.addEventListener('pointerup',ktUp);ktInk.addEventListener('pointercancel',ktUp);
-function ktCheck(end){
-  if(!KT||KT.done||!KT.mask)return;
+function ktReset(){
+  KT.done=false;KT.stars=0;ktStars();$('#ktMaru').innerHTML='';
+  $('#ktOk').hidden=false;$('#ktNext').className='ktbtn';
+  ktInk.getContext('2d').clearRect(0,0,KT.S,KT.S);
+  const h=$('#ktHint');h.classList.remove('show');h.getContext('2d').clearRect(0,0,KT.S,KT.S);
+}
+function ktMeasure(){
   const N=KT.N,g=ktTmp.getContext('2d');g.clearRect(0,0,N,N);g.drawImage(ktInk,0,0,N,N);
-  const a=g.getImageData(0,0,N,N).data;let hit=0,inkN=0,out=0;
-  for(let i=0;i<N*N;i++){if(a[i*4+3]>60){inkN++;if(KT.mask[i])hit++;if(!KT.near[i])out++;}}
-  const cov=KT.mn?hit/KT.mn:0,outR=inkN?out/inkN:0;
-  let st=cov>=.6&&outR<=.5?3:cov>=.38?2:cov>=.15?1:0;
-  if(st===3&&!end)st=2;
-  if(st>KT.stars){KT.stars=st;ktStars();if(st<3)SFX.star();}
-  if(st===3)ktSuccess();
-  else if(end&&cov>=.6&&outR>.5)toast('はみだしちゃった。🧽 けして もういちど！',2400);
+  const a=g.getImageData(0,0,N,N).data,per=new Array(KT.sizes.length).fill(0);let hit=0,inkN=0,out=0;
+  for(let i=0;i<N*N;i++){const on=a[i*4+3]>60;if(on){inkN++;if(!KT.near[i])out++;}if(on&&KT.mask[i]){hit++;per[KT.lab[i]]++;}}
+  let worst=1;KT.sizes.forEach((sz,c)=>{if(sz>=KT.mn*.05)worst=Math.min(worst,per[c]/sz);});
+  return {cov:KT.mn?hit/KT.mn:0,outR:inkN?out/inkN:0,worst,inkN};
+}
+// なぞれて いない ところを ひからせる（もじの いろで、インクの ところは けす）
+function ktHint(){
+  const k=KT.list[KT.i],S=KT.S,h=$('#ktHint'),c=h.getContext('2d');
+  c.clearRect(0,0,S,S);c.save();
+  const p=kGlyphPos(c,S,k);c.fillStyle=(KCOL[k]||KPAL[0])[0];c.globalAlpha=.55;c.fillText(k,p.x,p.y);
+  c.globalAlpha=1;c.globalCompositeOperation='destination-out';c.drawImage(ktInk,0,0,S,S);c.restore();
+  h.classList.remove('show');void h.offsetWidth;h.classList.add('show');
+}
+function ktJudge(){
+  if(!KT||KT.done||!KT.mask)return;actx();
+  const m=ktMeasure();
+  if(m.inkN<6){SFX.tap();ktHint();ksay('ゆびで なぞってね',.95);toast('うすい もじを ゆびで なぞってね',2200);return;}
+  if(m.cov>=.66&&m.worst>=.45&&m.outR<=.5){ktSuccess();return;}
+  KT.stars=m.cov>=.45?2:m.cov>=.2?1:0;ktStars();SFX.soft();
+  if(m.cov>=.66&&m.worst>=.45){toast('はみだしちゃった。🧽 けして もういちど！',2600);ksay('はみださないように なぞってね',.95);}
+  else{ktHint();toast('もうすこし！ ひかった ところも なぞってね',2600);ksay(['もうすこし！','ひかった ところも なぞってね'],.95);}
 }
 function ktSuccess(){
   KT.done=true;const k=KT.list[KT.i];
   const first=!(KP[k]&&KP[k].t);const p=KP[k]||(KP[k]={});p.t=(p.t||0)+1;kpsave();
+  KT.stars=3;ktStars();$('#ktHint').classList.remove('show');
   ktMaru();SFX.fan();
   const r=$('#ktPaper').getBoundingClientRect();confetti(r.left+r.width/2,r.top+r.height/2,70,12);
   ksay(['はなまる！','じょうずに かけたね！'],.95);
-  $('#ktNext').classList.add('go2');
-  if(first)setTimeout(giveSticker,1700);
+  $('#ktOk').hidden=true;$('#ktNext').className='ktbtn primary go2';
+  if(first)setTimeout(()=>giveCoin(1),1700);
 }
 function ktMaru(){
   const sv=$('#ktMaru');let d='',e='';
@@ -1209,7 +1415,8 @@ function ktMaru(){
   ps.forEach((p,j)=>{const L=p.getTotalLength();p.style.strokeDasharray=L;p.style.strokeDashoffset=L;p.style.transition=`stroke-dashoffset ${j?1:.55}s ease-out ${j?.5:0}s`;});
   void sv.getBoundingClientRect();requestAnimationFrame(()=>ps.forEach(p=>p.style.strokeDashoffset=0));
 }
-$('#ktClear').onclick=()=>{if(!KT)return;SFX.tap();KT.done=false;KT.stars=0;ktStars();$('#ktMaru').innerHTML='';$('#ktNext').classList.remove('go2');ktInk.getContext('2d').clearRect(0,0,KT.S,KT.S);};
+$('#ktClear').onclick=()=>{if(!KT)return;SFX.tap();ktReset();};
+$('#ktOk').onclick=ktJudge;
 $('#ktNext').onclick=()=>{
   if(!KT)return;SFX.tap();
   if(KT.i<KT.list.length-1){KT.i++;ktShow(true);}
@@ -1220,16 +1427,6 @@ $('#ktBack').onclick=kToMenu;
 window.addEventListener('resize',()=>{if(ktrace.classList.contains('show')&&KT){ktLayout();ktShow(false);}});
 
 /* ---- シール ---- */
-function giveSticker(){
-  const have=new Set(KST),rest=ALL.filter(it=>!have.has(it.img));
-  if(!rest.length){toast('シールは ぜんぶ あつまったよ！ 🎉');return;}
-  const it=rest[Math.floor(Math.random()*rest.length)];KST.push(it.img);store('babyfc_kana_st',KST);$('#kStkN').textContent=KST.length;
-  $('#kgImg').src=it.img;$('#kgName').textContent=it.j;$('#kgift').hidden=false;
-  SFX.star();setTimeout(()=>{const g=$('.kgs');if(g&&!$('#kgift').hidden){const r=g.getBoundingClientRect();confetti(r.left+r.width/2,r.top+r.height/2,50,10);}},650);
-  ksay(['シール ゲット！',it.j+'の シールだよ'],.95);
-}
-$('#kgOk').onclick=()=>{$('#kgift').hidden=true;SFX.tap();};
-$('#kgift').onclick=e=>{if(e.target.id==='kgift')$('#kgift').hidden=true;};
 function kOpenBook(){
   kHideAll();kbook.classList.add('show');kbook.scrollTop=0;
   $('#kbNote').textContent=`あつめた シール：${KST.length} / ${ALL.length}まい。タップすると なまえを よむよ。`;
@@ -1245,6 +1442,251 @@ function kOpenBook(){
 }
 $('#kStk').onclick=()=>{actx();kOpenBook();};
 $('#kbBack').onclick=()=>{kHideAll();kmenu.classList.add('show');kRenderMenu();};
+
+/* ---- コイン（あそぶと もらえる → ガチャガチャで シールに） ---- */
+let KC=store('babyfc_kana_coin');if(typeof KC!=='number'||KC<0){KC=1;store('babyfc_kana_coin',KC);}   // はじめに 1まい
+const kmem=$('#kmem'),kpeek=$('#kpeek'),kwb=$('#kwb'),kgacha=$('#kgacha');
+let kCoinT=null;
+function kCoinUI(){$('#kCoinN').textContent=KC;$('#kgCoins').textContent='🪙 '+KC;}
+function giveCoin(n){
+  KC+=n;store('babyfc_kana_coin',KC);kCoinUI();
+  const el=$('#kcoin');$('#kcoinT').textContent=n>1?`コイン ${n}まい ゲット！`:'コイン ゲット！';
+  el.hidden=true;void el.offsetWidth;el.hidden=false;SFX.coin();
+  clearTimeout(kCoinT);kCoinT=setTimeout(()=>{el.hidden=true;},1900);
+}
+function kStopGames(){if(typeof kmClear==='function')kmClear();if(typeof kpStop==='function')kpStop();if(typeof kwClear==='function')kwClear();}
+function kEndPanel(id,big,title,sub,againLabel,again){
+  const e=$(id);e.hidden=false;
+  e.innerHTML=`<div class="big">${big}</div><div class="ttl">${title}</div><div class="sub2">${sub}</div>
+    <div class="endbtns"><button class="primary">${againLabel}</button><button>もどる</button></div>`;
+  const bs=e.querySelectorAll('button');bs[0].onclick=()=>{actx();again();};bs[1].onclick=kToMenu;
+}
+
+/* ---- カード あわせ（じ と しゃしん の ペア） ---- */
+let KM=null;
+function kmClear(){if(KM){KM.t.forEach(clearTimeout);KM.t=[];}}
+function kStartMem(){
+  kmClear();
+  const used=new Set(),ks=[];
+  for(const k of shuffle(kList().filter(k=>KANA.W[k].img))){const im=KANA.W[k].img;if(used.has(im))continue;used.add(im);ks.push(k);if(ks.length===4)break;}
+  kHideAll();
+  KM={ks,cards:shuffle(ks.flatMap(k=>[{k,t:'k'},{k,t:'p'}])),open:[],got:0,lock:false,t:[]};
+  kmem.classList.add('show');$('#kmEnd').hidden=true;keepAwake();kmRender();
+  ksay('おなじ なかまを さがそう！',.95);
+}
+function kmRender(){
+  const b=$('#kmBoard');b.innerHTML='';
+  const W=b.clientWidth,H=b.clientHeight,wide=W>H*1.1,cols=wide?4:2,rows=wide?2:4,gap=10;
+  const cw=Math.max(60,Math.min((W-gap*(cols-1))/cols,(H-gap*(rows-1))/rows*.78)),ch=cw/.78;
+  b.style.gridTemplateColumns=`repeat(${cols},${cw.toFixed(0)}px)`;b.style.gridAutoRows=ch.toFixed(0)+'px';b.style.setProperty('--cw',cw.toFixed(0)+'px');
+  KM.cards.forEach(c=>{
+    const el=document.createElement('button');el.className='mcard'+(c.done?' got':'');kStyle(el,c.k);
+    const face=c.t==='k'?`<div class="mk">${esc(c.k)}</div>`:`<div class="mp"><img src="${esc(KANA.W[c.k].img)}" alt=""></div><div class="mw">${kWordHTML(c.k)}</div>`;
+    el.innerHTML=`<div class="mi"><div class="mf mfront"><span>⭐</span></div><div class="mf mback">${face}</div></div>`;
+    el.setAttribute('aria-label','カード');el.onclick=()=>kmTap(c);b.appendChild(el);c.el=el;
+  });
+  $('#kmmCount').textContent=`${KM.got} / ${KM.ks.length}`;
+}
+function kmTap(c){
+  if(!KM||KM.lock||c.done||KM.open.includes(c))return;actx();
+  c.el.classList.add('open');SFX.flip();KM.open.push(c);
+  ksay(c.t==='k'?c.k:KANA.W[c.k].w,.9);
+  if(KM.open.length<2)return;
+  const [a,b]=KM.open;KM.lock=true;
+  if(a.k===b.k){
+    KM.t.push(setTimeout(()=>{
+      a.done=b.done=true;a.el.classList.add('got');b.el.classList.add('got');SFX.ok();
+      const r=b.el.getBoundingClientRect();confetti(r.left+r.width/2,r.top+r.height/2,32,8);
+      ksay(['ぴんぽーん！',kSayWord(a.k)],.92);
+      KM.got++;$('#kmmCount').textContent=`${KM.got} / ${KM.ks.length}`;KM.open=[];KM.lock=false;
+      if(KM.got===KM.ks.length)KM.t.push(setTimeout(()=>{
+        kEndPanel('#kmEnd','🎉','ぜんぶ そろったね！',`${KM.ks.map(esc).join('・')}`,'🎴 もういっかい',kStartMem);
+        SFX.fan();bigConfetti();ksay('ぜんぶ そろったね！ すごい！');KM.t.push(setTimeout(()=>giveCoin(1),1300));
+      },1800));
+    },500));
+  }else{
+    KM.t.push(setTimeout(()=>{SFX.soft();a.el.classList.remove('open');b.el.classList.remove('open');KM.open=[];KM.lock=false;},1300));
+  }
+}
+$('#kmmBack').onclick=kToMenu;
+
+/* ---- ひょっこり タッチ（あなから でてきた どうぶつの じを さがす） ---- */
+let KPK=null;
+function kpStop(){if(!KPK)return;KPK.over=true;KPK.t.forEach(clearTimeout);KPK.t=[];KPK.holes.forEach(h=>clearTimeout(h.timer));cancelAnimationFrame(KPK.raf);}
+function kStartPeek(){
+  kpStop();kHideAll();kpeek.classList.add('show');$('#kpEnd').hidden=true;keepAwake();
+  const animals=ALL.filter(it=>it.d&&it.d.g===0);
+  KPK={L:kList(),animals,target:null,hits:0,tHits:0,dur:45000,end:Date.now()+45000,holes:[],t:[],raf:0,over:false};
+  const f=$('#kpField');f.innerHTML='';
+  for(let i=0;i<6;i++){
+    const h=document.createElement('div');h.className='hole';h.setAttribute('role','button');h.setAttribute('aria-label','あな '+(i+1));
+    h.innerHTML='<div class="kpop"><div class="kps"></div><div class="kpb"><img alt=""></div></div><div class="mound"></div>';
+    f.appendChild(h);KPK.holes.push({el:h,busy:false,timer:0});
+    h.addEventListener('pointerdown',e=>{e.preventDefault();kpTap(i);});   // あなの どこを タッチしても OK
+  }
+  kpLayout();kpScore();kpNewTarget();kpLoop();KPK.t.push(setTimeout(kpSpawn,700));
+}
+function kpLayout(){
+  const f=$('#kpField'),W=f.clientWidth,H=f.clientHeight,asp=W/Math.max(1,H);
+  const [c,r]=asp>2.2?[6,1]:asp>1?[3,2]:[2,3];
+  f.style.gridTemplateColumns=`repeat(${c},1fr)`;f.style.gridTemplateRows=`repeat(${r},1fr)`;
+  const hw=Math.floor(Math.min((W-6*(c-1))/c,(H-6*(r-1))/r/1.15));
+  f.style.setProperty('--hw',hw+'px');
+  f.querySelectorAll('.hole').forEach(h=>{h.style.width=hw+'px';h.style.height=Math.floor(hw*1.15)+'px';});
+}
+function kpScore(){$('#kpScore').textContent='⭐ '+KPK.hits;}
+function kpNewTarget(){
+  const L=KPK.L;let k;do{k=L[Math.floor(Math.random()*L.length)];}while(k===KPK.target&&L.length>1);
+  KPK.target=k;KPK.tHits=0;kStyle(kpeek,k);
+  $('#kpTarget').innerHTML=`<b>${esc(k)}</b> を タッチ！`;
+  const t=$('#kpTarget');t.classList.remove('pop2');void t.offsetWidth;t.classList.add('pop2');
+  ksay([k+'。',k+' を さがして タッチ！'],.9);
+}
+$('#kpTarget').onclick=()=>{if(KPK&&!KPK.over){actx();ksay(KPK.target,.85,true);}};
+function kpSpawn(){
+  if(!KPK||KPK.over)return;
+  const free=[];KPK.holes.forEach((h,i)=>{if(!h.busy)free.push(i);});
+  if(free.length){
+    const i=free[Math.floor(Math.random()*free.length)],h=KPK.holes[i];
+    const shown=KPK.holes.some(x=>x.busy&&x.k===KPK.target);
+    let k=KPK.target;
+    if(shown?Math.random()<.75:Math.random()<.3){const o=KPK.L.filter(x=>x!==KPK.target);k=o[Math.floor(Math.random()*o.length)];}
+    const a=KPK.animals[Math.floor(Math.random()*KPK.animals.length)];
+    h.busy=true;h.k=k;h.hit=false;
+    h.el.querySelector('img').src=a.img;h.el.querySelector('.kps').textContent=k;
+    h.el.classList.remove('hit','miss');h.el.classList.add('up');
+    h.timer=setTimeout(()=>kpDown(i),1900+Math.random()*900);
+  }
+  KPK.t.push(setTimeout(kpSpawn,600+Math.random()*500));
+}
+function kpDown(i){
+  const h=KPK.holes[i];clearTimeout(h.timer);h.el.classList.remove('up');
+  h.timer=setTimeout(()=>{h.busy=false;h.el.classList.remove('hit','miss');},330);
+}
+function kpTap(i){
+  if(!KPK||KPK.over)return;const h=KPK.holes[i];if(!h.busy||h.hit||!h.el.classList.contains('up'))return;actx();
+  clearTimeout(h.timer);
+  if(h.k===KPK.target){
+    h.hit=true;h.el.classList.add('hit');SFX.pop();setTimeout(()=>SFX.ok(),110);
+    const r=h.el.getBoundingClientRect();confetti(r.left+r.width/2,r.top+r.height*.35,28,8);
+    KPK.hits++;KPK.tHits++;kpScore();
+    if(KPK.tHits>=3)KPK.t.push(setTimeout(kpNewTarget,650));else ksay('ぴんぽーん！',1);
+    h.timer=setTimeout(()=>kpDown(i),550);
+  }else{
+    h.el.classList.remove('miss');void h.el.offsetWidth;h.el.classList.add('miss');SFX.soft();ksay(h.k+' だよ。',.95);
+    h.timer=setTimeout(()=>kpDown(i),700);
+  }
+}
+function kpLoop(){
+  if(!KPK||KPK.over)return;
+  const left=Math.max(0,KPK.end-Date.now());$('#kpTime').style.width=(left/KPK.dur*100)+'%';
+  if(left<=0){kpEnd();return;}
+  KPK.raf=requestAnimationFrame(kpLoop);
+}
+function kpEnd(){
+  const n=KPK.hits;kpStop();KPK.holes.forEach(h=>h.el.classList.remove('up'));
+  kEndPanel('#kpEnd','🐹',`${n}こ みつけたよ！`,'⭐'.repeat(Math.min(n,20)),'🐹 もういっかい',kStartPeek);
+  SFX.fan();bigConfetti();ksay(n?`${n}こ みつけたよ！ すごい！`:'また あそぼうね！');
+  if(n>=3)setTimeout(()=>giveCoin(1),1300);
+}
+$('#kpBack').onclick=kToMenu;
+
+/* ---- ことば つくり（しゃしんの ことばを じで ならべる） ---- */
+let KW=null;
+function kwClear(){if(KW){KW.t.forEach(clearTimeout);KW.t=[];}}
+function kStartWord(){
+  kwClear();
+  const L=(KANA.WB&&KANA.WB[KS.script])||[];
+  if(!L.length)return;
+  kHideAll();
+  KW={words:shuffle(L.slice()).slice(0,5),i:0,pos:0,miss:0,busy:false,t:[]};
+  kwb.classList.add('show');$('#kwEnd').hidden=true;keepAwake();kwShow(true);
+}
+function kwShow(now){
+  kwClear();const [w,img]=KW.words[KW.i],chars=[...w];KW.pos=0;KW.miss=0;KW.busy=false;
+  kStyle(kwb,chars[0]);
+  $('#kwPic').innerHTML=`<img src="${esc(img)}" alt="">`;$('#kwPic').classList.remove('yay');
+  $('#kwSlots').innerHTML=chars.map(c=>`<div class="kslot"><span class="kg">${esc(c)}</span></div>`).join('');
+  const pool=KANA[KS.script].sets.flatMap(st=>st.rows.flat()).filter(c=>c&&!chars.includes(c));
+  const extra=shuffle(pool).slice(0,chars.length<=2?2:3);
+  const tl=$('#kwTiles');tl.innerHTML='';
+  shuffle([...chars,...extra]).forEach(c=>{
+    const b=document.createElement('button');b.className='ktile';b.textContent=c;b.dataset.k=c;kStyle(b,c);
+    b.onclick=()=>kwTap(b,c);tl.appendChild(b);
+  });
+  $('#kwCount').textContent=`${KW.i+1} / ${KW.words.length}`;$('#kwProg').style.width=((KW.i+1)/KW.words.length*100)+'%';
+  const say=()=>ksay([w+'！','ことばを つくろう！'],.9);
+  if(now)say();else KW.t.push(setTimeout(say,350));
+}
+function kwTap(b,c){
+  if(!KW||KW.busy||b.classList.contains('used'))return;actx();
+  const [w]=KW.words[KW.i],chars=[...w];
+  if(c===chars[KW.pos]){
+    b.classList.add('used');SFX.tap();ksay(c,.85);
+    const slot=$('#kwSlots').children[KW.pos];kStyle(slot,c);slot.classList.add('on');
+    KW.pos++;KW.miss=0;$('#kwTiles').querySelectorAll('.glow').forEach(x=>x.classList.remove('glow'));
+    if(KW.pos===chars.length){
+      KW.busy=true;
+      KW.t.push(setTimeout(()=>{
+        SFX.ok();$('#kwPic').classList.add('yay');
+        const r=$('#kwPic').getBoundingClientRect();confetti(r.left+r.width/2,r.top+r.height/2,46,10);
+        ksay([w+'！','できたね！'],.9);
+        KW.t.push(setTimeout(()=>{
+          if(KW.i<KW.words.length-1){KW.i++;kwShow(false);}
+          else{kEndPanel('#kwEnd','🧩','ことばが できたね！',KW.words.map(x=>esc(x[0])).join('・'),'🧩 もういっかい',kStartWord);
+            SFX.fan();bigConfetti();ksay('ぜんぶ できたね！ すごい！');KW.t.push(setTimeout(()=>giveCoin(1),1300));}
+        },2200));
+      },300));
+    }
+  }else{
+    KW.miss++;SFX.soft();b.classList.remove('shake');void b.offsetWidth;b.classList.add('shake');ksay('ちがうよ',1);
+    if(KW.miss>=2)$('#kwTiles').querySelectorAll('.ktile').forEach(x=>{if(!x.classList.contains('used')&&x.dataset.k===chars[KW.pos])x.classList.add('glow');});
+  }
+}
+$('#kwBack').onclick=kToMenu;
+$('#kwSay').onclick=()=>{if(KW){actx();ksay(KW.words[KW.i][0],.9,true);}};
+
+/* ---- ガチャガチャ ---- */
+let kgBusy=false;
+function kOpenGacha(){
+  kHideAll();kgacha.classList.add('show');kgBusy=false;$('#kgCap').hidden=true;$('#kgMsg').textContent='';kCoinUI();
+  ksay(KC>0?'ガチャガチャを まわそう！':'コインを あつめよう！',.95);
+}
+function kgTurn(){
+  if(kgBusy)return;actx();
+  const have=new Set(KST),rest=ALL.filter(it=>!have.has(it.img));
+  if(!rest.length){$('#kgMsg').textContent='シールは ぜんぶ あつまったよ！ 🎉';ksay('シールは ぜんぶ あつまったよ！');return;}
+  if(KC<1){$('#kgMsg').textContent='コインが ないよ。あそんで あつめてね！';SFX.soft();ksay('コインが ないよ。あそんで あつめてね',.95);return;}
+  kgBusy=true;KC--;store('babyfc_kana_coin',KC);kCoinUI();$('#kgMsg').textContent='';
+  const it=rest[Math.floor(Math.random()*rest.length)];
+  const m=$('#kgMachine');m.classList.remove('turn');void m.offsetWidth;m.classList.add('turn');
+  [0,.22,.44,.66,.88].forEach(t=>beep(1500,t,.04,'square',.05));
+  ksay('ガチャ ガチャ… なにが でるかな？',.95);
+  setTimeout(()=>{SFX.pop();kgShowCap(it);},1150);
+}
+function kgShowCap(it){
+  const cap=$('#kgCap'),cols=['#EF5350','#42A5F5','#66BB6A','#FFCA28','#AB47BC','#FF7043','#26C6DA','#EC407A'];
+  cap.style.setProperty('--cc',cols[Math.floor(Math.random()*cols.length)]);
+  cap.classList.remove('opened');cap.hidden=false;
+  cap.querySelector('img').src=it.img;$('#kgName').textContent='';$('#kgCapMsg').textContent='タップして あけてね！';$('#kgCapBtns').hidden=true;
+  const ball=$('#kgBall');ball.style.animation='none';void ball.offsetWidth;ball.style.animation='';
+  ball.onclick=()=>{
+    if(cap.classList.contains('opened'))return;cap.classList.add('opened');
+    KST.push(it.img);store('babyfc_kana_st',KST);$('#kStkN').textContent=KST.length;
+    SFX.fan();const r=ball.getBoundingClientRect();confetti(r.left+r.width/2,r.top+r.height/2,70,12);
+    $('#kgName').textContent=it.j;$('#kgCapMsg').textContent='🎉 シール ゲット！';ksay(['やったー！',it.j+'の シールだよ'],.95);
+    setTimeout(()=>{$('#kgCapBtns').hidden=false;kgBusy=false;},900);
+  };
+}
+$('#kGacha').onclick=()=>{actx();kOpenGacha();};
+$('#kgTurn').onclick=kgTurn;
+$('#kgAgain').onclick=()=>{$('#kgCap').hidden=true;kgTurn();};
+$('#kgBook').onclick=()=>{actx();kOpenBook();};
+$('#kgBack').onclick=kToMenu;
+$('#kGoMem').onclick=()=>{actx();kStartMem();};
+$('#kGoPeek').onclick=()=>{actx();kStartPeek();};
+$('#kGoWord').onclick=()=>{actx();kStartWord();};
+window.addEventListener('resize',()=>{if(kmem.classList.contains('show')&&KM)kmRender();if(kpeek.classList.contains('show')&&KPK)kpLayout();});
 
 buildHome();
 </script>
