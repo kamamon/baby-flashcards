@@ -405,6 +405,75 @@ a{color:inherit}
 .kcap.opened .cbot{transform:translateY(75%) rotate(15deg);opacity:0}
 .kcap.opened .cstk{opacity:1;transform:none}
 .kcn{font-size:26px;font-weight:900;min-height:1.3em}
+
+/* ---- スペシャル シール（おうちの しゃしん） ---- */
+.kbh{font-size:16px;font-weight:900;margin-top:18px;color:#8a5a00}
+.kbh small{font-size:12px;font-weight:800;color:var(--sub);margin-left:6px}
+#kbHome .kbgrid{margin-top:10px}
+.kst.sp{box-shadow:0 0 0 5px #fff,0 0 0 8px #FFC107,0 4px 12px rgba(255,160,0,.35)}
+.kst.sp img{inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.kst.cut{background:transparent;box-shadow:none;border-radius:0}
+.kst.cut img{inset:0;width:100%;height:100%;object-fit:contain;border-radius:0;filter:drop-shadow(0 3px 5px rgba(0,0,0,.22))}
+.kst.q{background:#FFF8E1;box-shadow:none;border:3px dashed #FFCA28;display:flex;align-items:center;justify-content:center}
+.kst.q span{font-size:clamp(26px,9vw,44px);font-weight:900;color:#FFB300}
+.kuopen{display:block;margin:26px auto 0;padding:12px 18px;border-radius:14px;background:#fff;color:#8a5a00;font-size:15px;font-weight:900;box-shadow:0 2px 0 rgba(0,0,0,.06)}
+.kuopen small{display:block;margin-top:2px;font-size:11.5px;color:var(--sub);font-weight:700}
+.kuintro p{font-size:14.5px;line-height:1.75}
+.kuadd{display:flex;gap:10px;align-items:stretch;margin-top:12px}
+.kuaddbtn{margin-top:0;flex:1;background:#FFA000;font-size:18px;white-space:nowrap;padding:15px 10px}
+.kupaste{flex:none;padding:0 12px;white-space:nowrap;border-radius:18px;background:#FFF3D6;color:#8a5a00;font-size:16px;font-weight:900;box-shadow:0 3px 0 rgba(0,0,0,.08)}
+.kufile{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.kunote{margin:12px 0 0;padding-left:1.2em;font-size:12.5px;color:var(--sub);line-height:1.65}
+.kunote li+li{margin-top:4px}
+.kulist{display:flex;flex-direction:column;gap:12px}
+.kurow{display:flex;align-items:center;gap:10px}
+.kurow .kst{width:58px;flex:none;transform:none;margin:4px}
+.kuname{width:100%;padding:12px 14px;border-radius:14px;border:2px solid #eadfce;font:inherit;font-size:17px;font-weight:700;background:#fffdf9;color:var(--ink);-webkit-appearance:none;appearance:none}
+.kuname:focus{outline:none;border-color:#FFB300}
+.kurow .kuname{flex:1;min-width:0;padding:10px 12px;font-size:16px}
+.kugot{flex:none;padding:9px 10px;border-radius:12px;font-size:13px;font-weight:900;background:#FFF3D6;color:#8a5a00;white-space:nowrap}
+.kugot.on{background:#E8F5E9;color:#2E7D32}
+.kudel{flex:none;width:44px;height:44px;border-radius:12px;background:#f6f2ec;font-size:18px}
+.kudel.arm{background:#E53935;color:#fff;font-size:13px;font-weight:900}
+.kuempty{font-size:14px;color:var(--sub);text-align:center;padding:14px 0}
+.kuedit{position:fixed;inset:0;z-index:30;background:rgba(40,30,20,.5);display:flex;align-items:center;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom))}
+.kuedit[hidden]{display:none}
+.kubox{background:#fff;border-radius:24px;padding:16px;width:min(94vw,380px);max-height:100%;overflow-y:auto;display:flex;flex-direction:column;gap:10px;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.kuh{font-size:19px;font-weight:900;text-align:center}
+.kuh small{font-size:13px;color:var(--sub);font-weight:800;margin-left:6px}
+.kucrop{position:relative;width:min(78vw,300px,44vh);aspect-ratio:1/1;margin:0 auto;border-radius:16px;overflow:hidden;background:#fff;touch-action:none;box-shadow:inset 0 0 0 1px #eee;flex:none}
+.kucrop canvas{display:block;width:100%;height:100%}
+.kuring{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle closest-side,transparent 98.5%,rgba(255,255,255,.72) 100%)}
+.kuring::after{content:"";position:absolute;inset:0;border-radius:50%;border:3px dashed #FFC107}
+.kuedit.iscut .kuring,.kuedit.iscut .kuzoom{display:none}
+.kuedit.iscut .kucrop{background:#F3ECE2}
+.kuzoom{width:100%;accent-color:#FFA000}
+.kuhelp{font-size:13px;color:var(--sub);text-align:center;font-weight:700}
+.kubtns{display:flex;gap:10px}
+.kubtns button{flex:1;padding:14px;border-radius:16px;font-size:18px;font-weight:900;background:#f1ebe3;color:#555}
+.kubtns .primary{background:var(--accent);color:#fff}
+.kubusy{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:31;background:rgba(0,0,0,.72);color:#fff;padding:14px 22px;border-radius:14px;font-weight:800}
+.kubusy[hidden]{display:none}
+@media (orientation:landscape) and (max-height:520px){
+  .kubox{width:min(96vw,680px);display:grid;grid-template-columns:auto 1fr;grid-template-areas:"h h" "c z" "c t" "c n" "c b";gap:8px 16px;align-content:center}
+  .kuh{grid-area:h}.kucrop{grid-area:c;width:min(60vh,280px);margin:0}.kuzoom{grid-area:z}.kuhelp{grid-area:t}.kuname{grid-area:n}.kubtns{grid-area:b}
+}
+/* きんいろ カプセル */
+#kgGold.on>circle{fill:url(#kgGG)}
+#kgGold .kgsp{display:none;fill:#fff}
+#kgGold.on .kgsp{display:inline;animation:ktw .9s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
+@keyframes ktw{from{transform:scale(.6) rotate(-15deg);opacity:.5}to{transform:scale(1.15) rotate(10deg);opacity:1}}
+.kcap.sp{background:radial-gradient(circle at 50% 45%,#FFF0B8 0,#FFF8EE 62%)}
+.kcap.sp .kcapmsg{color:#E65100;font-size:min(24px,5.6vw);text-align:center}
+.kcap.sp .ctop{background:linear-gradient(135deg,#FFF59D,#FFC107 45%,#FF8F00)}
+.kcap.sp .cbot{background:linear-gradient(180deg,#fff,#FFF3D6)}
+.kcap.sp .cball::before,.kcap.sp .cball::after{content:"✨";position:absolute;z-index:2;pointer-events:none;font-size:clamp(28px,10vw,52px);animation:ktw .8s ease-in-out infinite alternate}
+.kcap.sp .cball::before{left:-10%;top:2%}
+.kcap.sp .cball::after{right:-10%;bottom:4%;animation-delay:.4s}
+.kcap.sp .cstk{box-shadow:0 0 0 6px #fff,0 0 0 11px #FFC107,0 0 36px 12px rgba(255,193,7,.5)}
+.cstk.home img{inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.cstk.cut{background:transparent;box-shadow:none!important;border-radius:0;overflow:visible}
+.cstk.cut img{inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 8px 14px rgba(0,0,0,.25))}
 </style>
 </head>
 <body>
@@ -516,7 +585,7 @@ a{color:inherit}
   </div>
   <div class="sec"><h3>あいうえお ひょう<span class="klegend">タップで よむよ ・ 💮なぞれた ・ ⭐クイズ</span></h3><div class="kchart" id="kChart"></div></div>
   <div class="sec"><h3>せってい</h3><div class="chips" id="kOpts"></div>
-    <div class="note">🪙 コインは あそぶと もらえます（めくって カードを さいごまで・クイズ・はじめての はなまる・カード あわせ・ひょっこり タッチ・ことば つくり）。コイン 1まいで ガチャガチャを 1かい まわせて、しゃしんの シールが 1まい でます。</div></div>
+    <div class="note">🪙 コインは あそぶと もらえます（めくって カードを さいごまで・クイズ・はじめての はなまる・カード あわせ・ひょっこり タッチ・ことば つくり）。コイン 1まいで ガチャガチャを 1かい まわせて、しゃしんの シールが 1まい でます。おうちの おもちゃなどの しゃしんで「✨スペシャル シール」も つくれます（シールちょうの いちばん した）。</div></div>
 </div></div>
 
 <!-- ===== あいうえお：めくって カード ===== -->
@@ -573,8 +642,38 @@ a{color:inherit}
 <div id="kbook" class="sheet"><div class="page">
   <div class="dmhead"><button class="ibtn" id="kbBack" aria-label="もどる">↩︎</button><h2>📒 シールちょう</h2></div>
   <div class="note" id="kbNote"></div>
+  <div id="kbHome" hidden></div>
+  <h3 class="kbh" id="kbRegH" hidden>📷 いつもの シール</h3>
   <div class="kbgrid" id="kbGrid"></div>
+  <button class="kuopen" id="kuOpen">✨ スペシャル シールを つくる <small>（おとなの かたへ）</small></button>
 </div></div>
+
+<!-- ===== スペシャル シールを つくる（おとなの かた むけ。しゃしんは この たんまつの なかだけ） ===== -->
+<div id="khome" class="sheet"><div class="page">
+  <div class="dmhead"><button class="ibtn" id="khBack" aria-label="もどる">↩︎</button><h2>✨ スペシャル シール</h2></div>
+  <div class="sec kuintro">
+    <p>おうちにある おもちゃ・ぬいぐるみ・絵本などを写真に撮って、ガチャガチャの「スペシャル シール」にできます。金色のカプセルで出てきます。</p>
+    <div class="kuadd"><button class="go kuaddbtn" id="kuAdd">＋ しゃしんを えらぶ</button><button class="kupaste" id="kuPaste" hidden>📋 はりつけ</button></div>
+    <input type="file" class="kufile" id="kuFile" accept="image/*" multiple tabindex="-1" aria-hidden="true">
+    <ul class="kunote">
+      <li>写真はこの端末の中（このアプリのデータ）だけに保存され、インターネットには送られません。公開サイトにも載りません。ご家庭の中で楽しむための機能です。</li>
+      <li>写真アプリで被写体を長押しして切り抜いた画像を使うと、型抜きシールのようになります（切り抜きを「コピー」して「📋 はりつけ」でも作れます）。</li>
+      <li>ホーム画面のアプリとSafariでは保存場所が別です。アプリを削除すると、作ったシールも消えます。</li>
+    </ul>
+  </div>
+  <div class="sec"><h3>きんいろ カプセルの でやすさ</h3><div class="ktabs small" id="kuRate"><button data-v="some">ときどき</button><button data-v="often">よく</button><button data-v="always">まいかい</button></div></div>
+  <div class="sec"><h3>つくった シール（<span id="kuCount">0</span>まい）</h3><div class="kulist" id="kuList"></div>
+    <div class="note">「🎁 まだ」をタップすると、ガチャを回さずにシールちょうに入ります（もう一度タップで戻ります）。シールをタップすると名前を読み上げます。</div></div>
+</div></div>
+<div id="kuEdit" class="kuedit" hidden><div class="kubox">
+  <div class="kuh">シールを つくる <small id="kuEdN"></small></div>
+  <div class="kucrop" id="kuCrop"><canvas id="kuCv"></canvas><div class="kuring"></div></div>
+  <input type="range" class="kuzoom" id="kuZoom" min="1" max="5" step="0.01" value="1" aria-label="おおきさ">
+  <div class="kuhelp" id="kuHelp"></div>
+  <input class="kuname" id="kuName" maxlength="20" placeholder="なまえ（よみあげに つかうよ）" autocomplete="off" enterkeyhint="done">
+  <div class="kubtns"><button id="kuCancel">やめる</button><button class="primary" id="kuSave">できた！</button></div>
+</div></div>
+<div id="kuBusy" class="kubusy" hidden>よみこみちゅう…</div>
 
 <!-- ===== カード あわせ ===== -->
 <div id="kmem" class="screen">
@@ -604,11 +703,12 @@ a{color:inherit}
   <div class="topbar"><button class="ibtn" id="kgBack" aria-label="もどる">↩︎</button><div class="counter">🎁 ガチャガチャ</div><div class="badge" id="kgCoins"></div></div>
   <div class="kgwrap">
     <div class="kgm" id="kgMachine"><svg viewBox="0 0 200 280" aria-hidden="true">
+      <defs><linearGradient id="kgGG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF59D"/><stop offset=".55" stop-color="#FFC107"/><stop offset="1" stop-color="#FF8F00"/></linearGradient></defs>
       <rect x="62" y="146" width="76" height="18" rx="4" fill="#B71C1C"/>
       <circle cx="100" cy="86" r="80" fill="#E3F2FD" stroke="#fff" stroke-width="6"/>
       <g class="cps">
         <g transform="translate(62 70)"><circle r="17" fill="#EF5350"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
-        <g transform="translate(100 52)"><circle r="17" fill="#42A5F5"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
+        <g transform="translate(100 52)" id="kgGold"><circle r="17" fill="#42A5F5"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/><path class="kgsp" d="M14 -26l2.4 6.6 6.6 2.4-6.6 2.4-2.4 6.6-2.4-6.6-6.6-2.4 6.6-2.4z"/></g>
         <g transform="translate(138 72)"><circle r="17" fill="#FFCA28"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
         <g transform="translate(48 108)"><circle r="17" fill="#66BB6A"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
         <g transform="translate(84 96)"><circle r="17" fill="#AB47BC"/><path d="M-17 0a17 17 0 0 0 34 0z" fill="#fff"/></g>
@@ -999,7 +1099,9 @@ document.addEventListener('keydown',e=>{
   }else if(kflash.classList.contains('show')){
     if(e.key==='ArrowRight'||e.key===' '||e.key==='Enter'){e.preventDefault();kfTap();}
     else if(e.key==='ArrowLeft')kfPrev();else if(e.key==='Escape')kToMenu();
-  }else if(e.key==='Escape'&&[kquiz,ktrace,kbook,kmem,kpeek,kwb,kgacha].some(x=>x.classList.contains('show')))kToMenu();
+  }else if(e.key==='Escape'&&!$('#kuEdit').hidden){KU.q=[];kuNext();}
+  else if(e.key==='Escape'&&khome.classList.contains('show'))kOpenBook();
+  else if(e.key==='Escape'&&[kquiz,ktrace,kbook,kmem,kpeek,kwb,kgacha].some(x=>x.classList.contains('show')))kToMenu();
   else if(e.key==='Escape'&&kmenu.classList.contains('show'))$('#kmBack').click();
   else if(e.key==='Escape'&&credits.classList.contains('show'))$('#crBack').click();
 });
@@ -1101,7 +1203,7 @@ function fxLoop(){
 function bigConfetti(){const w=innerWidth,h=innerHeight;confetti(w*.2,h*.4,40,11);confetti(w*.8,h*.4,40,11);setTimeout(()=>confetti(w*.5,h*.3,50,12),250);}
 
 /* ---- がめんの きりかえ ---- */
-function kHideAll(){kStopGames();[kmenu,kbook,kflash,kquiz,ktrace,kmem,kpeek,kwb,kgacha].forEach(e=>e.classList.remove('show'));kClosePop();}
+function kHideAll(){kStopGames();[kmenu,kbook,kflash,kquiz,ktrace,kmem,kpeek,kwb,kgacha,khome].forEach(e=>e.classList.remove('show'));kClosePop();}
 function kOpenMenu(script){
   if(script){KS.script=script;ksave();}
   home.hidden=true;kHideAll();kmenu.classList.add('show');kmenu.scrollTop=0;kRenderMenu();
@@ -1137,7 +1239,7 @@ function kRenderMenu(){
     else b.disabled=true;
     ch.appendChild(b);
   }));
-  $('#kStkN').textContent=KST.length;$('#kCoinN').textContent=KC;
+  $('#kStkN').textContent=KST.length+kuGot();$('#kCoinN').textContent=KC;
   const o=$('#kOpts');o.innerHTML='';
   [['voice',KS.voice,KS.voice?'🔈 こえ・おと：オン':'🔇 こえ・おと：オフ'],['order',KS.order==='rand',KS.order==='rand'?'🔀 じゅんばん：ばらばら':'➡️ じゅんばん：あいうえお']].forEach(([k,on,t])=>{
     const b=document.createElement('button');b.className='chip'+(on?' on':'');b.textContent=t;
@@ -1429,7 +1531,22 @@ window.addEventListener('resize',()=>{if(ktrace.classList.contains('show')&&KT){
 /* ---- シール ---- */
 function kOpenBook(){
   kHideAll();kbook.classList.add('show');kbook.scrollTop=0;
-  $('#kbNote').textContent=`あつめた シール：${KST.length} / ${ALL.length}まい。タップすると なまえを よむよ。`;
+  const hg=kuGot(),ht=KU.list.length,H=$('#kbHome');
+  $('#kbNote').textContent=`あつめた シール：${KST.length+hg} / ${ALL.length+ht}まい。タップすると なまえを よむよ。`;
+  H.innerHTML='';H.hidden=!ht;$('#kbRegH').hidden=!ht;
+  if(ht){
+    const rest=ht-hg;
+    H.innerHTML=`<h3 class="kbh">✨ スペシャル シール <small>${rest?`あと ${rest}まい ガチャで でるよ`:'ぜんぶ あつまった！'}</small></h3><div class="kbgrid"></div>`;
+    const hgd=H.querySelector('.kbgrid');
+    KU.list.forEach((u,i)=>{
+      const b=document.createElement('button');b.style.setProperty('--r',(((i*29)%11)-5)+'deg');
+      if(u.got){b.className='kst sp'+(u.cut?' cut':'');b.innerHTML=`<img src="${u.src}" alt="">`;b.setAttribute('aria-label',u.name||'スペシャル シール');
+        b.onclick=()=>{b.classList.remove('wig');void b.offsetWidth;b.classList.add('wig');actx();SFX.star();if(u.name)ksay(u.name,.95,true);};}
+      else{b.className='kst q';b.innerHTML='<span>？</span>';b.setAttribute('aria-label','まだ');
+        b.onclick=()=>{actx();SFX.soft();ksay('ガチャガチャで でるよ',.95,true);};}
+      hgd.appendChild(b);
+    });
+  }
   const g=$('#kbGrid');g.innerHTML='';const by={};ALL.forEach(it=>by[it.img]=it);
   KST.slice().reverse().forEach((src,i)=>{
     const it=by[src];if(!it)return;
@@ -1649,16 +1766,19 @@ $('#kwSay').onclick=()=>{if(KW){actx();ksay(KW.words[KW.i][0],.9,true);}};
 /* ---- ガチャガチャ ---- */
 let kgBusy=false;
 function kOpenGacha(){
-  kHideAll();kgacha.classList.add('show');kgBusy=false;$('#kgCap').hidden=true;$('#kgMsg').textContent='';kCoinUI();
+  kHideAll();kgacha.classList.add('show');kgBusy=false;$('#kgCap').hidden=true;kCoinUI();kuCounts();
+  $('#kgMsg').textContent=kuRest().length?'✨ きんいろの カプセルが はいってるよ！':'';
   ksay(KC>0?'ガチャガチャを まわそう！':'コインを あつめよう！',.95);
 }
 function kgTurn(){
   if(kgBusy)return;actx();
-  const have=new Set(KST),rest=ALL.filter(it=>!have.has(it.img));
-  if(!rest.length){$('#kgMsg').textContent='シールは ぜんぶ あつまったよ！ 🎉';ksay('シールは ぜんぶ あつまったよ！');return;}
+  const have=new Set(KST),rest=ALL.filter(it=>!have.has(it.img)),hrest=kuRest();
+  if(!rest.length&&!hrest.length){$('#kgMsg').textContent='シールは ぜんぶ あつまったよ！ 🎉';ksay('シールは ぜんぶ あつまったよ！');return;}
   if(KC<1){$('#kgMsg').textContent='コインが ないよ。あそんで あつめてね！';SFX.soft();ksay('コインが ないよ。あそんで あつめてね',.95);return;}
   kgBusy=true;KC--;store('babyfc_kana_coin',KC);kCoinUI();$('#kgMsg').textContent='';
-  const it=rest[Math.floor(Math.random()*rest.length)];
+  let it;
+  if(hrest.length&&(!rest.length||Math.random()<(KU_RATE[KS.hrate]||.6))){const u=hrest[Math.floor(Math.random()*hrest.length)];it={home:u,img:u.src,j:u.name};}
+  else it=rest[Math.floor(Math.random()*rest.length)];
   const m=$('#kgMachine');m.classList.remove('turn');void m.offsetWidth;m.classList.add('turn');
   [0,.22,.44,.66,.88].forEach(t=>beep(1500,t,.04,'square',.05));
   ksay('ガチャ ガチャ… なにが でるかな？',.95);
@@ -1666,15 +1786,25 @@ function kgTurn(){
 }
 function kgShowCap(it){
   const cap=$('#kgCap'),cols=['#EF5350','#42A5F5','#66BB6A','#FFCA28','#AB47BC','#FF7043','#26C6DA','#EC407A'];
+  const sp=!!it.home,stk=cap.querySelector('.cstk');
   cap.style.setProperty('--cc',cols[Math.floor(Math.random()*cols.length)]);
-  cap.classList.remove('opened');cap.hidden=false;
-  cap.querySelector('img').src=it.img;$('#kgName').textContent='';$('#kgCapMsg').textContent='タップして あけてね！';$('#kgCapBtns').hidden=true;
+  cap.classList.remove('opened');cap.classList.toggle('sp',sp);stk.classList.toggle('home',sp&&!it.home.cut);stk.classList.toggle('cut',sp&&it.home.cut);cap.hidden=false;
+  cap.querySelector('img').src=it.img;$('#kgName').textContent='';$('#kgCapMsg').textContent=sp?'✨ きんいろの カプセル！ ✨':'タップして あけてね！';$('#kgCapBtns').hidden=true;
+  if(sp){setTimeout(()=>{if(!cap.classList.contains('opened')){SFX.star();ksay('わあ！ きんいろの カプセルだ！ あけてみよう',.95);}},350);}
   const ball=$('#kgBall');ball.style.animation='none';void ball.offsetWidth;ball.style.animation='';
   ball.onclick=()=>{
     if(cap.classList.contains('opened'))return;cap.classList.add('opened');
-    KST.push(it.img);store('babyfc_kana_st',KST);$('#kStkN').textContent=KST.length;
-    SFX.fan();const r=ball.getBoundingClientRect();confetti(r.left+r.width/2,r.top+r.height/2,70,12);
-    $('#kgName').textContent=it.j;$('#kgCapMsg').textContent='🎉 シール ゲット！';ksay(['やったー！',it.j+'の シールだよ'],.95);
+    const r=ball.getBoundingClientRect();
+    if(sp){
+      it.home.got=Date.now();kuPatch(it.home.id,{got:it.home.got}).catch(()=>{});kuCounts();
+      SFX.fan();setTimeout(()=>SFX.star(),450);confetti(r.left+r.width/2,r.top+r.height/2,80,13);setTimeout(bigConfetti,300);
+      $('#kgName').textContent=it.j||'';$('#kgCapMsg').textContent='🎉 スペシャル シール ゲット！';
+      ksay(it.j?['やったー！',it.j+'の シールだよ']:['やったー！','スペシャル シールだよ'],.95);
+    }else{
+      KST.push(it.img);store('babyfc_kana_st',KST);kuCounts();
+      SFX.fan();confetti(r.left+r.width/2,r.top+r.height/2,70,12);
+      $('#kgName').textContent=it.j;$('#kgCapMsg').textContent='🎉 シール ゲット！';ksay(['やったー！',it.j+'の シールだよ'],.95);
+    }
     setTimeout(()=>{$('#kgCapBtns').hidden=false;kgBusy=false;},900);
   };
 }
@@ -1687,6 +1817,218 @@ $('#kGoMem').onclick=()=>{actx();kStartMem();};
 $('#kGoPeek').onclick=()=>{actx();kStartPeek();};
 $('#kGoWord').onclick=()=>{actx();kStartWord();};
 window.addEventListener('resize',()=>{if(kmem.classList.contains('show')&&KM)kmRender();if(kpeek.classList.contains('show')&&KPK)kpLayout();});
+
+
+/* ---- スペシャル シール（おうちで とった しゃしん。この たんまつの なかだけに ほぞん。サーバーには おくらない） ---- */
+const khome=$('#khome');
+const KU={db:null,list:[],url:{},ready:false,err:false,q:[],ed:null,saving:false};
+const KU_RATE={some:.3,often:.6,always:1};
+if(!KU_RATE[KS.hrate])KS.hrate='often';
+function kuDB(){
+  return new Promise((res,rej)=>{
+    if(KU.db)return res(KU.db);
+    let r;try{r=indexedDB.open('babyfc_home',1);}catch(e){return rej(e);}
+    r.onupgradeneeded=()=>{if(!r.result.objectStoreNames.contains('st'))r.result.createObjectStore('st',{keyPath:'id'});};
+    r.onsuccess=()=>{KU.db=r.result;KU.db.onversionchange=()=>{KU.db.close();KU.db=null;};res(KU.db);};
+    r.onerror=()=>rej(r.error||new Error('idb'));
+    r.onblocked=()=>rej(new Error('blocked'));
+  });
+}
+function kuTx(mode,fn){
+  return kuDB().then(db=>new Promise((res,rej)=>{
+    const tx=db.transaction('st',mode),req=fn(tx.objectStore('st'));
+    tx.oncomplete=()=>res(req?req.result:undefined);tx.onerror=()=>rej(tx.error);tx.onabort=()=>rej(tx.error||new Error('abort'));
+  }));
+}
+function kuPatch(id,patch){   // なまえ・もらった だけ かえる（がぞうは そのまま）
+  return kuDB().then(db=>new Promise((res,rej)=>{
+    const tx=db.transaction('st','readwrite'),os=tx.objectStore('st'),g=os.get(id);
+    g.onsuccess=()=>{if(g.result)os.put(Object.assign(g.result,patch));};
+    tx.oncomplete=()=>res();tx.onerror=()=>rej(tx.error);tx.onabort=()=>rej(tx.error||new Error('abort'));
+  }));
+}
+function kuURL(r){if(!KU.url[r.id])KU.url[r.id]=URL.createObjectURL(new Blob([r.buf],{type:r.type||'image/jpeg'}));return KU.url[r.id];}
+async function kuLoad(){
+  try{
+    const all=await kuTx('readonly',os=>os.getAll());
+    KU.list=(all||[]).sort((a,b)=>a.t-b.t).map(r=>({id:r.id,name:r.name||'',cut:!!r.cut,got:r.got||0,t:r.t,src:kuURL(r)}));
+  }catch(e){KU.list=[];KU.err=true;}
+  KU.ready=true;kuCounts();kuRenderHome();
+}
+function kuGot(){return KU.list.filter(u=>u.got).length;}
+function kuRest(){return KU.list.filter(u=>!u.got);}
+function kuCounts(){
+  const n=$('#kStkN');if(n)n.textContent=KST.length+kuGot();
+  const g=$('#kgGold');if(g)g.classList.toggle('on',kuRest().length>0);
+}
+
+/* しゃしんを よみこむ → ちいさく する → すけている（きりぬき）か しらべる */
+function kuLoadImg(file){
+  return new Promise((res,rej)=>{const u=URL.createObjectURL(file),im=new Image();
+    im.onload=()=>res({im,u});im.onerror=()=>{URL.revokeObjectURL(u);rej(new Error('img'));};im.src=u;});
+}
+function kuScale(src,w,h,max){
+  while(Math.max(w,h)>max*2){   // おおきすぎる しゃしんは はんぶんずつ（ギザギザ よけ）
+    const c=document.createElement('canvas');c.width=Math.max(1,Math.round(w/2));c.height=Math.max(1,Math.round(h/2));
+    c.getContext('2d').drawImage(src,0,0,c.width,c.height);src=c;w=c.width;h=c.height;
+  }
+  const k=Math.min(1,max/Math.max(w,h)),c=document.createElement('canvas');
+  c.width=Math.max(1,Math.round(w*k));c.height=Math.max(1,Math.round(h*k));
+  const x=c.getContext('2d');x.imageSmoothingQuality='high';x.drawImage(src,0,0,c.width,c.height);return c;
+}
+function kuAlphaBox(c){
+  const s=Math.min(1,160/Math.max(c.width,c.height)),w=Math.max(1,Math.round(c.width*s)),h=Math.max(1,Math.round(c.height*s));
+  const t=document.createElement('canvas');t.width=w;t.height=h;const x=t.getContext('2d');x.drawImage(c,0,0,w,h);
+  let d;try{d=x.getImageData(0,0,w,h).data;}catch(e){return null;}
+  let clear=0,x0=w,y0=h,x1=-1,y1=-1;
+  for(let y=0;y<h;y++)for(let i=0;i<w;i++){const a=d[(y*w+i)*4+3];if(a<200)clear++;if(a>24){if(i<x0)x0=i;if(i>x1)x1=i;if(y<y0)y0=y;if(y>y1)y1=y;}}
+  if(clear<w*h*.04||x1<0)return null;
+  const bx=Math.max(0,(x0-1)/s),by=Math.max(0,(y0-1)/s),bx2=Math.min(c.width,(x1+2)/s),by2=Math.min(c.height,(y1+2)/s);
+  return {x:bx,y:by,w:Math.max(1,bx2-bx),h:Math.max(1,by2-by)};
+}
+function kuCutSticker(c,b){   // きりぬきに しろい ふちを つけて「かたぬき シール」に
+  const S=512,pad=S*.07,k=Math.min((S-pad*2)/b.w,(S-pad*2)/b.h),dw=b.w*k,dh=b.h*k,dx=(S-dw)/2,dy=(S-dh)/2;
+  const sil=document.createElement('canvas');sil.width=sil.height=S;const sx=sil.getContext('2d');
+  sx.drawImage(c,b.x,b.y,b.w,b.h,dx,dy,dw,dh);sx.globalCompositeOperation='source-in';sx.fillStyle='#fff';sx.fillRect(0,0,S,S);
+  const o=document.createElement('canvas');o.width=o.height=S;const ox=o.getContext('2d'),R=S*.022;
+  for(let a=0;a<24;a++){const t=a/24*Math.PI*2;ox.drawImage(sil,Math.cos(t)*R,Math.sin(t)*R);}
+  ox.imageSmoothingQuality='high';ox.drawImage(c,b.x,b.y,b.w,b.h,dx,dy,dw,dh);
+  return o;
+}
+
+/* シールを つくる がめん（ゆびで うごかす・ひろげて おおきく） */
+function kuFiles(files){
+  KU.q=[...(files||[])].filter(f=>/^image\//.test(f.type||'')||/\.(heic|heif|png|jpe?g|webp|gif)$/i.test(f.name||''));
+  if(!KU.q.length){toast('しゃしんを えらんでね');return;}
+  KU.total=KU.q.length;kuNext();
+}
+async function kuNext(){
+  $('#kuEdit').hidden=true;KU.ed=null;
+  const f=KU.q.shift();if(!f){kuRenderHome();return;}
+  $('#kuBusy').hidden=false;
+  try{
+    const {im,u}=await kuLoadImg(f);
+    const c=kuScale(im,im.naturalWidth||im.width,im.naturalHeight||im.height,1400);URL.revokeObjectURL(u);
+    const b=/jpe?g/i.test(f.type||'')?null:kuAlphaBox(c);
+    $('#kuBusy').hidden=true;kuEditOpen(c,b?kuCutSticker(c,b):null);
+  }catch(e){$('#kuBusy').hidden=true;toast('この しゃしんは よみこめませんでした');kuNext();}
+}
+function kuEditOpen(c,cut){
+  KU.ed={c,cut,s:1,ox:0,oy:0,p:new Map()};
+  const E=$('#kuEdit');E.classList.toggle('iscut',!!cut);E.hidden=false;
+  $('#kuName').value='';$('#kuZoom').value=1;
+  const done=KU.total-KU.q.length;$('#kuEdN').textContent=KU.total>1?`${done} / ${KU.total}`:'';
+  $('#kuHelp').textContent=cut?'きりぬき シールに なるよ':'ゆびで うごかして、まるの なかに いれてね';
+  requestAnimationFrame(kuEdDraw);
+}
+function kuEdSize(){return $('#kuCrop').clientWidth||280;}
+function kuEdClamp(e,C){
+  const iw=e.c.width,ih=e.c.height,k=Math.max(C/iw,C/ih)*e.s,dw=iw*k,dh=ih*k;
+  const mx=Math.max(0,(dw-C)/2)/C,my=Math.max(0,(dh-C)/2)/C;
+  e.ox=Math.max(-mx,Math.min(mx,e.ox));e.oy=Math.max(-my,Math.min(my,e.oy));return {dw,dh};
+}
+function kuEdDraw(){
+  const e=KU.ed;if(!e)return;
+  const cv=$('#kuCv'),C=kuEdSize(),r=Math.min(2,window.devicePixelRatio||1),px=Math.round(C*r);
+  if(cv.width!==px){cv.width=cv.height=px;}
+  const x=cv.getContext('2d');x.setTransform(r,0,0,r,0,0);x.clearRect(0,0,C,C);
+  if(e.cut){const m=C*.03;x.imageSmoothingQuality='high';x.drawImage(e.cut,m,m,C-2*m,C-2*m);return;}
+  const {dw,dh}=kuEdClamp(e,C);
+  x.fillStyle='#fff';x.fillRect(0,0,C,C);x.imageSmoothingQuality='high';x.drawImage(e.c,C/2+e.ox*C-dw/2,C/2+e.oy*C-dh/2,dw,dh);
+}
+function kuEdZoom(ns){const e=KU.ed;if(!e)return;ns=Math.max(1,Math.min(5,ns));const f=ns/e.s;e.ox*=f;e.oy*=f;e.s=ns;}
+function kuEdRender(){
+  const e=KU.ed;if(e.cut)return e.cut;
+  const S=512,o=document.createElement('canvas');o.width=o.height=S;const x=o.getContext('2d');
+  x.fillStyle='#fff';x.fillRect(0,0,S,S);
+  const iw=e.c.width,ih=e.c.height,k=Math.max(S/iw,S/ih)*e.s,dw=iw*k,dh=ih*k;
+  x.imageSmoothingQuality='high';x.drawImage(e.c,S/2+e.ox*S-dw/2,S/2+e.oy*S-dh/2,dw,dh);return o;
+}
+function kuBuf(b){return b.arrayBuffer?b.arrayBuffer():new Promise((res,rej)=>{const f=new FileReader();f.onload=()=>res(f.result);f.onerror=()=>rej(f.error);f.readAsArrayBuffer(b);});}
+async function kuEdSave(){
+  const e=KU.ed;if(!e||KU.saving)return;KU.saving=true;
+  try{
+    const c=kuEdRender(),type=e.cut?'image/png':'image/jpeg';
+    const blob=await new Promise(r=>c.toBlob(r,type,.86));if(!blob)throw new Error('blob');
+    const rec={id:'u'+Date.now().toString(36)+Math.random().toString(36).slice(2,7),name:$('#kuName').value.trim().slice(0,20),
+      buf:await kuBuf(blob),type,cut:!!e.cut,got:0,t:Date.now()};
+    await kuTx('readwrite',os=>os.put(rec));
+    KU.list.push({id:rec.id,name:rec.name,cut:rec.cut,got:0,t:rec.t,src:kuURL(rec)});
+    try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist();}catch(_){}
+    actx();SFX.star();kuCounts();toast(rec.name?`「${rec.name}」の シールが できたよ`:'シールが できたよ',1800);
+    KU.saving=false;kuNext();
+  }catch(err){KU.saving=false;toast('ほぞん できませんでした（'+((err&&err.name)||'error')+'）');}
+}
+const kuCrop=$('#kuCrop');
+kuCrop.addEventListener('pointerdown',ev=>{
+  const e=KU.ed;if(!e||e.cut)return;ev.preventDefault();
+  try{kuCrop.setPointerCapture(ev.pointerId);}catch(_){}
+  e.p.set(ev.pointerId,{x:ev.clientX,y:ev.clientY});
+});
+kuCrop.addEventListener('pointermove',ev=>{
+  const e=KU.ed;if(!e||!e.p.has(ev.pointerId))return;ev.preventDefault();
+  const C=kuEdSize(),ids=[...e.p.keys()];
+  if(ids.length===1){const p=e.p.get(ev.pointerId);e.ox+=(ev.clientX-p.x)/C;e.oy+=(ev.clientY-p.y)/C;}
+  else{
+    const a=e.p.get(ids[0]),b=e.p.get(ids[1]),me={x:ev.clientX,y:ev.clientY};
+    const na=ids[0]===ev.pointerId?me:a,nb=ids[1]===ev.pointerId?me:b;
+    const d0=Math.hypot(a.x-b.x,a.y-b.y),d1=Math.hypot(na.x-nb.x,na.y-nb.y);
+    if(d0>12){kuEdZoom(e.s*d1/d0);$('#kuZoom').value=e.s;}
+    e.ox+=((na.x+nb.x)-(a.x+b.x))/2/C;e.oy+=((na.y+nb.y)-(a.y+b.y))/2/C;
+  }
+  e.p.set(ev.pointerId,{x:ev.clientX,y:ev.clientY});kuEdDraw();
+});
+const kuUp=ev=>{if(KU.ed)KU.ed.p.delete(ev.pointerId);};
+kuCrop.addEventListener('pointerup',kuUp);kuCrop.addEventListener('pointercancel',kuUp);
+$('#kuZoom').oninput=ev=>{kuEdZoom(+ev.target.value);kuEdDraw();};
+$('#kuSave').onclick=kuEdSave;
+$('#kuCancel').onclick=()=>{kuNext();};
+$('#kuAdd').onclick=()=>{if(KU.err){toast('この ブラウザでは ほぞん できません');return;}const f=$('#kuFile');f.value='';f.click();};
+$('#kuFile').onchange=ev=>{kuFiles(ev.target.files);};
+if(navigator.clipboard&&navigator.clipboard.read)$('#kuPaste').hidden=false;
+$('#kuPaste').onclick=async()=>{
+  try{
+    const items=await navigator.clipboard.read();
+    for(const it of items){const t=it.types.find(x=>x.indexOf('image/')===0);
+      if(t){const b=await it.getType(t);kuFiles([new File([b],'paste.'+(t.split('/')[1]||'png'),{type:t})]);return;}}
+    toast('コピーした がぞうが ありません');
+  }catch(e){toast('はりつけ できませんでした');}
+};
+window.addEventListener('resize',()=>{if(KU.ed&&!$('#kuEdit').hidden)kuEdDraw();});
+
+/* おとなの かた むけ：つくった シールの いちらん */
+function kOpenHome(){kHideAll();khome.classList.add('show');khome.scrollTop=0;kuRenderHome();}
+function kuRenderHome(){
+  if(!khome.classList.contains('show'))return;
+  $('#kuRate').querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.v===KS.hrate));
+  $('#kuCount').textContent=KU.list.length;
+  const L=$('#kuList');L.innerHTML='';
+  if(KU.err){L.innerHTML='<div class="kuempty">この ブラウザでは ほぞん できないようです（プライベート ブラウズでは つかえません）。</div>';return;}
+  if(!KU.list.length){L.innerHTML='<div class="kuempty">まだ ありません。「＋ しゃしんを えらぶ」から つくってね。</div>';return;}
+  KU.list.slice().reverse().forEach(u=>{
+    const row=document.createElement('div');row.className='kurow';
+    row.innerHTML=`<button class="kst sp${u.cut?' cut':''}" aria-label="よむ"><img src="${u.src}" alt=""></button>`+
+      `<input class="kuname" maxlength="20" placeholder="なまえ" value="${esc(u.name)}" enterkeyhint="done">`+
+      `<button class="kugot${u.got?' on':''}">${u.got?'✓ もらった':'🎁 まだ'}</button><button class="kudel" aria-label="けす">🗑</button>`;
+    row.querySelector('.kst').onclick=()=>{actx();SFX.tap();if(u.name)ksay(u.name,.95,true);};
+    const nm=row.querySelector('.kuname');
+    nm.onchange=()=>{u.name=nm.value.trim().slice(0,20);kuPatch(u.id,{name:u.name}).catch(()=>toast('ほぞん できませんでした'));};
+    nm.onkeydown=ev=>{if(ev.key==='Enter')nm.blur();};
+    row.querySelector('.kugot').onclick=()=>{u.got=u.got?0:Date.now();kuPatch(u.id,{got:u.got}).catch(()=>{});SFX.tap();kuCounts();kuRenderHome();};
+    const d=row.querySelector('.kudel');
+    d.onclick=()=>{
+      if(!d.classList.contains('arm')){d.classList.add('arm');d.textContent='けす？';clearTimeout(d._t);d._t=setTimeout(()=>{d.classList.remove('arm');d.textContent='🗑';},2600);return;}
+      kuTx('readwrite',os=>os.delete(u.id)).then(()=>{
+        try{URL.revokeObjectURL(u.src);}catch(_){}delete KU.url[u.id];KU.list=KU.list.filter(x=>x!==u);kuCounts();kuRenderHome();
+      }).catch(()=>toast('けせませんでした'));
+    };
+    L.appendChild(row);
+  });
+}
+$('#kuRate').querySelectorAll('button').forEach(b=>b.onclick=()=>{KS.hrate=b.dataset.v;ksave();SFX.tap();kuRenderHome();});
+$('#kuOpen').onclick=()=>{actx();kOpenHome();};
+$('#khBack').onclick=()=>{kOpenBook();};
+if(window.indexedDB)kuLoad();else{KU.err=true;KU.ready=true;}
 
 buildHome();
 </script>
