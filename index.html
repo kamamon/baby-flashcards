@@ -483,6 +483,224 @@ a{color:inherit}
 .word.xl{white-space:normal;word-break:keep-all;overflow-wrap:anywhere;max-width:100%}
 .deck .nm{word-break:keep-all;overflow-wrap:anywhere}
 .deck .nm.sm{font-size:14px}
+
+/* ---- おやこで あそぼう ---- */
+.playbanner{display:flex;align-items:center;gap:14px;width:100%;margin:12px 0 0;padding:14px 16px;border-radius:20px;background:#fff;border:3px solid #DCEDC8;box-shadow:0 3px 0 rgba(0,0,0,.05);text-align:left}
+.playbanner .pbi{flex:none;width:64px;height:64px;border-radius:14px;background:#F1F8E9;border:2px solid #f3ece4;display:flex;align-items:center;justify-content:center;font-size:36px}
+.playbanner b{display:block;font-size:19px;font-weight:900}
+.playbanner span{display:block;font-size:12.5px;color:var(--sub);margin-top:3px;line-height:1.5}
+.playbanner:active{transform:scale(.97)}
+.pacts{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px}
+@media(min-width:600px){.pacts{grid-template-columns:1fr 1fr}}
+.pact{position:relative;display:flex;align-items:center;gap:12px;padding:14px 14px 14px 12px;border-radius:18px;background:var(--pc);text-align:left;box-shadow:0 3px 0 rgba(0,0,0,.06)}
+.pact i{font-style:normal;font-size:32px;flex:none;width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,.75);display:flex;align-items:center;justify-content:center}
+.pact b{display:block;font-size:17px;font-weight:900;padding-right:58px}
+.pact span{display:block;font-size:12.5px;color:#6d6257;margin-top:2px;line-height:1.45}
+.pact em{display:block;font-style:normal;font-size:11px;color:rgba(0,0,0,.42);font-weight:800;margin-top:3px}
+.pact u{position:absolute;top:9px;right:10px;text-decoration:none;font-size:11px;font-weight:900;color:#fff;background:#FF7043;padding:3px 8px;border-radius:999px}
+.pact:active{transform:scale(.98)}
+.pbtn{padding:11px 14px;border-radius:14px;background:#f6f2ec;font-size:15px;font-weight:800;color:#5d554c}
+.pbtn.del{color:#c62828}
+.pbtn.warn,.pbtn.arm{background:#E53935;color:#fff}
+.prow2{display:flex;gap:10px}.prow2>*{flex:1}
+.preset{display:block;margin:10px auto 0;font-size:13px;color:var(--sub);text-decoration:underline;padding:6px}
+.preset.arm{color:#E53935;font-weight:900}
+.plog{font-size:13px;line-height:1.55;border-bottom:1px solid #f1ebe3;padding:6px 0}
+.plog small{color:var(--sub);margin-right:6px}.plog b{margin-right:4px}
+.pimp{margin-top:10px;padding:12px;border-radius:14px;background:#FFF3E0;font-size:13.5px;line-height:1.6}
+.go.pgreen{background:#43A047}
+.psel{width:100%;padding:11px 12px;border-radius:12px;border:2px solid #eadfce;font:inherit;font-size:16px;background:#fffdf9;color:var(--ink)}
+/* ページ */
+.pthumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;margin-top:12px}
+.pth{position:relative;background:#fff;border-radius:14px;padding:6px 4px 6px;box-shadow:0 2px 0 rgba(0,0,0,.05);display:flex;flex-direction:column;align-items:center}
+.pth img{width:100%;aspect-ratio:1/1;object-fit:contain}
+.pth span{font-size:11.5px;font-weight:800;margin-top:2px;line-height:1.3;text-align:center;word-break:keep-all;overflow-wrap:anywhere}
+.pth.on{box-shadow:0 0 0 3px #43A047}
+.pth.on::after{content:"✓";position:absolute;top:4px;right:6px;width:24px;height:24px;border-radius:50%;background:#43A047;color:#fff;font-weight:900;font-size:15px;display:flex;align-items:center;justify-content:center}
+.pgu{text-align:center}
+.pgupic{width:min(70vw,300px);aspect-ratio:1/1;margin:0 auto}
+.pgupic img{width:100%;height:100%;object-fit:contain}
+.pgun{font-size:28px;font-weight:900;margin:4px 0 8px}
+.pgsteps{padding-left:1.3em;font-size:14.5px;line-height:1.7}
+.pgsteps li+li{margin-top:4px}
+.pgtalk p{font-size:16px;font-weight:700;line-height:1.6;background:#FFF8EE;border-radius:12px;padding:8px 12px;margin-top:6px}
+.pmyr{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.pmyth{display:flex;gap:4px;flex:1 1 100%}
+.pmyth img{width:48px;height:48px;object-fit:contain;background:#fff;border-radius:10px;box-shadow:0 0 0 1px #f0e8dc}
+.pmyinfo{flex:1}.pmyinfo b{display:block;font-size:17px;font-weight:900}.pmyinfo span{font-size:12.5px;color:var(--sub)}
+.pmyb{display:flex;gap:6px}.pmyb .pbtn{padding:9px 11px;font-size:14px}
+.pmesel{display:flex;flex-wrap:wrap;gap:6px}
+.pms{width:72px;background:#FFF8EE;border-radius:12px;padding:4px;display:flex;flex-direction:column;align-items:center;position:relative}
+.pms img{width:60px;height:60px;object-fit:contain}
+.pms span{font-size:10.5px;font-weight:800;line-height:1.2;text-align:center;overflow-wrap:anywhere}
+.pms::after{content:"×";position:absolute;top:-4px;right:-4px;width:20px;height:20px;border-radius:50%;background:#bbb;color:#fff;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center}
+/* ゲーム がめん */
+.pgbody{position:absolute;left:0;right:0;top:calc(62px + env(safe-area-inset-top));bottom:0;padding:0 max(14px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));display:flex;flex-direction:column;align-items:center;overflow:hidden}
+.pgbody.psetupw{display:block;overflow-y:auto;touch-action:pan-y;-webkit-overflow-scrolling:touch}
+.psetup{max-width:560px;margin:0 auto;padding-bottom:24px}
+.pst{font-size:22px;font-weight:900;text-align:center;margin:2px 0 4px}
+.psec{background:#FFF8EE;border-radius:16px;padding:12px;margin-top:10px}
+.psec h3{font-size:13.5px;font-weight:900;color:#8a7d6e;margin-bottom:8px}
+.psetup .go{background:#43A047}
+.pghost{position:fixed;width:84px;height:84px;object-fit:contain;transform:translate(-50%,-60%) scale(1.05);pointer-events:none;z-index:40;filter:drop-shadow(0 8px 12px rgba(0,0,0,.25))}
+/* F05 どれかな */
+.pwq{font-size:clamp(22px,6.4vmin,40px);font-weight:900;text-align:center;margin:1.2vh 0 1.4vh;line-height:1.3}
+.pwq b{color:#1E88E5}
+.pwgrid{flex:1;min-height:0;width:100%;display:grid;gap:12px;align-content:center;justify-content:center}
+.pwc{position:relative;background:#fff;border-radius:22px;box-shadow:0 0 0 3px #efe7dc,0 5px 0 rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;overflow:hidden;transition:transform .12s}
+.pwc img{width:88%;height:88%;object-fit:contain;pointer-events:none}
+.pwc:active{transform:scale(.97)}
+.pwc.ok{box-shadow:0 0 0 6px #43A047,0 5px 0 rgba(0,0,0,.06)}
+.pwc.no{animation:pshake .5s}
+.pwn{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-size:clamp(15px,4.2vmin,24px);font-weight:900;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.pwn:empty{display:none}
+.pwc.ok .pwn{color:#2E7D32;text-shadow:0 0 6px #fff,0 0 6px #fff}
+.pwc.no .pwn,.pwc:not(.ok) .pwn{background:rgba(0,0,0,.45);margin:0 18%;border-radius:999px;padding:2px 6px;text-shadow:none}
+.pwre{margin-top:1.4vh;padding:12px 26px;border-radius:999px;background:#1E88E5;color:#fff;font-size:18px;font-weight:900;box-shadow:0 3px 0 rgba(0,0,0,.12);flex:none}
+.pwh{font-size:12.5px;color:var(--sub);margin-top:8px;text-align:center;flex:none}
+@keyframes pshake{0%,100%{transform:none}20%{transform:translateX(-10px) rotate(-2deg)}40%{transform:translateX(9px) rotate(2deg)}60%{transform:translateX(-6px)}80%{transform:translateX(4px)}}
+.pradult{font-size:13.5px;background:#FFF3E0;color:#8a5a00;border-radius:12px;padding:8px 12px;margin-top:2px;text-align:center;flex:none}
+.prskip{background:#f1ebe3;color:#5d554c}
+/* F02 1まい */
+.real1 .prq{font-size:clamp(22px,6.2vmin,38px);font-weight:900;margin:1vh 0}
+.prbig{flex:1;min-height:0;width:100%;display:flex;align-items:center;justify-content:center}
+.prbig img{max-width:min(86vw,520px);max-height:100%;width:100%;height:100%;object-fit:contain}
+.prname{font-size:clamp(26px,8vmin,52px);font-weight:900;margin:.6vh 0 1vh}
+.prbtns{display:flex;gap:10px;width:100%;max-width:520px;flex:none}
+.prbtns .go{margin:0;flex:1.4;background:#43A047}
+.prbtns .pbtn{flex:1}
+/* F10 なかま わけ */
+.psq{font-size:clamp(19px,5.4vmin,30px);font-weight:900;margin:.6vh 0 1vh;text-align:center;flex:none}
+.psgrid{flex:1;min-height:0;width:100%;display:grid;gap:12px;align-content:center;justify-content:center}
+.psc{position:relative;background:#fff;border-radius:18px;box-shadow:0 0 0 3px #efe7dc,0 4px 0 rgba(0,0,0,.06);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;touch-action:none}
+.psc img{width:78%;height:72%;object-fit:contain;pointer-events:none}
+.psc span{font-size:clamp(11px,3.2vmin,15px);font-weight:800;line-height:1.2;max-width:94%;text-align:center;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;pointer-events:none}
+.psc.sel{box-shadow:0 0 0 5px #FFB300,0 4px 0 rgba(0,0,0,.06);transform:scale(1.04)}
+.psc.gone{background:transparent;box-shadow:inset 0 0 0 2px #f1ebe3}
+.psc.drag{opacity:.35}
+.psc.shake{animation:pshake .5s}
+.psshelves{display:flex;gap:10px;width:100%;max-width:720px;flex:none;margin-top:1.2vh;height:min(30vh,190px)}
+.pshelf{flex:1;border-radius:18px;background:#F3ECFA;border:3px dashed #CE93D8;display:flex;flex-direction:column;align-items:center;padding:6px;overflow:hidden;cursor:pointer}
+.pshelf:nth-child(2){background:#E8F4FD;border-color:#90CAF9}
+.pshelf:nth-child(3){background:#FFF4E0;border-color:#FFCC80}
+.pshelf.hint{animation:phint 1s ease-in-out 3;border-style:solid}
+@keyframes phint{50%{transform:scale(1.04);box-shadow:0 0 0 6px rgba(255,179,0,.5)}}
+.psl{font-size:clamp(14px,4vmin,19px);font-weight:900;color:#5d4a6e;display:flex;align-items:center;gap:4px;white-space:nowrap}
+.psl i{font-style:normal;font-size:1.3em}
+.psin{flex:1;width:100%;display:flex;flex-wrap:wrap;align-content:flex-start;justify-content:center;gap:4px;margin-top:4px;overflow:hidden}
+.psin img{width:clamp(34px,10vmin,52px);height:clamp(34px,10vmin,52px);object-fit:contain;background:#fff;border-radius:10px}
+.pshow{display:flex;flex-direction:column;gap:8px;margin:10px 0 0;width:100%;max-width:520px}
+.pshow>div{background:#FFF8EE;border-radius:14px;padding:8px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.pshow b{width:100%;font-size:14px}
+.pshow img{width:46px;height:46px;object-fit:contain;background:#fff;border-radius:8px}
+/* F21 ひとりに ひとつ */
+.pdq{font-size:clamp(19px,5.6vmin,32px);font-weight:900;margin:.6vh 0 1vh;text-align:center;flex:none}
+.pdfr{display:flex;justify-content:center;gap:min(3vw,18px);width:100%;flex:none}
+.pdp{display:flex;flex-direction:column;align-items:center;flex:1 1 0;min-width:0;max-width:150px}
+.pdai{width:100%;aspect-ratio:1/1;max-width:min(17vh,120px);border-radius:50%;background:#fff;box-shadow:0 0 0 3px #f1ebe3;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.pdai img{width:88%;height:88%;object-fit:contain}
+.pdnm{font-size:clamp(11px,3.2vmin,15px);font-weight:800;margin:3px 0 4px;height:2.4em;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.15;word-break:keep-all;overflow-wrap:anywhere}
+.pdpl{width:100%;max-width:min(19vh,130px);aspect-ratio:1.6/1;border-radius:50%;background:radial-gradient(ellipse at 50% 45%,#fff 0 52%,#f4efe8 53% 66%,#fff 67%);box-shadow:0 0 0 2px #e6ddd0,0 4px 0 rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center}
+.pdpl img{width:62%;height:120%;object-fit:contain;margin-top:-18%;pointer-events:none;filter:drop-shadow(0 3px 3px rgba(0,0,0,.15))}
+.pdtray{flex:1;min-height:0;width:100%;max-width:640px;margin-top:1.4vh;border-radius:20px;background:#FFF8EE;box-shadow:inset 0 0 0 3px #f1e6d6;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:8px;padding:8px}
+.pdfood{width:clamp(52px,14vmin,84px);height:clamp(52px,14vmin,84px);border-radius:16px;background:#fff;box-shadow:0 3px 0 rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;touch-action:none}
+.pdfood img{width:86%;height:86%;object-fit:contain;pointer-events:none}
+.pdfood.drag{opacity:.35}
+.pdempty{font-size:14px;color:var(--sub);font-weight:800}
+.pdask{flex:none;min-height:0;width:100%;max-width:640px;text-align:center}
+.pdat{font-size:17px;font-weight:900;margin-top:8px}
+.pdab{display:flex;gap:8px;margin-top:6px}
+.pdab button{flex:1;padding:12px 4px;border-radius:16px;background:#fff;box-shadow:0 0 0 3px #e9dfd1,0 3px 0 rgba(0,0,0,.06);font-size:clamp(14px,4.2vmin,18px);font-weight:900}
+.pdab button.no{animation:pshake .5s}
+.pdres{margin-top:8px;font-size:clamp(17px,5vmin,24px);font-weight:900;color:#2E7D32;background:#E8F5E9;border-radius:16px;padding:10px}
+/* F24 かずを わけよう */
+.pxq{font-size:clamp(18px,5.2vmin,28px);font-weight:900;margin:.4vh 0 1vh;flex:none}
+.pxplates{display:flex;gap:12px;width:100%;max-width:640px;flex:1;min-height:0}
+.pxp{flex:1;border-radius:26px;display:flex;flex-direction:column;align-items:center;padding:8px;min-height:0}
+.pxp.p0{background:#FFF1E6;box-shadow:inset 0 0 0 3px #FFCCA6}
+.pxp.p1{background:#E4F6F4;box-shadow:inset 0 0 0 3px #9ED9D2}
+.pxin{flex:1;min-height:0;width:100%;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:4px}
+.pxf{width:var(--xs,64px);height:var(--xs,64px);display:flex;align-items:center;justify-content:center}
+.pxf img{width:100%;height:100%;object-fit:contain;pointer-events:none}
+.n3 .pxf{--xs:clamp(52px,16vmin,90px)}.n5 .pxf{--xs:clamp(44px,12.5vmin,74px)}.n10 .pxf{--xs:clamp(30px,8.6vmin,52px)}
+.pxn{font-size:clamp(28px,9vmin,52px);font-weight:900;line-height:1.1;flex:none}
+.p0 .pxn{color:#E8620C}.p1 .pxn{color:#00897B}
+.pxeq{font-size:clamp(24px,7.6vmin,44px);font-weight:900;margin:.8vh 0 .4vh;flex:none;letter-spacing:.04em}
+.pxframe{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;max-width:min(92vw,360px);flex:none}
+.pxframe i{width:clamp(22px,6.4vmin,34px);height:clamp(22px,6.4vmin,34px);border-radius:6px;background:#f6f2ec;position:relative}
+.pxframe i::after{content:"";position:absolute;inset:22%;border-radius:50%}
+.pxframe i.d0::after{background:#E8620C}.pxframe i.d1::after{background:#00897B}
+.split .pxok{margin-top:1vh;width:auto;padding:12px 40px;background:#43A047;flex:none}
+.pxfound{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px;margin-top:.8vh;flex:none;max-width:640px}
+.pxfound span{background:#FFF8E1;border-radius:999px;padding:4px 10px;font-weight:900;font-size:14px}
+.pxfound em{font-style:normal;font-size:12.5px;color:var(--sub);font-weight:800;width:100%;text-align:center}
+/* F01 がめんを おく */
+.pplace{flex:1;min-height:0;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.pplace img{flex:1;min-height:0;max-width:100%;width:100%;object-fit:contain}
+.ppn{font-size:clamp(32px,10vmin,72px);font-weight:900;margin:1vh 0}
+.ppend{flex:none;margin-bottom:4px;opacity:.75}
+/* おわり */
+.pgbody.pendw{justify-content:center;overflow-y:auto;touch-action:pan-y}
+.pend{text-align:center;max-width:560px;width:100%}
+.pbig{font-size:clamp(64px,20vmin,120px);line-height:1.1}
+.pet{font-size:clamp(24px,7vmin,40px);font-weight:900;margin-top:1vh}
+.pes{font-size:clamp(14px,4vmin,18px);color:var(--sub);margin-top:6px;font-weight:700;line-height:1.5}
+.pend .endbtns{margin-top:2vh}
+#pgTitle:empty{display:none}
+.pcoin{display:inline-block;margin-top:12px;padding:6px 16px;border-radius:999px;background:#FFF3C4;color:#8a5a00;font-weight:900;font-size:16px}
+.pask{font-size:13px;color:#8a7d6e;margin-top:14px;background:#FFF8EE;border-radius:12px;padding:8px 12px;display:inline-block}
+/* よこむき */
+@media (orientation:landscape) and (max-height:600px){
+  .pgbody{top:calc(8px + env(safe-area-inset-top));padding-left:max(66px,env(safe-area-inset-left));padding-right:max(66px,env(safe-area-inset-right))}
+  .pwq,.psq,.pdq,.pxq,.real1 .prq{margin:.2vh 0 .6vh}
+  .pwh{display:none}
+  #pgame .counter{display:none}
+  .pwre{margin-top:1vh;padding:9px 22px;font-size:16px}
+  .psshelves{height:30vh}
+  .pdtray{margin-top:1vh}
+  .pxeq{margin:.4vh 0 0}
+  .pxframe{display:none}
+}
+/* せってい：うごきを へらす・もじを おおきく */
+.pcalm *,.pcalm *::before,.pcalm *::after{animation:none!important;transition:none!important}
+.pbigtxt .pwq,.pbigtxt .psq,.pbigtxt .pdq,.pbigtxt .pxq{font-size:clamp(26px,8vmin,46px)}
+.pbigtxt .pwn,.pbigtxt .psc span,.pbigtxt .pdnm{font-size:clamp(16px,4.6vmin,24px)}
+.pbigtxt .note,.pbigtxt .pgsteps,.pbigtxt .pgtalk p{font-size:17px}
+/* いんさつ（プレビュー と ほんばん） */
+#printArea{display:none}
+.pprev{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:14px}
+.ppw{position:relative;width:calc(194mm * var(--s));height:calc(281mm * var(--s));overflow:hidden;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12);border-radius:4px}
+.ppw>.ppg{transform:scale(var(--s));transform-origin:0 0}
+.ppw small{position:absolute;right:6px;bottom:4px;font-size:11px;color:#aaa}
+.ppg{width:194mm;height:281mm;background:#fff;color:#222;overflow:hidden;font-family:var(--jp)}
+.ppg.c1,.ppg.c4,.ppg.c9{display:grid;gap:4mm}
+.ppg.c1{grid-template-columns:1fr;grid-template-rows:1fr}
+.ppg.c4{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.ppg.c9{grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr)}
+.ppc{border:.6mm dashed #bbb;border-radius:4mm;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4mm;overflow:hidden;min-height:0}
+.ppc img{width:100%;flex:1;min-height:0;object-fit:contain}
+.ppc b{font-weight:900;margin-top:2mm;line-height:1.2;text-align:center}
+.c1 .ppc b{font-size:20mm}.c4 .ppc b{font-size:10mm}.c9 .ppc b{font-size:6.4mm}
+.sortb h1,.order h1{font-size:9mm;text-align:center;margin:2mm 0 5mm}
+.sortb .ppbox{display:grid;gap:5mm;height:252mm}
+.sortb.s2 .ppbox{grid-template-columns:1fr 1fr}.sortb.s3 .ppbox{grid-template-columns:1fr 1fr 1fr}
+.sortb .ppbox>div{border:1.2mm solid #999;border-radius:6mm;display:flex;justify-content:center;padding-top:7mm}
+.sortb .ppbox b{font-size:10mm}
+.pporow{display:grid;grid-template-columns:34mm 60mm 20mm 1fr;align-items:center;column-gap:3mm;height:38mm;border-bottom:.4mm solid #ddd}
+.pporow.nm{display:block;height:16mm;line-height:16mm;font-size:7mm;font-weight:700;border-bottom:.4mm solid #999}
+.pporow img{width:34mm;height:34mm;object-fit:contain}
+.pporow b{font-size:7.5mm;line-height:1.2;word-break:keep-all;overflow-wrap:anywhere}
+.pporow span{font-size:5.5mm;color:#555;white-space:nowrap}
+.pporow .bx{display:flex;gap:3mm}
+.pporow i{width:10mm;height:10mm;border:.6mm solid #888;border-radius:2mm}
+@media print{
+  @page{size:A4 portrait;margin:8mm}
+  html,body{height:auto!important;background:#fff!important;overflow:visible!important}
+  body>*:not(#printArea){display:none!important}
+  #printArea{display:block!important}
+  #printArea .ppg{break-after:page;page-break-after:always}
+  #printArea .ppg:last-child{break-after:auto;page-break-after:auto}
+}
 </style>
 </head>
 <body>
@@ -505,6 +723,7 @@ a{color:inherit}
     <div class="kbt"><div class="kbi">あ</div><div><b>あいうえお</b><span>ひらがな・カタカナで あそぼう。めくって カード・ふうせん クイズ・なぞって かこう</span></div></div>
     <div class="kbbtns"><button class="bh" id="openHira"><em>あ</em>ひらがな</button><button class="bk" id="openKata"><em>ア</em>カタカナ</button></div>
   </div>
+  <button class="playbanner" id="openPlay"><div class="pbi">🧸</div><div><b>おやこで あそぼう</b><span>0〜7さい。きいて えらぶ・なかま わけ・1つずつ くばる・かずを わける・おうちで さがす・マイデッキ・いんさつ</span></div></button>
   <button class="mix" id="mix">🎲 ぜんぶから ランダム 20まい</button>
   <div id="groups"></div>
   <div class="foot">
@@ -746,6 +965,35 @@ a{color:inherit}
 </div>
 
 <div id="kcoin" class="kcoinpop" hidden><div class="cc">🪙</div><div class="ct" id="kcoinT">コイン ゲット！</div></div>
+
+<!-- ===== おやこで あそぼう（ていあんしょの さいしょの 8つ） ===== -->
+<div id="pmenu" class="sheet"><div class="page">
+  <div class="dmhead"><button class="ibtn" id="pmBack" aria-label="ホーム">🏠</button><h2>🧸 おやこで あそぼう</h2></div>
+  <div class="sec"><h3>なんさい？（めやす・あそびは どれでも えらべます）</h3><div class="chips" id="pAge"></div>
+    <h3 style="margin-top:12px">すきな もの</h3><div class="chips" id="pLike"></div>
+    <div class="note" id="pAgeNote"></div></div>
+  <div class="pacts" id="pActs"></div>
+  <div class="sec"><h3>おとなの かたへ：せってい</h3><div class="chips" id="pSet"></div>
+    <div class="note">みじかく はじめて、こどもの ようすで いつでも おわれます。ごほうびや こうかおんは けせます。</div></div>
+  <div class="sec"><h3>きろく（あそんだ ないよう）</h3><div id="pLog"></div><button class="preset" id="pLogClear">きろくを けす</button></div>
+  <div class="sec"><h3>データの ほぞん（ほかの iPhone へ うつす とき など）</h3>
+    <div class="prow2"><button class="pbtn" id="pExport">📦 かきだす</button><button class="pbtn" id="pImport">📂 よみこむ</button></div>
+    <input type="file" id="pImpFile" accept="application/json,.json" class="kufile" tabindex="-1" aria-hidden="true">
+    <div class="note">マイデッキ・きろく・せってい・コイン・シール・スペシャル シールの しゃしんを 1つの ファイルに まとめます。よみこむと いまの データは おきかわります。</div></div>
+</div></div>
+
+<div id="ppage" class="sheet"><div class="page">
+  <div class="dmhead"><button class="ibtn" id="ppBack" aria-label="もどる">↩︎</button><h2 id="ppTitle"></h2></div>
+  <div id="ppBody"></div>
+</div></div>
+
+<div id="pgame" class="screen">
+  <div class="prog" id="pgProg"></div>
+  <div class="topbar"><button class="ibtn" id="pgBack" aria-label="もどる">↩︎</button><div class="counter" id="pgTitle"></div><button class="ibtn" id="pgSay" aria-label="もういちど きく">🔈</button></div>
+  <div class="pgbody" id="pgBody"></div>
+</div>
+
+<div id="printArea"></div>
 <canvas id="fx"></canvas>
 
 <div id="toast"></div>
@@ -823,7 +1071,7 @@ function buildHome(){
     });
     wrap.appendChild(grid);
   });
-  $('#total').textContent=`${DECKS.length}しゅるい ・ ぜんぶで ${total}まい ＋ ドットカード ＋ あいうえお`;
+  $('#total').textContent=`${DECKS.length}しゅるい ・ ぜんぶで ${total}まい ＋ ドットカード ＋ あいうえお ＋ おやこで あそぼう`;
   syncToggles();
 }
 function syncToggles(){
@@ -878,7 +1126,7 @@ function showEnd(){
   if(S.voice)speak('おしまい');
 }
 function restart(){if(S.shuffle)shuffle(order);idx=0;ended=false;hint.classList.add('off');show();startAuto();}
-function goHome(){stopAuto();releaseAwake();card.classList.remove('show');home.hidden=false;}
+function goHome(){stopAuto();releaseAwake();card.classList.remove('show');if(PRET){const f=PRET;PRET=null;f();return;}home.hidden=false;}
 function startAuto(){stopAuto();if(S.auto>0){timer=setInterval(()=>advance(true),S.auto*1000);badge.textContent='⏱ '+S.auto+'びょう';}else badge.textContent='';}
 function stopAuto(){if(timer){clearInterval(timer);timer=null;}}
 $('#btnHome').onclick=goHome;$('#btnHome2').onclick=goHome;$('#btnAgain').onclick=restart;
@@ -2057,6 +2305,610 @@ $('#kuRate').querySelectorAll('button').forEach(b=>b.onclick=()=>{KS.hrate=b.dat
 $('#kuOpen').onclick=()=>{actx();kOpenHome();};
 $('#khBack').onclick=()=>{kOpenBook();};
 if(window.indexedDB)kuLoad();else{KU.err=true;KU.ready=true;}
+
+
+/* ============ おやこで あそぼう（ていあんしょ「さいしょに つくる 8つ」F01・02・05・10・21・24・58・62 ＋ F57・63・64） ============ */
+const pmenu=$('#pmenu'),ppage=$('#ppage'),pgame=$('#pgame');
+let PS={age:'2',like:'all',voice:true,sound:true,reward:true,calm:false,big:false,nums:true,which:2,wsrc:'',sortR:'fv',deal:1,split:5,real:1,rsrc:'near'};
+Object.assign(PS,store('babyfc_play')||{});
+function psave(){store('babyfc_play',PS);}
+let PMY=store('babyfc_my');if(!Array.isArray(PMY))PMY=[];
+function pmysave(){store('babyfc_my',PMY);}
+let PLOG=store('babyfc_plog');if(!Array.isArray(PLOG))PLOG=[];
+function plog(a,x,r){PLOG.unshift({t:Date.now(),a,x:x||'',r:r||[]});PLOG=PLOG.slice(0,80);store('babyfc_plog',PLOG);}
+function psay(p,r){if(PS.voice)ksay(p,r||.9,true);}
+function psfx(n){if(!PS.sound||!SFX[n])return;const v=KS.voice;KS.voice=true;try{SFX[n]();}catch(e){}KS.voice=v;}
+function pfun(x,y){if(PS.calm)return;if(x===undefined)bigConfetti();else confetti(x,y,46,10);}
+let PCN=0;
+function pcoin(){if(!PS.reward)return;KC+=1;store('babyfc_kana_coin',KC);kCoinUI();PCN=1;}
+let PTS=[];function pT(f,ms){PTS.push(setTimeout(f,ms));}
+function pClear(){PTS.forEach(clearTimeout);PTS=[];}
+function pPick(a){return a[Math.floor(Math.random()*a.length)];}
+let PG=null,PPB=null,PRET=null;
+
+/* ---- カード（だいざい） ---- */
+const PBYK={};ALL.forEach(it=>{if(!PBYK[it.img])PBYK[it.img]=it;});
+const isAI=it=>!!(it&&it.c&&it.c.ai);
+function pFind(w,ai){return (ai&&ALL.find(it=>it.j===w&&isAI(it)))||ALL.find(it=>it.j===w&&!isAI(it))||ALL.find(it=>it.j===w);}
+function pItem(k){
+  if(k&&k.indexOf('u:')===0){const u=KU.list.find(x=>'u:'+x.id===k);return u?{j:u.name||'うちの しゃしん',e:'',img:u.src,key:k,d:{g:-1,name:'うちの しゃしん'}}:null;}
+  return PBYK[k]||null;
+}
+function pKey(it){return it.key||it.img;}
+function pUniq(a){const s=new Set();return a.filter(it=>{if(!it||s.has(it.j))return false;s.add(it.j);return true;});}
+const PNEAR=['コップ','スプーン','フォーク','おはし','おさら','いす','とけい','でんわ','かぎ','はブラシ','タオル','テレビ','くつ','ぼうし','かさ','めがね',
+  'くつした','ボール','つみき','クレヨン','えんぴつ','はさみ','りんご','バナナ','みかん','たまご','パン','ぎゅうにゅう','にんじん','トマト','じゃがいも','きゅうり','チーズ','ヨーグルト'];
+function pPool(src){
+  src=src||'all';
+  if(src==='near')return pUniq(PNEAR.map(w=>pFind(w)));
+  if(src.indexOf('my:')===0){const d=PMY.find(x=>x.id===src.slice(3));return d?pUniq(d.keys.map(pItem)):[];}
+  if(src==='food')return pUniq(ALL.filter(it=>it.d.g===1||it.d.g===2));
+  if(/^g\d$/.test(src)){const g=+src[1];return pUniq(ALL.filter(it=>it.d.g===g));}
+  return pUniq(ALL.slice());
+}
+const PSRC=[['near','🏠 みぢかな もの'],['all','🎲 ぜんぶ'],['g0','🐾 どうぶつ'],['food','🍎 たべもの'],['g3','🚃 のりもの'],['g4','🧸 みのまわり']];
+function pSrcList(near){return (near?PSRC:PSRC.slice(1)).concat(PMY.map(d=>['my:'+d.id,'⭐ '+d.name]));}
+function pNorm(s){return String(s||'').toLowerCase().replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-0x60)).replace(/[\s・]/g,'');}
+
+/* ---- メニュー（F57 ねんれいの めやすと きょうみで えらぶ・F63 せってい） ---- */
+const PACTS=[
+  {id:'guide',f:'F01',icon:'🗣️',name:'おやこの こえかけ',sub:'おとなが みて、じつぶつで あそぶ',age:[0,3],col:'#FFE9CC',go:()=>pOpenGuide()},
+  {id:'real',f:'F02',icon:'🔍',name:'おうちで さがそう',sub:'えと じつぶつを つなぐ',age:[1,4],col:'#E3F2D5',go:()=>pRealSetup()},
+  {id:'which',f:'F05',icon:'👂',name:'どれかな？',sub:'なまえを きいて えを えらぶ',age:[2,7],col:'#D9EAFB',go:()=>pWhichSetup()},
+  {id:'sort',f:'F10',icon:'🗂️',name:'なかま わけ',sub:'きまりを きめて たなに わける',age:[2,7],col:'#EEDDF5',go:()=>pSortSetup()},
+  {id:'deal',f:'F21',icon:'🍽️',name:'ひとりに ひとつ',sub:'1つずつ くばって、たりる？ あまる？',age:[2,5],col:'#FFE0E3',go:()=>pDealSetup()},
+  {id:'split',f:'F24',icon:'⚖️',name:'かずを わけよう',sub:'5は 2と3 など、うごかして わける',age:[4,7],col:'#D5F1F4',go:()=>pSplitSetup()},
+  {id:'my',f:'F58',icon:'⭐',name:'マイデッキ',sub:'すきな カードを あつめる',age:[0,7],col:'#FFF6C7',go:()=>pOpenMy()},
+  {id:'print',f:'F62',icon:'🖨️',name:'いんさつ して あそぶ',sub:'カード・なかまわけ だいし・ちゅうもんひょう',age:[0,7],col:'#EEE6DF',go:()=>pOpenPrint()},
+];
+const PAGES=[['0','0〜1さい'],['2','2〜3さい'],['4','4〜5さい'],['6','6〜7さい']];
+const PREC={'0':['guide','real','print','my'],'2':['which','deal','sort','real'],'4':['split','sort','which','deal'],'6':['split','sort','which','print']};
+const PAGENOTE={
+  '0':'0〜1さいは、おとなが がめんで じゅんびして、じつぶつや かみの カードで あそびましょう。こどもに がめんを みせつづけない くふうを。',
+  '2':'2〜3さいは、おやこで いっしょに。2つから えらぶ・1つずつ くばる・なかまに わける あそびが おすすめです。',
+  '4':'4〜5さいは、りゆうを はなしたり、うごかして ためしたり。かずを わける あそびが おすすめです。',
+  '6':'6〜7さいは、じぶんで ためして、ことばで せつめいする あそびを ふやしましょう。'};
+const PSET=[['voice','🔈 よみあげ'],['sound','🎵 こうかおん'],['reward','🪙 ごほうび（コイン）'],['calm','🌙 うごきを へらす'],['big','🔠 もじを おおきく']];
+const PNAME={guide:'おやこの こえかけ',real:'おうちで さがそう',which:'どれかな？',sort:'なかま わけ',deal:'ひとりに ひとつ',split:'かずを わけよう',my:'マイデッキ',print:'いんさつ'};
+function pChips(sel,list,get,set,after){
+  const el=typeof sel==='string'?$(sel):sel;if(!el)return;el.innerHTML='';
+  list.forEach(([v,t])=>{const b=document.createElement('button');b.className='chip'+(String(get())===String(v)?' on':'');b.innerHTML=t;
+    b.onclick=()=>{set(v);psave();actx();psfx('tap');if(after)after();else pChips(el,list,get,set);};el.appendChild(b);});
+}
+function pHideAll(){pClear();[pmenu,ppage].forEach(e=>e.classList.remove('show'));pgame.classList.remove('show');try{speechSynthesis.cancel();}catch(e){}}
+function pOpenMenu(){pHideAll();PG=null;home.hidden=true;pmenu.classList.add('show');pRenderMenu();releaseAwake();}
+function pRenderMenu(){
+  pChips('#pAge',PAGES,()=>PS.age,v=>{PS.age=v;},pRenderMenu);
+  pChips('#pLike',[['all','🎲 なんでも'],['g0','🐾 どうぶつ'],['food','🍎 たべもの'],['g3','🚃 のりもの']].concat(PMY.map(d=>['my:'+d.id,'⭐ '+d.name])),()=>PS.like,v=>{PS.like=v;PS.wsrc='';},pRenderMenu);
+  $('#pAgeNote').textContent=PAGENOTE[PS.age]||'';
+  const rec=PREC[PS.age]||[],rank=a=>{const i=rec.indexOf(a.id);return i<0?100+PACTS.indexOf(a):i;};
+  const W=$('#pActs');W.innerHTML='';
+  PACTS.slice().sort((a,b)=>rank(a)-rank(b)).forEach(a=>{
+    const b=document.createElement('button');b.className='pact';b.style.setProperty('--pc',a.col);
+    b.innerHTML=`<i>${a.icon}</i><div><b>${esc(a.name)}</b><span>${esc(a.sub)}</span><em>${a.age[0]}〜${a.age[1]}さい ・ ${a.f}</em></div>${rec.includes(a.id)?'<u>おすすめ</u>':''}`;
+    b.onclick=()=>{actx();psfx('tap');a.go();};W.appendChild(b);
+  });
+  const S2=$('#pSet');S2.innerHTML='';
+  PSET.forEach(([k,t])=>{const b=document.createElement('button');b.className='chip'+(PS[k]?' on':'');b.textContent=t+(PS[k]?' ✓':'');
+    b.onclick=()=>{PS[k]=!PS[k];psave();actx();psfx('tap');pRenderMenu();};S2.appendChild(b);});
+  const L=$('#pLog');
+  L.innerHTML=PLOG.length?PLOG.slice(0,12).map(g=>{const d=new Date(g.t);return `<div class="plog"><small>${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,'0')}</small><b>${esc(PNAME[g.a]||g.a)}</b> ${esc(g.x)} ${(g.r||[]).map(esc).join(' ')}</div>`;}).join(''):'<div class="note" style="margin-top:0">まだ ありません。あそぶと ここに のこります（こどもの せいせきでは なく、つぎの あそびを えらぶ めやすです）。</div>';
+  $('#pLogClear').hidden=!PLOG.length;
+}
+$('#openPlay').onclick=()=>{actx();pOpenMenu();};
+$('#pmBack').onclick=()=>{pHideAll();home.hidden=false;};
+$('#pLogClear').onclick=()=>{const b=$('#pLogClear');if(!b.classList.contains('arm')){b.classList.add('arm');b.textContent='もういちど おすと けします';clearTimeout(b._t);b._t=setTimeout(()=>{b.classList.remove('arm');b.textContent='きろくを けす';},3000);return;}
+  PLOG=[];store('babyfc_plog',PLOG);b.classList.remove('arm');b.textContent='きろくを けす';pRenderMenu();};
+
+/* ---- がめん（ゲーム）と ページ ---- */
+function pShowGame(title){
+  pHideAll();home.hidden=true;pgame.classList.add('show');
+  pgame.classList.toggle('pcalm',!!PS.calm);pgame.classList.toggle('pbigtxt',!!PS.big);
+  $('#pgTitle').textContent=title||'';$('#pgProg').style.width='0';$('#pgSay').hidden=true;keepAwake();
+}
+function pEnsureGame(){if(!pgame.classList.contains('show'))pShowGame('');}
+function pBackMenu(){pClear();PG=null;pOpenMenu();}
+$('#pgBack').onclick=()=>{actx();(PG&&PG.back?PG.back:pBackMenu)();};
+$('#pgSay').onclick=()=>{actx();if(PG&&PG.say){if(PG.re!==undefined)PG.re++;PG.say();}};
+function pOpenPage(title,back){
+  pHideAll();home.hidden=true;ppage.classList.add('show');ppage.scrollTop=0;ppage.classList.toggle('pbigtxt',!!PS.big);
+  $('#ppTitle').textContent=title;PPB=back||pOpenMenu;releaseAwake();
+}
+$('#ppBack').onclick=()=>{actx();(PPB||pOpenMenu)();};
+function pSetup(title,opts,go,note){
+  pShowGame(title);PG={back:pBackMenu};
+  const B=$('#pgBody');B.className='pgbody psetupw';
+  B.innerHTML=`<div class="psetup"><div class="pst">${esc(title)}</div>${opts.map((o,i)=>`<div class="psec"><h3>${esc(o.label)}</h3><div class="chips" data-i="${i}"></div></div>`).join('')}<button class="go pgo">▶ はじめる</button>${note?`<div class="note">${note}</div>`:''}</div>`;
+  opts.forEach((o,i)=>pChips(B.querySelector(`.chips[data-i="${i}"]`),o.list,o.get,o.set));
+  B.querySelector('.pgo').onclick=()=>{actx();psfx('tap');go();};
+}
+function pEnd(big,title,sub,again,more,extra){
+  pClear();const coin=PCN;PCN=0;$('#pgProg').style.width='100%';$('#pgSay').hidden=true;
+  const B=$('#pgBody');B.className='pgbody pendw';
+  B.innerHTML=`<div class="pend"><div class="pbig">${big}</div><div class="pet">${esc(title)}</div><div class="pes">${esc(sub)}</div>${extra||''}
+    ${coin?'<div class="pcoin">🪙 コイン 1まい ゲット！</div>':''}<div class="endbtns"><button class="primary pa">🔁 もう いっかい</button>${(more||[]).map((m,i)=>`<button class="pmore" data-i="${i}">${esc(m[0])}</button>`).join('')}<button class="pm">📋 ほかの あそび</button></div>
+    <div class="pask">おうちの ひとと「なにが たのしかった？」と はなしてみよう</div></div>`;
+  B.querySelector('.pa').onclick=()=>{actx();again();};
+  B.querySelector('.pm').onclick=()=>{actx();pBackMenu();};
+  B.querySelectorAll('.pmore').forEach(b=>b.onclick=()=>{actx();more[+b.dataset.i][1]();});
+  psfx('fan');if(coin)setTimeout(()=>psfx('coin'),900);pfun();PG={back:pBackMenu};
+}
+/* カードの おおきさを がめんに あわせる（たて・よこ どちらでも） */
+function pFit(grid,n,pad){
+  const W=grid.clientWidth,H=grid.clientHeight,gap=12;let best=0,bc=1;
+  for(let c=1;c<=n;c++){const r=Math.ceil(n/c),s=Math.min((W-gap*(c-1))/c,(H-gap*(r-1))/r);if(s>best){best=s;bc=c;}}
+  best=Math.max(56,Math.min(best,pad||330));
+  grid.style.gridTemplateColumns=`repeat(${bc},${Math.floor(best)}px)`;grid.style.gridAutoRows=Math.floor(best)+'px';
+}
+/* ドラッグ（タップでも すすめる） */
+function pDrag(el,img,onDrop){
+  let sx=0,sy=0,pid=null,g=null,moved=false;
+  el.addEventListener('pointerdown',e=>{pid=e.pointerId;sx=e.clientX;sy=e.clientY;moved=false;try{el.setPointerCapture(pid);}catch(_){}});
+  el.addEventListener('pointermove',e=>{
+    if(e.pointerId!==pid)return;
+    if(!moved&&Math.hypot(e.clientX-sx,e.clientY-sy)>12){moved=true;g=document.createElement('img');g.src=img;g.className='pghost';document.body.appendChild(g);el.classList.add('drag');}
+    if(g){g.style.left=e.clientX+'px';g.style.top=e.clientY+'px';}
+  });
+  const end=(e,drop)=>{
+    if(e.pointerId!==pid)return;pid=null;if(g){g.remove();g=null;}el.classList.remove('drag');
+    if(moved){el._skip=true;setTimeout(()=>{el._skip=false;},60);if(drop){const t=document.elementFromPoint(e.clientX,e.clientY),d=t&&t.closest('[data-drop]');if(d)onDrop(d);}}
+  };
+  el.addEventListener('pointerup',e=>end(e,true));el.addEventListener('pointercancel',e=>end(e,false));
+}
+
+/* ---- F05 どれかな？（きいて えを えらぶ） ---- */
+let PW=null;
+function pWhichSetup(){
+  pSetup('どれかな？',[
+    {label:'だいざい',list:pSrcList(true),get:()=>PS.wsrc||PS.like,set:v=>{PS.wsrc=v;}},
+    {label:'えらぶ かず',list:[[2,'★ 2つ（ちがう なかま）'],[3,'★★ 3つ（おなじ なかま）'],[4,'★★★ 4つ（にている もの）']],get:()=>PS.which,set:v=>{PS.which=+v;}}],
+    pWhichGo,'なまえを きいて、あう えを えらびます。「🔈」で なんども きけます。ゆびさしを おとなが かわりに タップしても OK。');
+}
+function pDistract(t,pool,n){
+  const sameD=x=>x.d&&t.d&&x.d.name===t.d.name,sameG=x=>x.d&&t.d&&x.d.g===t.d.g,o=pool.filter(x=>x.j!==t.j);
+  let c=n<=2?o.filter(x=>!sameG(x)):n===3?o.filter(sameG):o.filter(sameD);
+  c=shuffle(c);if(c.length<n-1)c=c.concat(shuffle(o.filter(x=>!c.includes(x))));
+  return c.slice(0,n-1);
+}
+function pWhichGo(){
+pEnsureGame();  const pool=pPool(PS.wsrc||PS.like),n=Math.min(+PS.which||2,4,pool.length);
+  if(pool.length<2){toast('カードが たりないよ（2まい いじょう いれてね）');return;}
+  PW={pool,n,qs:shuffle(pool.slice()).slice(0,Math.min(5,pool.length)),i:0,miss:0,lock:false};
+  PG={say:()=>psay(`${PW.cur.q.j}は どれ？`),back:pBackMenu,re:0};pWhichAsk();
+}
+function pWhichAsk(){
+  pClear();PW.lock=false;const q=PW.qs[PW.i],ch=shuffle([q,...pDistract(q,PW.pool,PW.n)]);PW.cur={q,ch};
+  $('#pgTitle').textContent=`どれかな？ ${PW.i+1} / ${PW.qs.length}`;$('#pgProg').style.width=(PW.i/PW.qs.length*100)+'%';$('#pgSay').hidden=false;
+  const B=$('#pgBody');B.className='pgbody which';
+  B.innerHTML=`<div class="pwq"><b>${esc(q.j)}</b>は どれ？</div><div class="pwgrid">${ch.map((it,k)=>`<button class="pwc" data-k="${k}"><img src="${esc(it.img)}" alt=""><span class="pwn"></span></button>`).join('')}</div>
+    <button class="pwre">🔈 もういちど きく</button><div class="pwh">ゆっくり えらんでね ・ ゆびさしを おとなが タップしても OK</div>`;
+  B.querySelectorAll('.pwc').forEach(b=>b.onclick=()=>pWhichTap(b,ch[+b.dataset.k]));
+  B.querySelector('.pwre').onclick=()=>{actx();PG.re++;PG.say();};
+  requestAnimationFrame(()=>pFit(B.querySelector('.pwgrid'),ch.length));
+  PG.say();
+}
+function pWhichTap(b,it){
+  if(PW.lock)return;actx();const q=PW.cur.q;
+  if(it===q){
+    PW.lock=true;b.classList.add('ok');b.querySelector('.pwn').textContent=it.j;psfx('ok');psay(`ぴんぽーん！ ${it.j}だね`);
+    const r=b.getBoundingClientRect();pfun(r.left+r.width/2,r.top+r.height/2);
+    pT(()=>{PW.i++;PW.i<PW.qs.length?pWhichAsk():pWhichEnd();},1800);
+  }else{
+    PW.miss++;b.classList.remove('no');void b.offsetWidth;b.classList.add('no');b.querySelector('.pwn').textContent=it.j;psfx('soft');
+    psay(`それは ${it.j}だね。 ${q.j}は どれかな？`);
+  }
+}
+function pWhichEnd(){
+  pcoin();plog('which',`${PW.qs.length}もん・${PW.n}つから（ききなおし ${PG.re}かい）`);
+  pEnd('👂','よく きけたね！',`${PW.qs.length}もん できたよ`,pWhichGo,[['⚙️ かずを かえる',pWhichSetup]]);
+}
+
+/* ---- F10 なかま わけ ---- */
+const PSX=new Set(['くり','しいたけ','えだまめ','すいりくりょうようバス']);
+const pdn=(...names)=>it=>names.includes(it.d.name)&&!PSX.has(it.j);
+const PSORT=[
+  {id:'fv',lv:1,name:'たべもの と のりもの',sh:[['🍎','たべもの',it=>it.d.g===1||it.d.g===2],['🚃','のりもの',it=>it.d.g===3]]},
+  {id:'av',lv:1,name:'どうぶつ と のりもの',sh:[['🐾','どうぶつ',it=>it.d.g===0],['🚃','のりもの',it=>it.d.g===3]]},
+  {id:'af',lv:1,name:'どうぶつ と たべもの',sh:[['🐾','どうぶつ',it=>it.d.g===0],['🍎','たべもの',it=>it.d.g===1||it.d.g===2]]},
+  {id:'fr',lv:2,name:'くだもの と やさい',sh:[['🍓','くだもの',pdn('くだもの','くだもの いろいろ','めずらしい くだもの')],['🥕','やさい',pdn('やさい','つちの なかの やさい','はっぱの やさい','みの なる やさい')]]},
+  {id:'sw',lv:2,name:'おやつ と ごはん',sh:[['🍰','おやつ',pdn('おかし','ケーキ・やきがし','にっぽんの おやつ')],['🍚','ごはん・おかず',pdn('ごはん・どんぶり','パン・めん','おかず いろいろ','ちいさな おかず')]]},
+  {id:'ss',lv:2,name:'みず と そら',sh:[['🌊','みずの うえ',pdn('ふね')],['☁️','そら',pdn('そら・うちゅう')]]},
+  {id:'rws',lv:3,name:'みち・みず・そら',sh:[['🛣️','みち',pdn('くるま・バス','はたらく くるま')],['🌊','みず',pdn('ふね')],['☁️','そら',pdn('そら・うちゅう')]]},
+  {id:'fvm',lv:3,name:'くだもの・やさい・きのこ',sh:[['🍓','くだもの',pdn('くだもの いろいろ','めずらしい くだもの')],['🥕','やさい',pdn('つちの なかの やさい','はっぱの やさい','みの なる やさい')],['🍄','きのこ',pdn('きのこ')]]},
+  {id:'free',lv:3,name:'じぶんで きめる',free:true,sh:[['🔴','あかの たな'],['🔵','あおの たな']]},
+];
+let PSO=null;
+function pSortSetup(){
+  pSetup('なかま わけ',[{label:'わけかた',list:PSORT.map(r=>[r.id,`${'★'.repeat(r.lv)} ${r.name}`]),get:()=>PS.sortR,set:v=>{PS.sortR=v;}}],pSortGo,
+    'カードを タップ → たなを タップ（ドラッグでも OK）。たなの カードを タップすると もどせます。さいごに「どうして そう わけたの？」と はなしてみよう。');
+}
+function pSortGo(){
+pEnsureGame();  const R=PSORT.find(r=>r.id===PS.sortR)||PSORT[0];let cards=[];
+  if(R.free){[it=>it.d.g===0,it=>it.d.g===1||it.d.g===2,it=>it.d.g===3,it=>it.d.g===4].forEach(f=>shuffle(pUniq(ALL.filter(f))).slice(0,2).forEach(it=>cards.push({it,ans:-1})));cards=shuffle(cards).slice(0,6);}
+  else{const per=R.sh.length===2?3:2;R.sh.forEach((s,si)=>shuffle(pUniq(ALL.filter(s[2]))).slice(0,per).forEach(it=>cards.push({it,ans:si})));cards=shuffle(cards);}
+  PSO={R,cards:cards.map((c,i)=>Object.assign(c,{i,at:-1,miss:0})),sel:null,miss:0};
+  PG={say:()=>psay(R.free?'すきな きまりを きめて、2つの たなに わけよう':`${R.sh.map(s=>s[1]).join('と、')}に わけよう`),back:pBackMenu};
+  pSortRender();PG.say();
+}
+function pSortRender(){
+  const B=$('#pgBody'),R=PSO.R;B.className='pgbody sort s'+R.sh.length;$('#pgTitle').textContent='なかま わけ';$('#pgSay').hidden=false;
+  const done=PSO.cards.filter(c=>c.at>=0).length;$('#pgProg').style.width=(done/PSO.cards.length*100)+'%';
+  B.innerHTML=`<div class="psq">${R.free?'すきな きまりで わけよう':esc(R.name)+' に わけよう'}</div>
+    <div class="psgrid">${PSO.cards.map(c=>c.at<0?`<button class="psc${PSO.sel===c.i?' sel':''}" data-i="${c.i}"><img src="${esc(c.it.img)}" alt=""><span>${esc(c.it.j)}</span></button>`:'<div class="psc gone"></div>').join('')}</div>
+    <div class="psshelves">${R.sh.map((s,si)=>`<div class="pshelf" data-drop="1" data-s="${si}"><div class="psl"><i>${s[0]}</i>${esc(s[1])}</div><div class="psin">${PSO.cards.filter(c=>c.at===si).map(c=>`<img src="${esc(c.it.img)}" data-i="${c.i}" alt="">`).join('')}</div></div>`).join('')}</div>`;
+  B.querySelectorAll('.psc[data-i]').forEach(el=>{
+    const c=PSO.cards[+el.dataset.i];
+    el.onclick=()=>{if(el._skip)return;actx();PSO.sel=PSO.sel===c.i?null:c.i;psfx('tap');psay(c.it.j,1);pSortRender();};
+    pDrag(el,c.it.img,d=>pSortPlace(c.i,+d.dataset.s));
+  });
+  B.querySelectorAll('.pshelf').forEach(el=>el.onclick=e=>{
+    const im=e.target.closest('.psin img');
+    if(im){const c=PSO.cards[+im.dataset.i];c.at=-1;psfx('tap');pSortRender();return;}
+    if(PSO.sel!==null)pSortPlace(PSO.sel,+el.dataset.s);else{psfx('soft');toast('さきに カードを えらんでね',1500);}
+  });
+  requestAnimationFrame(()=>pFit(B.querySelector('.psgrid'),PSO.cards.length,170));
+}
+function pSortPlace(i,si){
+  const c=PSO.cards[i],R=PSO.R;if(!c||c.at>=0)return;actx();
+  if(R.free||c.ans===si){
+    c.at=si;PSO.sel=null;psfx('tap');if(!R.free)psay(`${c.it.j}は ${R.sh[si][1]}`,1);pSortRender();
+    if(PSO.cards.every(x=>x.at>=0))pT(pSortDone,900);
+  }else{
+    c.miss++;PSO.miss++;psfx('soft');
+    const el=$(`#pgBody .psc[data-i="${i}"]`);if(el){el.classList.remove('shake');void el.offsetWidth;el.classList.add('shake');}
+    if(c.miss>=2){const sh=$(`#pgBody .pshelf[data-s="${c.ans}"]`);if(sh)sh.classList.add('hint');psay(`${c.it.j}は ${R.sh[c.ans][1]}の なかまだよ`);}
+    else psay(`${c.it.j}は どっちの なかま かな？`);
+  }
+}
+function pSortDone(){
+  const R=PSO.R;pcoin();plog('sort',`「${R.name}」${PSO.cards.length}まい`+(R.free?'':`（やりなおし ${PSO.miss}かい）`));
+  const extra=R.free?`<div class="pshow">${R.sh.map((s,si)=>`<div><b>${s[0]} ${esc(s[1])}</b>${PSO.cards.filter(c=>c.at===si).map(c=>`<img src="${esc(c.it.img)}" alt="">`).join('')}</div>`).join('')}</div>`:'';
+  pEnd('🗂️',R.free?'すてきな わけかた！':'ぜんぶ わけられたね！',R.free?'どんな きまりで わけたのか、おしえてね':'どうして そう わけたの？ はなしてみよう',pSortGo,[['🔀 べつの わけかた',pSortSetup]],extra);
+  psay(R.free?'どんな きまりで わけたのか、おしえてね':'ぜんぶ わけられたね。どうして そう わけたの？');
+}
+
+/* ---- F21 ひとりに ひとつ ---- */
+const PFRIEND=['いぬ','ねこ','うさぎ','パンダ','ぞう','ペンギン','コアラ','ライオン','きりん','ハムスター'];
+const PFOOD=['りんご','みかん','バナナ','いちご','なし','もも','たまご','おにぎり','ドーナツ','プリン','どらやき','たいやき','マカロン','パンケーキ'];
+let PD=null;
+function pDealSetup(){
+  pSetup('ひとりに ひとつ',[{label:'だんかい',list:[[1,'★ 3にん ぴったり'],[2,'★★ たりる？ あまる？'],[3,'★★★ 5にんまで']],get:()=>PS.deal,set:v=>{PS.deal=+v;}}],pDealGo,
+    'たべものを タップすると、じゅんばんに おさらへ のります（すきな おさらへ ドラッグしても OK）。おさらの たべものを タップすると もどります。');
+}
+function pDealGo(){pEnsureGame();PD={round:0,rounds:3,ok:0};PG={say:()=>psay(`みんなに ${PD.food.j}を 1つずつ くばろう`),back:pBackMenu};pDealRound();}
+function pDealRound(){
+  const lv=+PS.deal||1;let k,m;
+  if(lv===1){k=3;m=3;}else if(lv===2){k=3;m=pPick([2,3,4]);}else{k=pPick([3,4,5]);m=Math.max(1,Math.min(7,k+pPick([-2,-1,0,1,2])));}
+  Object.assign(PD,{k,m,fr:shuffle(PFRIEND.map(w=>pFind(w)).filter(Boolean)).slice(0,k),food:pFind(pPick(PFOOD),true),plates:Array(k).fill(false),tray:m,fin:false});
+  pDealRender();PG.say();
+}
+function pDealRender(){
+  const B=$('#pgBody');B.className='pgbody deal k'+PD.k;$('#pgTitle').textContent=`ひとりに ひとつ ${PD.round+1} / ${PD.rounds}`;$('#pgSay').hidden=false;
+  $('#pgProg').style.width=(PD.round/PD.rounds*100)+'%';
+  B.innerHTML=`<div class="pdq">${esc(PD.food.j)}を 1つずつ くばろう</div>
+    <div class="pdfr">${PD.fr.map((f,i)=>`<div class="pdp" data-drop="1" data-p="${i}"><div class="pdai"><img src="${esc(f.img)}" alt=""></div><div class="pdnm">${esc(f.j)}さん</div><button class="pdpl${PD.plates[i]?' full':''}" data-p="${i}">${PD.plates[i]?`<img src="${esc(PD.food.img)}" alt="">`:''}</button></div>`).join('')}</div>
+    <div class="pdtray">${Array.from({length:PD.tray},(_,i)=>`<button class="pdfood" data-t="${i}"><img src="${esc(PD.food.img)}" alt=""></button>`).join('')}${PD.tray?'':'<span class="pdempty">トレーは からっぽ</span>'}</div>
+    <div class="pdask" id="pdAsk"></div>`;
+  B.querySelectorAll('.pdfood').forEach(el=>{
+    el.onclick=()=>{if(el._skip||PD.fin)return;actx();const i=PD.plates.indexOf(false);if(i<0){psfx('soft');toast('もう みんな もってるね',1400);return;}pDealPut(i);};
+    pDrag(el,PD.food.img,d=>{if(PD.fin)return;const i=+d.dataset.p;if(PD.plates[i]){psfx('soft');toast(`${PD.fr[i].j}さんは もう もってるよ`,1400);return;}pDealPut(i);});
+  });
+  B.querySelectorAll('.pdpl').forEach(el=>el.onclick=()=>{if(PD.fin)return;const i=+el.dataset.p;if(!PD.plates[i])return;actx();PD.plates[i]=false;PD.tray++;psfx('tap');pDealRender();});
+  pDealCheck();
+}
+function pDealPut(i){
+  PD.plates[i]=true;PD.tray--;psfx('tap');pDealRender();
+  const pl=$(`#pgBody .pdpl[data-p="${i}"]`);if(pl)pop(pl);
+}
+function pDealCheck(){
+  const A=$('#pdAsk'),full=PD.plates.every(Boolean);
+  if(PD.fin)return;
+  if(!(full||PD.tray===0)){A.innerHTML='';return;}
+  const real=PD.m===PD.k?'p':PD.m>PD.k?'a':'t';
+  if((+PS.deal||1)===1){pDealResult(real);return;}
+  A.innerHTML=`<div class="pdat">どうだった？</div><div class="pdab"><button data-v="p">🙆 ぴったり</button><button data-v="a">➕ あまった</button><button data-v="t">➖ たりない</button></div>`;
+  psay('どうだった？ ぴったり？ あまった？ たりない？');
+  A.querySelectorAll('button').forEach(b=>b.onclick=()=>{actx();if(b.dataset.v===real)pDealResult(real);else{psfx('soft');b.classList.remove('no');void b.offsetWidth;b.classList.add('no');psay('もういちど よく みてみよう。おさらと トレーを くらべてね');}});
+}
+function pDealResult(real){
+  PD.fin=true;PD.ok++;const d=Math.abs(PD.m-PD.k),empty=PD.fr.filter((f,i)=>!PD.plates[i]).map(f=>f.j+'さん');
+  const msg=real==='p'?'みんな 1つずつ。ぴったり！':real==='a'?`みんなに くばって、${d}こ あまったね`:`${empty.join('と ')}の ぶんが たりないね`;
+  $('#pdAsk').innerHTML=`<div class="pdres">⭕ ${esc(msg)}</div>`;psfx('ok');psay(msg);pfun();
+  pT(()=>{PD.round++;PD.round<PD.rounds?pDealRound():pDealEnd();},2600);
+}
+function pDealEnd(){pcoin();plog('deal',`${PD.rounds}かい・だんかい ${PS.deal}`);pEnd('🍽️','じょうずに くばれたね！','おうちでも おさらと おやつで やってみよう',pDealGo,[['⚙️ だんかいを かえる',pDealSetup]]);}
+
+/* ---- F24 かずを わけよう ---- */
+let PX=null;
+function pSplitSetup(){
+  pSetup('かずを わけよう',[{label:'いくつ？',list:[[3,'★ 3'],[5,'★★ 5'],[10,'★★★ 10']],get:()=>PS.split,set:v=>{PS.split=+v;}},
+    {label:'すうじ',list:[[1,'すうじを みせる'],[0,'「できた！」の あとで みせる']],get:()=>PS.nums?1:0,set:v=>{PS.nums=!!+v;}}],pSplitGo,
+    'たべものを タップすると、となりの おさらへ うごきます。「できた！」で わけかたを きろく。ちがう わけかたも ぜんぶ さがしてみよう。');
+}
+function pSplitGo(){pEnsureGame();const n=+PS.split||5;PX={n,food:pFind(pPick(PFOOD),true),side:Array(n).fill(0),found:[],shown:false};PG={say:()=>psay(`${PX.food.j} ${n}こを、2つの おさらに わけよう`),back:pBackMenu};pSplitRender();PG.say();}
+function pSplitRender(){
+  const n=PX.n,a=PX.side.filter(s=>!s).length,b=n-a,show=PS.nums||PX.shown,B=$('#pgBody');
+  B.className='pgbody split n'+n;$('#pgTitle').textContent=`${n}を つくろう`;$('#pgSay').hidden=false;$('#pgProg').style.width=(PX.found.length/(n-1)*100)+'%';
+  B.innerHTML=`<div class="pxq">2つの おさらに わけよう</div>
+    <div class="pxplates">${[0,1].map(s=>`<div class="pxp p${s}"><div class="pxin">${PX.side.map((v,i)=>v===s?`<button class="pxf" data-i="${i}"><img src="${esc(PX.food.img)}" alt=""></button>`:'').join('')}</div><div class="pxn">${show?(s?b:a):'？'}</div></div>`).join('')}</div>
+    <div class="pxeq">${show&&a&&b?`${a} と ${b} で ${n}`:'&nbsp;'}</div>
+    <div class="pxframe">${PX.side.map((_,i)=>`<i class="${i<a?'d0':'d1'}"></i>`).join('')}</div>
+    <button class="go pxok">✔ できた！</button>
+    <div class="pxfound">${PX.found.map(([x,y])=>`<span>${x} と ${y}</span>`).join('')}<em>みつけた わけかた ${PX.found.length} / ${n-1}</em></div>`;
+  B.querySelectorAll('.pxf').forEach(el=>el.onclick=()=>{actx();const i=+el.dataset.i;PX.side[i]^=1;PX.shown=false;psfx('tap');pSplitRender();});
+  B.querySelector('.pxok').onclick=()=>{
+    actx();const a2=PX.side.filter(s=>!s).length,b2=n-a2;
+    if(!a2||!b2){psfx('soft');psay('どちらの おさらにも のせてね');return;}
+    if(PX.found.some(([x,y])=>x===a2&&y===b2)){PX.shown=true;pSplitRender();psfx('soft');psay(`${a2}と ${b2}は もう みつけたね。ほかの わけかたは あるかな？`);return;}
+    PX.found.push([a2,b2]);PX.found.sort((p,q)=>p[0]-q[0]);PX.shown=true;psfx('ok');psay(`${a2}と ${b2}で ${n}`);pSplitRender();
+    const r=B.querySelector('.pxeq').getBoundingClientRect();pfun(r.left+r.width/2,r.top+r.height/2);
+    if(PX.found.length>=n-1)pT(pSplitEnd,1800);
+  };
+}
+function pSplitEnd(){
+  const n=PX.n;pcoin();plog('split',`${n}を わける（${n-1}とおり ぜんぶ）`);
+  pEnd('⚖️','ぜんぶ みつけたね！',`${n}は `+PX.found.map(([x,y])=>`${x}と${y}`).join('・'),pSplitGo,[['⚙️ かずを かえる',pSplitSetup]]);
+}
+
+/* ---- F02 おうちで さがそう（えと じつぶつを つなぐ） ---- */
+let PR=null;
+function pRealSetup(){
+  pSetup('おうちで さがそう',[{label:'だいざい',list:pSrcList(true),get:()=>PS.rsrc||'near',set:v=>{PS.rsrc=v;}},
+    {label:'あそびかた',list:[[1,'★ 1まい：さがしに いこう'],[2,'★★ 2まいから えらぶ'],[3,'★★★ 3まいから えらぶ']],get:()=>PS.real,set:v=>{PS.real=+v;}}],pRealGo,
+    'えと おなじ ものを、おうちの なかで さがします。ちいさな ものは くちに いれないよう ちゅうい。1さいは いんさつした カードと じつぶつで あそぶのも おすすめです。');
+}
+function pRealGo(){
+pEnsureGame();  const pool=pPool(PS.rsrc||'near'),lv=Math.min(+PS.real||1,pool.length);
+  if(pool.length<Math.max(2,lv)){toast('カードが たりないよ');return;}
+  PR={pool,lv,qs:shuffle(pool.slice()).slice(0,5),i:0,found:[]};
+  PG={say:()=>psay(PR.lv===1?`${PR.qs[PR.i].j}、おうちに あるかな？ いっしょに さがそう`:'おなじ ものは どれ？'),back:pBackMenu};pRealAsk();
+}
+function pRealAsk(){
+  pClear();const q=PR.qs[PR.i],B=$('#pgBody');$('#pgSay').hidden=false;
+  $('#pgTitle').textContent=`おうちで さがそう ${PR.i+1} / ${PR.qs.length}`;$('#pgProg').style.width=(PR.i/PR.qs.length*100)+'%';
+  if(PR.lv===1){
+    B.className='pgbody real1';
+    B.innerHTML=`<div class="prq">おうちで さがそう！</div><div class="prbig"><img src="${esc(q.img)}" alt=""></div><div class="prname">${esc(q.j)}</div>
+      <div class="prbtns"><button class="go prf">🎉 みつけた！</button><button class="pbtn prn">なかった</button></div>`;
+    B.querySelector('.prf').onclick=()=>{actx();PR.found.push(q.j);psfx('fan');psay(`みつけたね！ ${q.j}`);pfun();pT(pRealNext,1600);};
+    B.querySelector('.prn').onclick=()=>{actx();psfx('tap');pRealNext();};
+  }else{
+    const ch=shuffle([q,...pDistract(q,PR.pool,PR.lv)]);
+    B.className='pgbody which real2';
+    B.innerHTML=`<div class="pradult">おとなの かたへ：「<b>${esc(q.j)}</b>」の じつぶつ（おもちゃ）を みせてね</div><div class="pwq">おなじ ものは どれ？</div>
+      <div class="pwgrid">${ch.map((it,k)=>`<button class="pwc" data-k="${k}"><img src="${esc(it.img)}" alt=""><span class="pwn"></span></button>`).join('')}</div>
+      <button class="pwre prskip">とばす（おうちに ない）</button>`;
+    B.querySelectorAll('.pwc').forEach(b=>b.onclick=()=>{
+      actx();const it=ch[+b.dataset.k];
+      if(it===q){b.classList.add('ok');b.querySelector('.pwn').textContent=it.j;PR.found.push(q.j);psfx('ok');psay(`そうだね！ ${it.j}`);const r=b.getBoundingClientRect();pfun(r.left+r.width/2,r.top+r.height/2);pT(pRealNext,1700);}
+      else{b.classList.remove('no');void b.offsetWidth;b.classList.add('no');b.querySelector('.pwn').textContent=it.j;psfx('soft');psay(`それは ${it.j}だね。もういちど みてみよう`);}
+    });
+    B.querySelector('.prskip').onclick=()=>{actx();pRealNext();};
+    requestAnimationFrame(()=>pFit(B.querySelector('.pwgrid'),ch.length));
+  }
+  PG.say();
+}
+function pRealNext(){PR.i++;PR.i<PR.qs.length?pRealAsk():pRealEnd();}
+function pRealEnd(){pcoin();plog('real',PR.found.length?'みつけた：'+PR.found.join('・'):'こんかいは みつからなかった');pEnd('🏠','よく さがせたね！',PR.found.length?'みつけた もの：'+PR.found.join('・'):'また こんど さがそう',pRealGo,[['⚙️ あそびかたを かえる',pRealSetup]]);}
+
+/* ---- F01 おやこの こえかけ ---- */
+let PGU={src:'near',it:null};
+function pTalk(it){
+  const n=it.j,g=it.d?it.d.g:-1;
+  const T={0:[`${n}だよ。`,'なんて なくかな？ いっしょに まねっこ しよう。',`えほんや おさんぽで ${n}を さがしてみよう。`],
+    1:[`${n}だよ。`,'どんな いろ？ どんな かたちかな？',`おうちにも あるかな？ たべる ときに「${n}」って いってみよう。`],
+    2:[`${n}だよ。`,'おいしそうだね。どんな あじかな？',`${n}、たべた こと あるかな？`],
+    3:[`${n}だよ。`,'どこを はしるかな？ とぶかな？ すすむかな？',`おでかけの とき、${n}を さがしてみよう。`],
+    4:[`${n}だよ。`,'なにに つかうのかな？',`おうちの ${n}を いっしょに さわってみよう。`]};
+  return T[g]||[`${n}だよ。`,'よく みてみよう。なにが みえるかな？','おうちや そとで さがしてみよう。'];
+}
+function pOpenGuide(){PGU.it=null;pGuideRender();}
+function pGuideRender(){
+  const it=PGU.it;pOpenPage('🗣️ おやこの こえかけ',it?()=>{PGU.it=null;pGuideRender();}:pOpenMenu);const B=$('#ppBody');
+  if(!it){
+    B.innerHTML=`<div class="sec"><div class="note" style="margin-top:0">${PS.age==='0'?PAGENOTE['0']:'おとなが こえかけの れいを みてから、がめんを おいて、じつぶつや えほんで あそびます。'}</div>
+      <h3 style="margin-top:10px">だいざいを えらぶ</h3><div class="chips" id="pguSrc"></div></div><div class="pthumbs" id="pguGrid"></div>`;
+    pChips('#pguSrc',pSrcList(true),()=>PGU.src,v=>{PGU.src=v;},pGuideRender);
+    const items=pPool(PGU.src).slice(0,60);
+    $('#pguGrid').innerHTML=items.map((x,i)=>`<button class="pth" data-i="${i}"><img src="${esc(x.img)}" loading="lazy" alt=""><span>${esc(x.j)}</span></button>`).join('')||'<div class="note">カードが ありません</div>';
+    $('#pguGrid').querySelectorAll('.pth').forEach(b=>b.onclick=()=>{actx();psfx('tap');PGU.it=items[+b.dataset.i];pGuideRender();});
+    return;
+  }
+  B.innerHTML=`<div class="sec pgu"><div class="pgupic"><img src="${esc(it.img)}" alt=""></div><div class="pgun">${esc(it.j)}</div><button class="pbtn" id="pguSay">🔈 なまえを よむ</button></div>
+    <div class="sec"><h3>あそびかた</h3><ol class="pgsteps"><li>あんぜんな じつぶつ・おもちゃ・えほんを よういする（ちいさな ものは くちに いれないよう ちゅうい）</li><li>なまえを いって、こどもの はんのうを まつ</li><li>こえ・ゆびさし・しせんに、ことばで こたえる</li></ol>
+    <h3 style="margin-top:12px">こえかけの れい</h3><div class="pgtalk">${pTalk(it).map(l=>`<p>「${esc(l)}」</p>`).join('')}</div></div>
+    <button class="go pgreen" id="pguPlace">📱 がめんを おいて あそぶ</button>
+    <div class="prow2" style="margin-top:10px"><button class="pbtn" id="pguPrint">🖨 この カードを いんさつ</button><button class="pbtn" id="pguOther">← ほかを えらぶ</button></div>`;
+  $('#pguSay').onclick=()=>{actx();ksay(it.j,.9,true);};
+  $('#pguPlace').onclick=()=>{actx();pGuidePlace();};
+  $('#pguPrint').onclick=()=>{actx();pOpenPrint(pKey(it),pGuideRender);};
+  $('#pguOther').onclick=()=>{PGU.it=null;pGuideRender();};
+}
+function pGuidePlace(){
+  const it=PGU.it;pShowGame('');PG={say:()=>psay(it.j),back:pGuideMemo};$('#pgSay').hidden=false;
+  const B=$('#pgBody');B.className='pgbody place';
+  B.innerHTML=`<div class="pplace"><img src="${esc(it.img)}" alt=""><div class="ppn">${esc(it.j)}</div></div><button class="pbtn ppend">おわったら ここを タップ</button>`;
+  B.querySelector('.ppend').onclick=()=>{actx();pGuideMemo();};psay(it.j);
+}
+function pGuideMemo(){
+  const it=PGU.it,sel=new Set();pOpenPage('🗣️ ひとこと メモ',pGuideRender);
+  const tags=['👀 みた','👉 ゆびさした','🗣 こえを だした','✋ さわった','😊 またやりたい'];
+  $('#ppBody').innerHTML=`<div class="sec"><h3>${esc(it.j)}：どんな ようす だった？（いくつでも）</h3><div class="chips" id="pmTags"></div><button class="go pgreen" id="pmSave">ほぞん して おわる</button><button class="preset" id="pmSkip">メモしないで おわる</button></div>`;
+  const render=()=>{const el=$('#pmTags');el.innerHTML='';tags.forEach(t=>{const b=document.createElement('button');b.className='chip'+(sel.has(t)?' on':'');b.textContent=t;b.onclick=()=>{sel.has(t)?sel.delete(t):sel.add(t);psfx('tap');render();};el.appendChild(b);});};
+  render();
+  $('#pmSave').onclick=()=>{plog('guide',it.j,[...sel]);psfx('star');toast('メモしました',1400);PGU.it=null;pGuideRender();};
+  $('#pmSkip').onclick=()=>{PGU.it=null;pGuideRender();};
+}
+
+/* ---- F58 マイデッキ ---- */
+let PME=null;
+function pOpenMy(){PME=null;pMyRender();}
+function pMyRender(){
+  if(PME)return pMyEdit();
+  pOpenPage('⭐ マイデッキ',pOpenMenu);const B=$('#ppBody');
+  B.innerHTML=`<div class="note" style="margin:8px 2px 0">すきな カードを 3〜5まいから あつめて、めくったり、ほかの あそびの だいざいに したり できます。</div><div id="pmyList"></div><button class="go pgreen" id="pmyNew">＋ あたらしい デッキを つくる</button>`;
+  const L=$('#pmyList');
+  L.innerHTML=PMY.map((d,i)=>{const its=d.keys.map(pItem).filter(Boolean);return `<div class="sec pmyr"><div class="pmyth">${its.slice(0,5).map(x=>`<img src="${esc(x.img)}" alt="">`).join('')}</div>
+    <div class="pmyinfo"><b>${esc(d.name)}</b><span>${its.length}まい</span></div><div class="pmyb"><button class="pbtn" data-a="play" data-i="${i}">▶ めくる</button><button class="pbtn" data-a="edit" data-i="${i}">✏️ なおす</button><button class="pbtn del" data-a="del" data-i="${i}">🗑</button></div></div>`;}).join('');
+  L.querySelectorAll('button[data-a]').forEach(b=>b.onclick=()=>{
+    actx();const d=PMY[+b.dataset.i],a=b.dataset.a;if(!d)return;
+    if(a==='play')pMyPlay(d);
+    else if(a==='edit'){PME={id:d.id,name:d.name,keys:d.keys.slice(),q:'',g:'all'};pMyRender();}
+    else if(a==='del'){if(!b.classList.contains('arm')){b.classList.add('arm');b.textContent='けす？';clearTimeout(b._t);b._t=setTimeout(()=>{b.classList.remove('arm');b.textContent='🗑';},2600);return;}
+      PMY=PMY.filter(x=>x!==d);if(PS.like==='my:'+d.id)PS.like='all';['wsrc','rsrc'].forEach(k=>{if(PS[k]==='my:'+d.id)PS[k]='';});psave();pmysave();pMyRender();}
+  });
+  $('#pmyNew').onclick=()=>{actx();PME={id:'',name:'マイデッキ '+(PMY.length+1),keys:[],q:'',g:'all'};pMyRender();};
+}
+function pMyPlay(d){const items=d.keys.map(pItem).filter(Boolean);if(!items.length){toast('カードが ありません');return;}pHideAll();PRET=pMyRender;start({name:'⭐ '+d.name,items});}
+const PMG=[['all','ぜんぶ'],['g0','🐾 どうぶつ'],['g1','🍎 たべもの'],['g2','🍱 りょうり'],['g3','🚃 のりもの'],['g4','🧸 みのまわり'],['g5','🌸 しぜん'],['g6','🎏 にっぽん']];
+function pMyEdit(){
+  pOpenPage(PME.id?'✏️ デッキを なおす':'＋ あたらしい デッキ',()=>{PME=null;pMyRender();});
+  $('#ppBody').innerHTML=`<div class="sec"><h3>なまえ</h3><input class="kuname" id="pmeName" maxlength="16" autocomplete="off">
+    <h3 style="margin-top:12px">えらんだ カード（<span id="pmeN"></span>まい・タップで はずす）</h3><div class="pmesel" id="pmeSel"></div><button class="go pgreen" id="pmeSave">ほぞん</button></div>
+    <div class="sec"><h3>カードを さがす</h3><input class="kuname" id="pmeQ" placeholder="なまえで さがす（れい：りんご、バス）" autocomplete="off" enterkeyhint="search"><div class="chips" id="pmeG" style="margin-top:8px"></div></div>
+    <div class="pthumbs" id="pmeGrid"></div>`;
+  $('#pmeName').value=PME.name;$('#pmeQ').value=PME.q;
+  $('#pmeName').oninput=e=>{PME.name=e.target.value;};
+  $('#pmeQ').oninput=e=>{PME.q=e.target.value;pMyGrid();};
+  const gch=()=>pChips('#pmeG',PMG.concat(KU.list.length?[['home','✨ うちの しゃしん']]:[]),()=>PME.g,v=>{PME.g=v;},()=>{pMyGrid();gch();});gch();
+  $('#pmeSave').onclick=()=>{
+    actx();if(PME.keys.length<2){psfx('soft');toast('カードを 2まい いじょう えらんでね');return;}
+    const name=(PME.name||'').trim()||'マイデッキ';
+    if(PME.id){const d=PMY.find(x=>x.id===PME.id);if(d){d.name=name;d.keys=PME.keys.slice();}}
+    else PMY.push({id:'d'+Date.now().toString(36),name,keys:PME.keys.slice()});
+    pmysave();psfx('star');toast('ほぞんしました',1400);PME=null;pMyRender();
+  };
+  pMySel();pMyGrid();
+}
+function pMySel(){
+  $('#pmeN').textContent=PME.keys.length;
+  const S3=$('#pmeSel');S3.innerHTML=PME.keys.map(pItem).map((x,i)=>x?`<button class="pms" data-i="${i}"><img src="${esc(x.img)}" alt=""><span>${esc(x.j)}</span></button>`:'').join('')||'<div class="note" style="margin:0">したの カードを タップして えらんでね（3〜5まいが おすすめ）</div>';
+  S3.querySelectorAll('.pms').forEach(b=>b.onclick=()=>{PME.keys.splice(+b.dataset.i,1);psfx('tap');pMySel();pMyGrid();});
+}
+function pMyGrid(){
+  const q=pNorm(PME.q),g=PME.g;let list;
+  if(g==='home')list=KU.list.map(u=>pItem('u:'+u.id)).filter(Boolean);
+  else list=pUniq(ALL.filter(it=>g==='all'||it.d.g===+g.slice(1)));
+  if(q)list=list.filter(it=>pNorm(it.j).includes(q)||pNorm(it.e).includes(q));
+  const G=$('#pmeGrid');
+  if(g==='all'&&!q){G.innerHTML='<div class="note" style="grid-column:1/-1">なかまを えらぶか、なまえで さがしてね</div>';return;}
+  list=list.slice(0,120);
+  G.innerHTML=list.map((it,i)=>`<button class="pth${PME.keys.includes(pKey(it))?' on':''}" data-i="${i}"><img src="${esc(it.img)}" loading="lazy" alt=""><span>${esc(it.j)}</span></button>`).join('')||'<div class="note" style="grid-column:1/-1">みつからなかったよ</div>';
+  G.querySelectorAll('.pth').forEach(b=>b.onclick=()=>{
+    const k=pKey(list[+b.dataset.i]),at=PME.keys.indexOf(k);
+    if(at>=0)PME.keys.splice(at,1);else{if(PME.keys.length>=30){toast('30まいまで だよ');return;}PME.keys.push(k);}
+    psfx('tap');b.classList.toggle('on',at<0);pMySel();
+  });
+}
+
+/* ---- F62 いんさつ して あそぶ ---- */
+let PPR={kind:'cards',src:'near',per:4,name:1,rule:'fv',pages:[]};
+function pPrintItems(){
+  const s=PPR.src||'near';
+  if(s.indexOf('one:')===0){const it=pItem(s.slice(4));return it?[it]:[];}
+  if(s.indexOf('deck:')===0){const d=DECKS.find(x=>x.name===s.slice(5));return d?d.items.slice(0,36):[];}
+  return pPool(s).slice(0,36);
+}
+function pPrintMake(){
+  const P=[],items=pPrintItems(),nm=+PPR.name;
+  const card=it=>`<div class="ppc"><img src="${esc(it.img)}" alt="">${nm?`<b>${esc(it.j)}</b>`:''}</div>`;
+  if(PPR.kind==='cards'){const per=+PPR.per;for(let i=0;i<items.length;i+=per)P.push(`<div class="ppg c${per}">${items.slice(i,i+per).map(card).join('')}</div>`);}
+  else if(PPR.kind==='sort'){
+    const R=PSORT.find(r=>r.id===PPR.rule&&!r.free)||PSORT[0],cards=[];
+    R.sh.forEach(s=>shuffle(pUniq(ALL.filter(s[2]))).slice(0,R.sh.length===2?4:3).forEach(it=>cards.push(it)));
+    P.push(`<div class="ppg sortb s${R.sh.length}"><h1>なかま わけ：${esc(R.name)}</h1><div class="ppbox">${R.sh.map(s=>`<div><b>${s[0]} ${esc(s[1])}</b></div>`).join('')}</div></div>`);
+    P.push(`<div class="ppg c9">${shuffle(cards).slice(0,9).map(card).join('')}</div>`);
+  }else{
+    for(let i=0;i<items.length;i+=6)P.push(`<div class="ppg order"><h1>🛒 ちゅうもん ひょう</h1><div class="pporow nm">おなまえ：</div>${items.slice(i,i+6).map(it=>`<div class="pporow"><img src="${esc(it.img)}" alt=""><b>${esc(it.j)}</b><span>いくつ？</span><div class="bx"><i></i><i></i><i></i><i></i><i></i></div></div>`).join('')}</div>`);
+  }
+  PPR.pages=P;
+}
+function pOpenPrint(one,back){PPR.back=back||pOpenMenu;if(one){PPR.src='one:'+one;PPR.kind='cards';PPR.per=1;}else if(PPR.src.indexOf('one:')===0)PPR.src='near';pPrintRender();}
+function pPrintRender(){
+  pOpenPage('🖨️ いんさつ して あそぶ',PPR.back||pOpenMenu);
+  const srcs=[['near','🏠 みぢかな もの']].concat(PPR.src.indexOf('one:')===0&&pPrintItems().length?[[PPR.src,'📌 えらんだ カード：'+pPrintItems()[0].j]]:[],
+    PMY.map(d=>['my:'+d.id,'⭐ '+d.name]),DECKS.filter(d=>!d.flag&&!d.drawn).map(d=>['deck:'+d.name,(d.icon||'')+' '+d.name]));
+  $('#ppBody').innerHTML=`<div class="sec"><h3>つくる もの</h3><div class="chips" id="pprK"></div>
+    <div id="pprOpt"></div><button class="go pgreen" id="pprGo">🖨 いんさつ する</button>
+    <div class="note">A4 の かみに いんさつします。iPhone では「きょうゆう」→「プリント」からも いんさつ・PDF ほぞん できます。カードは きりとって、じつぶつと くらべたり、なかまに わけたり、おみせやさんごっこに つかえます。</div></div>
+    <div class="pprev" id="pprPrev"></div>`;
+  pChips('#pprK',[['cards','🃏 カード'],['sort','🗂️ なかまわけ だいし'],['order','🛒 ちゅうもんひょう']],()=>PPR.kind,v=>{PPR.kind=v;},()=>pPrintRender());
+  const O=$('#pprOpt');
+  if(PPR.kind==='sort'){
+    O.innerHTML='<h3 style="margin-top:12px">わけかた</h3><div class="chips" id="pprR"></div>';
+    pChips('#pprR',PSORT.filter(r=>!r.free).map(r=>[r.id,r.name]),()=>PPR.rule,v=>{PPR.rule=v;},()=>pPrintRender());
+  }else{
+    O.innerHTML=`<h3 style="margin-top:12px">カード</h3><select class="psel" id="pprS">${srcs.map(([v,t])=>`<option value="${esc(v)}"${v===PPR.src?' selected':''}>${esc(t)}</option>`).join('')}</select>`+
+      (PPR.kind==='cards'?'<h3 style="margin-top:12px">おおきさ</h3><div class="chips" id="pprP"></div>':'');
+    $('#pprS').onchange=e=>{PPR.src=e.target.value;pPrintRender();};
+    if(PPR.kind==='cards')pChips('#pprP',[[1,'1まい（おおきい）'],[4,'4まい'],[9,'9まい（ちいさい）']],()=>PPR.per,v=>{PPR.per=+v;},()=>pPrintRender());
+  }
+  O.insertAdjacentHTML('beforeend','<h3 style="margin-top:12px">なまえ</h3><div class="chips" id="pprN"></div>');
+  pChips('#pprN',[[1,'なまえ あり'],[0,'なまえ なし（えだけ）']],()=>PPR.name,v=>{PPR.name=+v;},()=>pPrintRender());
+  pPrintMake();
+  const V=$('#pprPrev'),w=Math.min(V.clientWidth||340,520),s=w/733;
+  V.innerHTML=PPR.pages.length?PPR.pages.map((p,i)=>`<div class="ppw" style="--s:${s.toFixed(4)}">${p}<small>${i+1} / ${PPR.pages.length}</small></div>`).join(''):'<div class="note">カードが ありません</div>';
+  $('#pprGo').onclick=()=>{actx();pDoPrint();};
+}
+function pDoPrint(){
+  if(!PPR.pages.length){toast('カードが ありません');return;}
+  const pa=$('#printArea');pa.innerHTML=PPR.pages.join('');
+  const ims=[...pa.querySelectorAll('img')];
+  Promise.all(ims.map(im=>im.complete?1:new Promise(r=>{im.onload=im.onerror=r;}))).then(()=>{
+    plog('print',`${{cards:'カード',sort:'なかまわけ だいし',order:'ちゅうもんひょう'}[PPR.kind]} ${PPR.pages.length}まい`);
+    try{window.print();}catch(e){toast('いんさつ できませんでした');}
+  });
+}
+
+/* ---- F64 データの かきだし・よみこみ ---- */
+function pB64(buf){const u=new Uint8Array(buf);let s='';for(let i=0;i<u.length;i+=0x8000)s+=String.fromCharCode.apply(null,u.subarray(i,i+0x8000));return btoa(s);}
+function pUnB64(b){const s=atob(b),u=new Uint8Array(s.length);for(let i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u.buffer;}
+async function pExport(){
+  const data={app:'baby-flashcards',v:1,t:new Date().toISOString(),ls:{},home:[]};
+  for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(/^babyfc/.test(k))data.ls[k]=localStorage.getItem(k);}
+  try{const all=await kuTx('readonly',os=>os.getAll());data.home=(all||[]).map(r=>({id:r.id,name:r.name,cut:!!r.cut,got:r.got||0,t:r.t,type:r.type,b64:pB64(r.buf)}));}catch(e){}
+  const name=`baby-flashcards-${new Date().toISOString().slice(0,10)}.json`,blob=new Blob([JSON.stringify(data)],{type:'application/json'});
+  try{const f=new File([blob],name,{type:'application/json'});if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f],title:name});return;}}
+  catch(e){if(e&&e.name==='AbortError')return;}
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},5000);toast('かきだしました',1800);
+}
+$('#pExport').onclick=()=>{actx();pExport();};
+$('#pImport').onclick=()=>{const f=$('#pImpFile');f.value='';f.click();};
+$('#pImpFile').onchange=async e=>{
+  const file=e.target.files&&e.target.files[0];if(!file)return;
+  let d=null;try{d=JSON.parse(await file.text());}catch(err){}
+  if(!d||d.app!=='baby-flashcards'||!d.ls){toast('この ファイルは よみこめません');return;}
+  const box=document.createElement('div');box.className='pimp';
+  const my=(()=>{try{return JSON.parse(d.ls.babyfc_my||'[]').length;}catch(_){return 0;}})();
+  box.innerHTML=`<b>${esc((d.t||'').slice(0,10))} の データ</b>（マイデッキ ${my}・スペシャル シール ${(d.home||[]).length}まい）で、いまの データを おきかえますか？<div class="prow2" style="margin-top:8px"><button class="pbtn warn">おきかえる</button><button class="pbtn">やめる</button></div>`;
+  const host=$('#pImport').closest('.sec');host.querySelectorAll('.pimp').forEach(x=>x.remove());host.appendChild(box);
+  const [yes,no]=box.querySelectorAll('button');no.onclick=()=>box.remove();
+  yes.onclick=async()=>{
+    yes.disabled=true;
+    try{
+      Object.keys(localStorage).filter(k=>/^babyfc/.test(k)).forEach(k=>localStorage.removeItem(k));
+      Object.entries(d.ls).forEach(([k,v])=>{if(/^babyfc/.test(k)&&typeof v==='string')localStorage.setItem(k,v);});
+      if(Array.isArray(d.home)){
+        await kuTx('readwrite',os=>os.clear());
+        for(const r of d.home)await kuTx('readwrite',os=>os.put({id:r.id,name:r.name||'',cut:!!r.cut,got:r.got||0,t:r.t||Date.now(),type:r.type||'image/jpeg',buf:pUnB64(r.b64)}));
+      }
+      toast('よみこみました。ひらきなおします',2000);setTimeout(()=>location.reload(),1200);
+    }catch(err){yes.disabled=false;toast('よみこめませんでした');}
+  };
+};
+
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Escape')return;
+  if(pgame.classList.contains('show'))(PG&&PG.back?PG.back:pBackMenu)();
+  else if(ppage.classList.contains('show'))(PPB||pOpenMenu)();
+  else if(pmenu.classList.contains('show')){pHideAll();home.hidden=false;}
+});
+window.addEventListener('resize',()=>{
+  if(!pgame.classList.contains('show'))return;
+  const g=$('#pgBody .pwgrid');if(g)pFit(g,g.children.length);
+  const s=$('#pgBody .psgrid');if(s)pFit(s,s.children.length,170);
+});
 
 buildHome();
 </script>
