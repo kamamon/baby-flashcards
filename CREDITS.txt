@@ -1,6 +1,7 @@
 ベビー フラッシュカード ― 写真のクレジット
 
-写真はすべて、自由に使えるライセンスで公開されている実写の写真です（おもに Wikimedia Commons）。
+実写の写真（card-○○.jpg）は、自由に使えるライセンスで公開されている写真です（おもに Wikimedia Commons）。
+ai/ フォルダの画像（V001〜V150・F001〜F250）は AI 生成画像です（このページの最後に一覧があります）。
 背景を除去して白に置き換え、トリミング・縮小しています。加工した写真も、元の写真と同じライセンスです。
 ライセンスの全文：CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ ／ CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
 （3.0・2.5・2.0 なども同じサイトの各バージョン）
@@ -1730,3 +1731,410 @@ card-tanbarin.jpg  タンバリン
 
 あいうえおの文字（kana.woff2）：Klee One SemiBold（Copyright 2020 The Klee Project Authors, https://github.com/fontworks-fonts/Klee）。
   SIL Open Font License 1.1（全文：OFL-KleeOne.txt）。ひらがな・カタカナだけを取り出して使っています。
+
+――――――――――――――――――――
+AI生成画像（ai/○○.jpg）
+
+のりもの 150種類・たべもの 250種類の白い背景の画像は、ChatGPT（OpenAI）の画像生成で作った AI 生成画像です。
+実際に撮影した写真ではありません。1254×1254 の元画像を 800×800 に縮小して使っています。
+
+ai/f001.jpg  りんご（Apple）  AI生成 F001
+ai/f002.jpg  みかん（Mandarin orange）  AI生成 F002
+ai/f003.jpg  バナナ（Banana）  AI生成 F003
+ai/f004.jpg  いちご（Strawberry）  AI生成 F004
+ai/f005.jpg  ぶどう（Grapes）  AI生成 F005
+ai/f006.jpg  なし（Japanese pear）  AI生成 F006
+ai/f007.jpg  かき（Persimmon）  AI生成 F007
+ai/f008.jpg  さくらんぼ（Cherries）  AI生成 F008
+ai/f009.jpg  パイナップル（Pineapple）  AI生成 F009
+ai/f010.jpg  レモン（Lemon）  AI生成 F010
+ai/f011.jpg  キウイフルーツ（Kiwifruit）  AI生成 F011
+ai/f012.jpg  マンゴー（Mango）  AI生成 F012
+ai/f013.jpg  ブルーベリー（Blueberries）  AI生成 F013
+ai/f014.jpg  もも（Peach）  AI生成 F014
+ai/f015.jpg  すいか（Watermelon）  AI生成 F015
+ai/f016.jpg  メロン（Melon）  AI生成 F016
+ai/f017.jpg  グレープフルーツ（Grapefruit）  AI生成 F017
+ai/f018.jpg  オレンジ（Orange）  AI生成 F018
+ai/f019.jpg  パパイヤ（Papaya）  AI生成 F019
+ai/f020.jpg  アボカド（Avocado）  AI生成 F020
+ai/f021.jpg  いちじく（Fig）  AI生成 F021
+ai/f022.jpg  ざくろ（Pomegranate）  AI生成 F022
+ai/f023.jpg  びわ（Loquat）  AI生成 F023
+ai/f024.jpg  プラム（Plum）  AI生成 F024
+ai/f025.jpg  あんず（Apricot）  AI生成 F025
+ai/f026.jpg  ラズベリー（Raspberries）  AI生成 F026
+ai/f027.jpg  ブラックベリー（Blackberries）  AI生成 F027
+ai/f028.jpg  ライチ（Lychee）  AI生成 F028
+ai/f029.jpg  パッションフルーツ（Passion fruit）  AI生成 F029
+ai/f030.jpg  ドラゴンフルーツ（Dragon fruit）  AI生成 F030
+ai/f031.jpg  ドリアン（Durian）  AI生成 F031
+ai/f032.jpg  ココナッツ（Coconut）  AI生成 F032
+ai/f033.jpg  グアバ（Guava）  AI生成 F033
+ai/f034.jpg  スターフルーツ（Star fruit）  AI生成 F034
+ai/f035.jpg  きんかん（Kumquat）  AI生成 F035
+ai/f036.jpg  ゆず（Yuzu）  AI生成 F036
+ai/f037.jpg  にんじん（Carrot）  AI生成 F037
+ai/f038.jpg  だいこん（Daikon radish）  AI生成 F038
+ai/f039.jpg  かぶ（Turnip）  AI生成 F039
+ai/f040.jpg  ごぼう（Burdock root）  AI生成 F040
+ai/f041.jpg  れんこん（Lotus root）  AI生成 F041
+ai/f042.jpg  じゃがいも（Potato）  AI生成 F042
+ai/f043.jpg  さつまいも（Sweet potato）  AI生成 F043
+ai/f044.jpg  さといも（Taro）  AI生成 F044
+ai/f045.jpg  ながいも（Chinese yam）  AI生成 F045
+ai/f046.jpg  かぼちゃ（Kabocha squash）  AI生成 F046
+ai/f047.jpg  きゅうり（Cucumber）  AI生成 F047
+ai/f048.jpg  トマト（Tomato）  AI生成 F048
+ai/f049.jpg  なす（Eggplant）  AI生成 F049
+ai/f050.jpg  ピーマン（Green pepper）  AI生成 F050
+ai/f051.jpg  ズッキーニ（Zucchini）  AI生成 F051
+ai/f052.jpg  ゴーヤ（Bitter melon）  AI生成 F052
+ai/f053.jpg  オクラ（Okra）  AI生成 F053
+ai/f054.jpg  キャベツ（Cabbage）  AI生成 F054
+ai/f055.jpg  はくさい（Napa cabbage）  AI生成 F055
+ai/f056.jpg  レタス（Lettuce）  AI生成 F056
+ai/f057.jpg  ほうれんそう（Spinach）  AI生成 F057
+ai/f058.jpg  こまつな（Komatsuna）  AI生成 F058
+ai/f059.jpg  みずな（Mizuna）  AI生成 F059
+ai/f060.jpg  しゅんぎく（Chrysanthemum greens）  AI生成 F060
+ai/f061.jpg  チンゲンサイ（Bok choy）  AI生成 F061
+ai/f062.jpg  ケール（Kale）  AI生成 F062
+ai/f063.jpg  ブロッコリー（Broccoli）  AI生成 F063
+ai/f064.jpg  カリフラワー（Cauliflower）  AI生成 F064
+ai/f065.jpg  アスパラガス（Asparagus）  AI生成 F065
+ai/f066.jpg  セロリ（Celery）  AI生成 F066
+ai/f067.jpg  たまねぎ（Onion）  AI生成 F067
+ai/f068.jpg  ねぎ（Welsh onion）  AI生成 F068
+ai/f069.jpg  にんにく（Garlic）  AI生成 F069
+ai/f070.jpg  しょうが（Ginger）  AI生成 F070
+ai/f071.jpg  にら（Garlic chives）  AI生成 F071
+ai/f072.jpg  もやし（Bean sprouts）  AI生成 F072
+ai/f073.jpg  たけのこ（Bamboo shoots）  AI生成 F073
+ai/f074.jpg  とうもろこし（Sweet corn）  AI生成 F074
+ai/f075.jpg  しいたけ（Shiitake mushrooms）  AI生成 F075
+ai/f076.jpg  しめじ（Shimeji mushrooms）  AI生成 F076
+ai/f077.jpg  えのき（Enoki mushrooms）  AI生成 F077
+ai/f078.jpg  まいたけ（Maitake mushrooms）  AI生成 F078
+ai/f079.jpg  まつたけ（Matsutake mushrooms）  AI生成 F079
+ai/f080.jpg  マッシュルーム（Button mushrooms）  AI生成 F080
+ai/f081.jpg  こめ（Rice grains）  AI生成 F081
+ai/f082.jpg  こむぎこ（Wheat flour）  AI生成 F082
+ai/f083.jpg  おおむぎ（Barley）  AI生成 F083
+ai/f084.jpg  オートミール（Oatmeal）  AI生成 F084
+ai/f085.jpg  そばのみ（Buckwheat groats）  AI生成 F085
+ai/f086.jpg  キヌア（Quinoa）  AI生成 F086
+ai/f087.jpg  えだまめ（Edamame）  AI生成 F087
+ai/f088.jpg  あずき（Adzuki beans）  AI生成 F088
+ai/f089.jpg  いんげんまめ（Common beans）  AI生成 F089
+ai/f090.jpg  ひよこまめ（Chickpeas）  AI生成 F090
+ai/f091.jpg  レンズまめ（Lentils）  AI生成 F091
+ai/f092.jpg  そらまめ（Broad beans）  AI生成 F092
+ai/f093.jpg  グリーンピース（Green peas）  AI生成 F093
+ai/f094.jpg  ピーナッツ（Peanuts）  AI生成 F094
+ai/f095.jpg  アーモンド（Almonds）  AI生成 F095
+ai/f096.jpg  くるみ（Walnuts）  AI生成 F096
+ai/f097.jpg  くり（Chestnuts）  AI生成 F097
+ai/f098.jpg  カシューナッツ（Cashew nuts）  AI生成 F098
+ai/f099.jpg  さけ（Salmon）  AI生成 F099
+ai/f100.jpg  まぐろ（Tuna）  AI生成 F100
+ai/f101.jpg  かつお（Skipjack tuna）  AI生成 F101
+ai/f102.jpg  さば（Mackerel）  AI生成 F102
+ai/f103.jpg  あじ（Horse mackerel）  AI生成 F103
+ai/f104.jpg  いわし（Sardines）  AI生成 F104
+ai/f105.jpg  さんま（Pacific saury）  AI生成 F105
+ai/f106.jpg  たい（Sea bream）  AI生成 F106
+ai/f107.jpg  たら（Cod）  AI生成 F107
+ai/f108.jpg  ぶり（Yellowtail）  AI生成 F108
+ai/f109.jpg  さわら（Spanish mackerel）  AI生成 F109
+ai/f110.jpg  うなぎ（Freshwater eel）  AI生成 F110
+ai/f111.jpg  あなご（Conger eel）  AI生成 F111
+ai/f112.jpg  ししゃも（Shishamo smelt）  AI生成 F112
+ai/f113.jpg  しらす（Whitebait）  AI生成 F113
+ai/f114.jpg  ふぐ（Pufferfish）  AI生成 F114
+ai/f115.jpg  ほっけ（Okhotsk Atka mackerel）  AI生成 F115
+ai/f116.jpg  えび（Shrimp）  AI生成 F116
+ai/f117.jpg  かに（Crab）  AI生成 F117
+ai/f118.jpg  いか（Squid）  AI生成 F118
+ai/f119.jpg  たこ（Octopus）  AI生成 F119
+ai/f120.jpg  ほたて（Scallops）  AI生成 F120
+ai/f121.jpg  あさり（Manila clams）  AI生成 F121
+ai/f122.jpg  しじみ（Shijimi clams）  AI生成 F122
+ai/f123.jpg  かき（Oysters）  AI生成 F123
+ai/f124.jpg  わかめ（Wakame seaweed）  AI生成 F124
+ai/f125.jpg  ぎゅうにく（Beef）  AI生成 F125
+ai/f126.jpg  ぶたにく（Pork）  AI生成 F126
+ai/f127.jpg  とりにく（Chicken）  AI生成 F127
+ai/f128.jpg  ひつじにく（Lamb and mutton）  AI生成 F128
+ai/f129.jpg  かもにく（Duck meat）  AI生成 F129
+ai/f130.jpg  ハム（Ham）  AI生成 F130
+ai/f131.jpg  ベーコン（Bacon）  AI生成 F131
+ai/f132.jpg  ソーセージ（Sausages）  AI生成 F132
+ai/f133.jpg  たまご（Eggs）  AI生成 F133
+ai/f134.jpg  うずらのたまご（Quail eggs）  AI生成 F134
+ai/f135.jpg  ぎゅうにゅう（Milk）  AI生成 F135
+ai/f136.jpg  チーズ（Cheese）  AI生成 F136
+ai/f137.jpg  ヨーグルト（Yogurt）  AI生成 F137
+ai/f138.jpg  バター（Butter）  AI生成 F138
+ai/f139.jpg  なまクリーム（Cream）  AI生成 F139
+ai/f140.jpg  れんにゅう（Condensed milk）  AI生成 F140
+ai/f141.jpg  ごはん（Cooked rice）  AI生成 F141
+ai/f142.jpg  おにぎり（Rice balls）  AI生成 F142
+ai/f143.jpg  おかゆ（Rice porridge）  AI生成 F143
+ai/f144.jpg  チャーハン（Fried rice）  AI生成 F144
+ai/f145.jpg  おちゃづけ（Ochazuke）  AI生成 F145
+ai/f146.jpg  すし（Sushi）  AI生成 F146
+ai/f147.jpg  カレーライス（Curry and rice）  AI生成 F147
+ai/f148.jpg  ハヤシライス（Hayashi rice）  AI生成 F148
+ai/f149.jpg  オムライス（Omurice）  AI生成 F149
+ai/f150.jpg  たきこみごはん（Seasoned rice）  AI生成 F150
+ai/f151.jpg  たまごかけごはん（Rice with egg）  AI生成 F151
+ai/f152.jpg  おやこどん（Chicken and egg rice bowl）  AI生成 F152
+ai/f153.jpg  ぎゅうどん（Beef rice bowl）  AI生成 F153
+ai/f154.jpg  かつどん（Pork cutlet rice bowl）  AI生成 F154
+ai/f155.jpg  パン（Bread）  AI生成 F155
+ai/f156.jpg  サンドイッチ（Sandwich）  AI生成 F156
+ai/f157.jpg  ハンバーガー（Hamburger）  AI生成 F157
+ai/f158.jpg  ホットドッグ（Hot dog）  AI生成 F158
+ai/f159.jpg  ピザ（Pizza）  AI生成 F159
+ai/f160.jpg  うどん（Udon noodles）  AI生成 F160
+ai/f161.jpg  そば（Soba noodles）  AI生成 F161
+ai/f162.jpg  ラーメン（Ramen）  AI生成 F162
+ai/f163.jpg  そうめん（Somen noodles）  AI生成 F163
+ai/f164.jpg  やきそば（Yakisoba）  AI生成 F164
+ai/f165.jpg  スパゲッティ（Spaghetti）  AI生成 F165
+ai/f166.jpg  ドリア（Doria (rice gratin)）  AI生成 F166
+ai/f167.jpg  ラザニア（Lasagna）  AI生成 F167
+ai/f168.jpg  リゾット（Risotto）  AI生成 F168
+ai/f169.jpg  パエリア（Paella）  AI生成 F169
+ai/f170.jpg  フォー（Pho）  AI生成 F170
+ai/f171.jpg  はるさめ（Glass noodles）  AI生成 F171
+ai/f172.jpg  みそしる（Miso soup）  AI生成 F172
+ai/f173.jpg  コーンスープ（Corn soup）  AI生成 F173
+ai/f174.jpg  ミネストローネ（Minestrone）  AI生成 F174
+ai/f175.jpg  クリームシチュー（Cream stew）  AI生成 F175
+ai/f176.jpg  ポトフ（Pot-au-feu）  AI生成 F176
+ai/f177.jpg  おでん（Oden）  AI生成 F177
+ai/f178.jpg  すきやき（Sukiyaki）  AI生成 F178
+ai/f179.jpg  しゃぶしゃぶ（Shabu-shabu）  AI生成 F179
+ai/f180.jpg  ほうとう（Hoto noodles）  AI生成 F180
+ai/f181.jpg  てんぷら（Tempura）  AI生成 F181
+ai/f182.jpg  とんかつ（Pork cutlet）  AI生成 F182
+ai/f183.jpg  からあげ（Japanese fried chicken）  AI生成 F183
+ai/f184.jpg  コロッケ（Croquette）  AI生成 F184
+ai/f185.jpg  メンチカツ（Minced meat cutlet）  AI生成 F185
+ai/f186.jpg  ぎょうざ（Gyoza dumplings）  AI生成 F186
+ai/f187.jpg  しゅうまい（Shumai dumplings）  AI生成 F187
+ai/f188.jpg  はるまき（Spring rolls）  AI生成 F188
+ai/f189.jpg  ちゅうかまん（Baozi (steamed buns)）  AI生成 F189
+ai/f190.jpg  たこやき（Takoyaki）  AI生成 F190
+ai/f191.jpg  おこのみやき（Okonomiyaki）  AI生成 F191
+ai/f192.jpg  ハンバーグ（Hamburg steak）  AI生成 F192
+ai/f193.jpg  ステーキ（Steak）  AI生成 F193
+ai/f194.jpg  やきとり（Yakitori）  AI生成 F194
+ai/f195.jpg  たまごやき（Japanese rolled omelet）  AI生成 F195
+ai/f196.jpg  オムレツ（Omelet）  AI生成 F196
+ai/f197.jpg  めだまやき（Fried egg）  AI生成 F197
+ai/f198.jpg  ポテトサラダ（Potato salad）  AI生成 F198
+ai/f199.jpg  やさいサラダ（Vegetable salad）  AI生成 F199
+ai/f200.jpg  とうふ（Tofu）  AI生成 F200
+ai/f201.jpg  なっとう（Natto）  AI生成 F201
+ai/f202.jpg  ひじきのにもの（Simmered hijiki）  AI生成 F202
+ai/f203.jpg  きんぴらごぼう（Kinpira burdock）  AI生成 F203
+ai/f204.jpg  ちくわ（Chikuwa fish cake）  AI生成 F204
+ai/f205.jpg  いたかまぼこ（Steamed fish cake）  AI生成 F205
+ai/f206.jpg  ケーキ（Cake）  AI生成 F206
+ai/f207.jpg  アイスクリーム（Ice cream）  AI生成 F207
+ai/f208.jpg  プリン（Custard pudding）  AI生成 F208
+ai/f209.jpg  ゼリー（Jelly dessert）  AI生成 F209
+ai/f210.jpg  ドーナツ（Doughnut）  AI生成 F210
+ai/f211.jpg  チョコチップクッキー（Chocolate chip cookies）  AI生成 F211
+ai/f212.jpg  チョコレート（Chocolate）  AI生成 F212
+ai/f213.jpg  あめ（Hard candy）  AI生成 F213
+ai/f214.jpg  グミ（Gummy candy）  AI生成 F214
+ai/f215.jpg  ガム（Chewing gum）  AI生成 F215
+ai/f216.jpg  マシュマロ（Marshmallows）  AI生成 F216
+ai/f217.jpg  ポップコーン（Popcorn）  AI生成 F217
+ai/f218.jpg  ポテトチップス（Potato chips）  AI生成 F218
+ai/f219.jpg  せんべい（Rice crackers）  AI生成 F219
+ai/f220.jpg  あられ（Arare crackers）  AI生成 F220
+ai/f221.jpg  かりんとう（Karinto）  AI生成 F221
+ai/f222.jpg  だんご（Dango dumplings）  AI生成 F222
+ai/f223.jpg  だいふく（Daifuku）  AI生成 F223
+ai/f224.jpg  ようかん（Yokan）  AI生成 F224
+ai/f225.jpg  たいやき（Taiyaki）  AI生成 F225
+ai/f226.jpg  どらやき（Dorayaki）  AI生成 F226
+ai/f227.jpg  まんじゅう（Manju）  AI生成 F227
+ai/f228.jpg  わらびもち（Warabimochi）  AI生成 F228
+ai/f229.jpg  くずもち（Kuzumochi）  AI生成 F229
+ai/f230.jpg  あんみつ（Anmitsu）  AI生成 F230
+ai/f231.jpg  しるこ（Sweet red bean soup）  AI生成 F231
+ai/f232.jpg  かきごおり（Shaved ice）  AI生成 F232
+ai/f233.jpg  わたあめ（Cotton candy）  AI生成 F233
+ai/f234.jpg  カステラ（Castella cake）  AI生成 F234
+ai/f235.jpg  シュークリーム（Cream puff）  AI生成 F235
+ai/f236.jpg  エクレア（Eclair）  AI生成 F236
+ai/f237.jpg  クレープ（Crepe）  AI生成 F237
+ai/f238.jpg  ワッフル（Waffle）  AI生成 F238
+ai/f239.jpg  パンケーキ（Pancake）  AI生成 F239
+ai/f240.jpg  マカロン（Macaron）  AI生成 F240
+ai/f241.jpg  タルト（Tart）  AI生成 F241
+ai/f242.jpg  バウムクーヘン（Baumkuchen）  AI生成 F242
+ai/f243.jpg  ビスコッティ（Biscotti）  AI生成 F243
+ai/f244.jpg  ところてん（Tokoroten）  AI生成 F244
+ai/f245.jpg  パイ（Pie）  AI生成 F245
+ai/f246.jpg  しょうゆ（Soy sauce）  AI生成 F246
+ai/f247.jpg  みそ（Miso paste）  AI生成 F247
+ai/f248.jpg  ケチャップ（Ketchup）  AI生成 F248
+ai/f249.jpg  マヨネーズ（Mayonnaise）  AI生成 F249
+ai/f250.jpg  はちみつ（Honey）  AI生成 F250
+ai/v001.jpg  セダン（Sedan）  AI生成 V001
+ai/v002.jpg  タクシー（Taxi）  AI生成 V002
+ai/v003.jpg  オープンカー（Convertible）  AI生成 V003
+ai/v004.jpg  スポーツカー（Sports car）  AI生成 V004
+ai/v005.jpg  オフロードカー（Off-road vehicle）  AI生成 V005
+ai/v006.jpg  リムジン（Limousine）  AI生成 V006
+ai/v007.jpg  キャンピングカー（Motorhome）  AI生成 V007
+ai/v008.jpg  ピックアップトラック（Pickup truck）  AI生成 V008
+ai/v009.jpg  フォーミュラカー（Formula racing car）  AI生成 V009
+ai/v010.jpg  ゴーカート（Go-kart）  AI生成 V010
+ai/v011.jpg  ろせんバス（Transit bus）  AI生成 V011
+ai/v012.jpg  にかいだてバス（Double-decker bus）  AI生成 V012
+ai/v013.jpg  れんせつバス（Articulated bus）  AI生成 V013
+ai/v014.jpg  スクールバス（School bus）  AI生成 V014
+ai/v015.jpg  トロリーバス（Trolleybus）  AI生成 V015
+ai/v016.jpg  すいりくりょうようバス（Amphibious bus）  AI生成 V016
+ai/v017.jpg  マイクロバス（Minibus）  AI生成 V017
+ai/v018.jpg  オープントップバス（Open-top bus）  AI生成 V018
+ai/v019.jpg  ひらボディトラック（Flatbed truck）  AI生成 V019
+ai/v020.jpg  パトカー（Police car）  AI生成 V020
+ai/v021.jpg  きゅうきゅうしゃ（Ambulance）  AI生成 V021
+ai/v022.jpg  しょうぼうしゃ（Fire engine）  AI生成 V022
+ai/v023.jpg  はしごしゃ（Aerial ladder fire truck）  AI生成 V023
+ai/v024.jpg  ゆうびんしゃ（Mail van）  AI生成 V024
+ai/v025.jpg  ダンプカー（Dump truck）  AI生成 V025
+ai/v026.jpg  タンクローリー（Tank truck）  AI生成 V026
+ai/v027.jpg  ミキサーしゃ（Concrete mixer truck）  AI生成 V027
+ai/v028.jpg  ごみしゅうしゅうしゃ（Garbage truck）  AI生成 V028
+ai/v029.jpg  レッカーしゃ（Tow truck）  AI生成 V029
+ai/v030.jpg  れいとうトラック（Refrigerated truck）  AI生成 V030
+ai/v031.jpg  キャリアカー（Car transporter）  AI生成 V031
+ai/v032.jpg  トレーラートラック（Semi-trailer truck）  AI生成 V032
+ai/v033.jpg  はこがたトラック（Box truck）  AI生成 V033
+ai/v034.jpg  まるたを はこぶ トラック（Logging truck）  AI生成 V034
+ai/v035.jpg  どうろせいそうしゃ（Street sweeper）  AI生成 V035
+ai/v036.jpg  ゆきかきトラック（Snowplow truck）  AI生成 V036
+ai/v037.jpg  すべりどめを まく くるま（Gritter truck）  AI生成 V037
+ai/v038.jpg  せんろも はしる くるま（Road–rail vehicle）  AI生成 V038
+ai/v039.jpg  いどうとしょかん（Bookmobile）  AI生成 V039
+ai/v040.jpg  うまを はこぶ トラック（Horsebox）  AI生成 V040
+ai/v041.jpg  ブルドーザー（Bulldozer）  AI生成 V041
+ai/v042.jpg  ショベルカー（Excavator）  AI生成 V042
+ai/v043.jpg  ホイールローダー（Wheel loader）  AI生成 V043
+ai/v044.jpg  バックホーローダー（Backhoe loader）  AI生成 V044
+ai/v045.jpg  スキッドステアローダー（Skid-steer loader）  AI生成 V045
+ai/v046.jpg  クローラークレーン（Crawler crane）  AI生成 V046
+ai/v047.jpg  トラッククレーン（Truck-mounted crane）  AI生成 V047
+ai/v048.jpg  ロードローラー（Road roller）  AI生成 V048
+ai/v049.jpg  モーターグレーダー（Motor grader）  AI生成 V049
+ai/v050.jpg  アスファルトを しく くるま（Asphalt paver）  AI生成 V050
+ai/v051.jpg  どうろを けずる くるま（Cold planer）  AI生成 V051
+ai/v052.jpg  みぞを ほる くるま（Trencher）  AI生成 V052
+ai/v053.jpg  くいを うつ くるま（Pile driver）  AI生成 V053
+ai/v054.jpg  あなを ほる トラック（Drilling rig truck）  AI生成 V054
+ai/v055.jpg  スクレーパー（Wheel tractor-scraper）  AI生成 V055
+ai/v056.jpg  フォークリフト（Forklift）  AI生成 V056
+ai/v057.jpg  コンテナを もちあげる くるま（Reach stacker）  AI生成 V057
+ai/v058.jpg  テレハンドラー（Telehandler）  AI生成 V058
+ai/v059.jpg  うでが のびる こうしょさぎょうしゃ（Boom lift）  AI生成 V059
+ai/v060.jpg  はさみがた こうしょさぎょうしゃ（Scissor lift）  AI生成 V060
+ai/v061.jpg  トラクター（Tractor）  AI生成 V061
+ai/v062.jpg  コンバイン（Combine harvester）  AI生成 V062
+ai/v063.jpg  たうえき（Rice transplanter）  AI生成 V063
+ai/v064.jpg  ぼくそうを かる くるま（Forage harvester）  AI生成 V064
+ai/v065.jpg  はたけに きりを まく くるま（Agricultural sprayer）  AI生成 V065
+ai/v066.jpg  きを きる くるま（Forestry harvester）  AI生成 V066
+ai/v067.jpg  きを はこぶ くるま（Forwarder）  AI生成 V067
+ai/v068.jpg  きを ひっぱる くるま（Skidder）  AI生成 V068
+ai/v069.jpg  のって うごかす しばかりき（Riding lawn mower）  AI生成 V069
+ai/v070.jpg  にりんトラクター（Two-wheel tractor）  AI生成 V070
+ai/v071.jpg  つうきんでんしゃ（Commuter train）  AI生成 V071
+ai/v072.jpg  じょうききかんしゃ（Steam locomotive）  AI生成 V072
+ai/v073.jpg  しんかんせん（Shinkansen）  AI生成 V073
+ai/v074.jpg  ドクターイエロー（Doctor Yellow）  AI生成 V074
+ai/v075.jpg  ディーゼルきかんしゃ（Diesel locomotive）  AI生成 V075
+ai/v076.jpg  でんききかんしゃ（Electric locomotive）  AI生成 V076
+ai/v077.jpg  ディーゼルカー（Diesel railcar）  AI生成 V077
+ai/v078.jpg  ちかてつ（Subway train）  AI生成 V078
+ai/v079.jpg  ろめんでんしゃ（Tram）  AI生成 V079
+ai/v080.jpg  レールを またぐ モノレール（Straddle-beam monorail）  AI生成 V080
+ai/v081.jpg  じしゃくで うく れっしゃ（Maglev train）  AI生成 V081
+ai/v082.jpg  ケーブルカー（Funicular）  AI生成 V082
+ai/v083.jpg  はぐるまで のぼる れっしゃ（Cog railway train）  AI生成 V083
+ai/v084.jpg  かもつれっしゃ（Freight train）  AI生成 V084
+ai/v085.jpg  しんだいれっしゃ（Sleeper train）  AI生成 V085
+ai/v086.jpg  にかいだてれっしゃ（Double-decker train）  AI生成 V086
+ai/v087.jpg  ゆきを はねとばす れっしゃ（Rotary snowplow）  AI生成 V087
+ai/v088.jpg  せんろを なおす くるま（Tamping machine）  AI生成 V088
+ai/v089.jpg  レールバス（Railbus）  AI生成 V089
+ai/v090.jpg  てこぎトロッコ（Handcar）  AI生成 V090
+ai/v091.jpg  ぶらさがる モノレール（Suspended monorail）  AI生成 V091
+ai/v092.jpg  ミニトレイン（Miniature railway train）  AI生成 V092
+ai/v093.jpg  じどうしゃうんぱんせん（Car carrier ship）  AI生成 V093
+ai/v094.jpg  ヨット（Sailboat）  AI生成 V094
+ai/v095.jpg  てこぎボート（Rowboat）  AI生成 V095
+ai/v096.jpg  カヌー（Canoe）  AI生成 V096
+ai/v097.jpg  カヤック（Kayak）  AI生成 V097
+ai/v098.jpg  いかだ（Raft）  AI生成 V098
+ai/v099.jpg  ペダルボート（Pedal boat）  AI生成 V099
+ai/v100.jpg  ゴンドラ（Gondola）  AI生成 V100
+ai/v101.jpg  モーターボート（Motorboat）  AI生成 V101
+ai/v102.jpg  すいじょうバイク（Personal watercraft）  AI生成 V102
+ai/v103.jpg  りょうしの ふね（Fishing boat）  AI生成 V103
+ai/v104.jpg  フェリー（Ferry）  AI生成 V104
+ai/v105.jpg  クルーズせん（Cruise ship）  AI生成 V105
+ai/v106.jpg  コンテナせん（Container ship）  AI生成 V106
+ai/v107.jpg  せきゆタンカー（Oil tanker）  AI生成 V107
+ai/v108.jpg  タグボート（Tugboat）  AI生成 V108
+ai/v109.jpg  こおりを わる ふね（Icebreaker）  AI生成 V109
+ai/v110.jpg  うみを しらべる ふね（Research vessel）  AI生成 V110
+ai/v111.jpg  きゅうじょてい（Rescue boat）  AI生成 V111
+ai/v112.jpg  せんすいかん（Submarine）  AI生成 V112
+ai/v113.jpg  ホバークラフト（Hovercraft）  AI生成 V113
+ai/v114.jpg  がいりんせん（Paddle steamer）  AI生成 V114
+ai/v115.jpg  りょかくき（Airliner）  AI生成 V115
+ai/v116.jpg  ヘリコプター（Helicopter）  AI生成 V116
+ai/v117.jpg  ききゅう（Hot-air balloon）  AI生成 V117
+ai/v118.jpg  ひこうせん（Airship）  AI生成 V118
+ai/v119.jpg  グライダー（Glider）  AI生成 V119
+ai/v120.jpg  すいじょうひこうき（Seaplane）  AI生成 V120
+ai/v121.jpg  ちいさな けいひこうき（Ultralight aircraft）  AI生成 V121
+ai/v122.jpg  つばさが にだんの ひこうき（Biplane）  AI生成 V122
+ai/v123.jpg  ジャイロプレーン（Autogyro）  AI生成 V123
+ai/v124.jpg  ハンググライダー（Hang glider）  AI生成 V124
+ai/v125.jpg  パラグライダー（Paraglider）  AI生成 V125
+ai/v126.jpg  モーターつき パラグライダー（Powered paraglider）  AI生成 V126
+ai/v127.jpg  ティルトローターき（Tiltrotor aircraft）  AI生成 V127
+ai/v128.jpg  にもつを はこぶ ひこうき（Cargo aircraft）  AI生成 V128
+ai/v129.jpg  ビジネスジェット（Business jet）  AI生成 V129
+ai/v130.jpg  そらから ひを けす ひこうき（Firefighting aircraft）  AI生成 V130
+ai/v131.jpg  スペースシャトル（Space shuttle）  AI生成 V131
+ai/v132.jpg  ロケット（Rocket）  AI生成 V132
+ai/v133.jpg  じてんしゃ（Bicycle）  AI生成 V133
+ai/v134.jpg  バイク（Motorcycle）  AI生成 V134
+ai/v135.jpg  さんりんしゃ（Tricycle）  AI生成 V135
+ai/v136.jpg  ふたりのり じてんしゃ（Tandem bicycle）  AI生成 V136
+ai/v137.jpg  にもつを はこぶ じてんしゃ（Cargo bicycle）  AI生成 V137
+ai/v138.jpg  ねそべって のる じてんしゃ（Recumbent bicycle）  AI生成 V138
+ai/v139.jpg  キックボード（Kick scooter）  AI生成 V139
+ai/v140.jpg  スケートボード（Skateboard）  AI生成 V140
+ai/v141.jpg  スノーモービル（Snowmobile）  AI生成 V141
+ai/v142.jpg  くるまいす（Wheelchair）  AI生成 V142
+ai/v143.jpg  セグウェイ（Segway PT）  AI生成 V143
+ai/v144.jpg  いちりんしゃ（Unicycle）  AI生成 V144
+ai/v145.jpg  トゥクトゥク（Auto rickshaw）  AI生成 V145
+ai/v146.jpg  じてんしゃタクシー（Cycle rickshaw）  AI生成 V146
+ai/v147.jpg  ばしゃ（Horse-drawn carriage）  AI生成 V147
+ai/v148.jpg  えきばしゃ（Stagecoach）  AI生成 V148
+ai/v149.jpg  そり（Sled）  AI生成 V149
+ai/v150.jpg  いぬぞり（Dog sled）  AI生成 V150
